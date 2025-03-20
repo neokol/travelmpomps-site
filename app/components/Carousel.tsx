@@ -23,7 +23,7 @@ const slides = [
 
 export const Carousel = () => {
     return (
-        <section className="relative flex items-center gap-12 px-8 py-16 bg-gradient-to-br from-[#F8F9F8] to-[#F8F9F8] text-gray-100">
+        <section className="relative flex items-center gap-12 px-8 py-16 bg-gradient-to-br bg-[#f6f5fd] text-gray-100">
             <Swiper
                 grabCursor={true}
                 centeredSlides={true}

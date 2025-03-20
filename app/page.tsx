@@ -13,7 +13,7 @@ export default function Home() {
         <Carousel />
       </div>
 
-      <div className="py-12">
+      <div className="py-0">
         <Widget />
       </div>
     </div>
