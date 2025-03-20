@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Euclid+Circular+A:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #2E2E2F;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Euclid Circular A', 'Poppins', sans-serif;
+}
+
+
+/* Colour Pallete
+White: #FFFEFE
+Darker white: #F8F9F8
+Orange: #F76808
+Black Bolt: #70706F
+Black Normal: #2E2E2F
+Lighter Blackground orange: #FAE5CB
+Light Orange2: #FEECD5
+Dark orange: #ADBEF3
+*/
