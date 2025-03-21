@@ -29,15 +29,17 @@ function Navbar() {
             <div className="flex items-center space-x-4">
                 {/* Destinations Dropdown */}
                 <div className="relative">
+                    <Link href="/destinations">
                     <button
                         onClick={toggleDropdown}
-                        className="px-3 py-2 text-[#2E2E2F] hover:text-[#F76808] transition-colors duration-200"
+                        className="px-3 py-2 text-[#2E2E2F] hover:text-[#F76808] transition-colors duration-200 font-bold"
                     >
                         Προορισμοί
                     </button>
+                    </Link>
                     {/* Dropdown Menu */}
                     {isDropdownOpen && (
-                        <div className="absolute bg-white shadow-lg rounded-lg mt-2 min-w-[160px]">
+                        <div className="absolute bg-white shadow-lg rounded-lg mt-2 min-w-[160px] font-bold">
                             <Link
                                 href="/destinations/berlin"
                                 className="block px-4 py-2 text-[#2E2E2F] hover:bg-gray-100"
@@ -49,7 +51,7 @@ function Navbar() {
                     )}
                 </div>
 
-                <Link href="/about" className="px-3 py-2 text-[#2E2E2F] hover:text-[#F76808] transition-colors duration-200" onClick={closeDropdown}>
+                <Link href="/about" className="px-3 py-2 text-[#2E2E2F] hover:text-[#F76808] transition-colors duration-200 font-bold" onClick={closeDropdown} >
                     Σχετικά με εμάς
                 </Link>
             </div>
