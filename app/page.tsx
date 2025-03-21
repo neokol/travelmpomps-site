@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import { Carousel } from "./components/Carousel";
 import { Widget } from "./components/Widget";
+import { Card1 } from "./components/Card1";
 
 export default function Home() {
   return (
@@ -13,8 +14,11 @@ export default function Home() {
         <Carousel />
       </div>
 
-      <div className="py-0">
+      {/* <div className="py-0">
         <Widget />
+      </div> */}
+      <div className="py-0">
+        <Card1 />
       </div>
     </div>
   );
