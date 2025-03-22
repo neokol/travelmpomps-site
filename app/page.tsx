@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import { Carousel } from "./components/Carousel";
-import { Widget } from "./components/Widget";
 import { Card1 } from "./components/Card1";
 
 export default function Home() {
