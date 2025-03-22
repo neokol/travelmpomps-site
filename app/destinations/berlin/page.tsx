@@ -46,7 +46,7 @@ function Berlin() {
                 {/* Main picture */}
                 <div className="flex justify-center my-8"> {/* Center the image */}
                     <Image
-                        src="/images/4.jpg"
+                        src="/images/4.jpeg"
                         width={1200} // Increase width for a wider image
                         height={600} // Adjust height proportionally
                         alt="Berlin"
