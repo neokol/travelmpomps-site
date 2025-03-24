@@ -19,7 +19,7 @@ export const Widget2 = ({ items }: WidgetProps) => {
 
     return (
         <section className="flex justify-center items-center py-8 bg-gradient-to-br text-gray-100">
-            <div className="flex p-5 w-[540px] h-[220px] rounded-lg bg-gray-900 shadow-lg">
+            <div className="flex p-5 w-[540px] h-[220px] rounded-lg bg-[#22333B] shadow-lg">
                 {/* Sidebar Buttons */}
                 <div className="w-[130px] pt-5">
                     {items.map((item, index) => (
@@ -27,7 +27,7 @@ export const Widget2 = ({ items }: WidgetProps) => {
                             key={item.name}
                             className={`w-full h-10 px-3 flex gap-2 items-center text-sm font-normal rounded-md transition-colors ${
                                 index === activeBlock
-                                    ? 'bg-blue-600 text-white'
+                                    ? 'bg-[#F76808] text-white'
                                     : 'bg-transparent text-gray-100 hover:bg-white/10'
                             }`}
                             onClick={() => toggleMenuBlock(index)}

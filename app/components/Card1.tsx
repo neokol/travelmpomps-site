@@ -1,26 +1,43 @@
 'use client';
+import Image from "next/image";
 
 import React from 'react';
-import { IoClose, IoFastFoodSharp } from 'react-icons/io5';
+import { IoClose } from 'react-icons/io5';
 import { MdReadMore } from 'react-icons/md';
-import { PiAirplaneTakeoffFill } from 'react-icons/pi';
-import { TbRoadSign } from 'react-icons/tb';
 import './style.css';
 
 const cards = [
     {
         name: 'Ταξίδια',
-        icon: <PiAirplaneTakeoffFill className="text-blue-500 w-30 h-30" />, // Larger size
+        icon: <Image
+                                        className="rounded-lg shadow-xl"
+                                        src="/travel.png"
+                                        width={150}
+                                        height={150}
+                                        alt="travel"
+                                    />, 
         more: 'Αναλυτικό πρόγραμμα σε διάφορους προορισμούς',
     },
     {
         name: 'Φαγητό',
-        icon: <IoFastFoodSharp className="text-red-500 w-30 h-30" />, // Larger size
+        icon: <Image
+        className="rounded-lg shadow-xl"
+        src="/food.png"
+        width={150}
+        height={150}
+        alt="travel"
+    />, // Larger size
         more: 'Προτάσεις για εστιατόρια, street food, γλυκά, παγωτά από την Ελλάδα και το εξωτερικό',
     },
     {
         name: 'Εκδρομές',
-        icon: <TbRoadSign className="text-green-500 w-30 h-30" />, // Larger size
+        icon: <Image
+        className="rounded-lg shadow-xl"
+        src="/explore.png"
+        width={150}
+        height={150}
+        alt="travel"
+    />, // Larger size
         more: 'Ιδέες για εκδρομές σε κοντινούς και μακρινούς προορισμούς τόσο στην Ελλάδα όσο και στο εξωτερικό',
     },
 ];

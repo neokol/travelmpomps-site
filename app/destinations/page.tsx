@@ -1,24 +1,54 @@
-import React from 'react'
-import Image from 'next/image'
-import Navbar from '@/app/components/Navbar'
-import Link from 'next/link'
+"use client";
 
-function Destinations() {
-    return (
-        <div className="min-h-screen">
-            <div><Navbar /></div>
-            <div className="p-30">
-                <Link href="/destinations/berlin">
-                    <Image className="rounded-lg shadow-xl"
-                        src="/Berlin_post.png"
-                        width={300}
-                        height={300}
-                        alt="Picture of the author"
-                    />
-                </Link>
-            </div>
-        </div>
-    )
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import Navbar from "../components/Navbar";
+
+interface Destination {
+    name: string;
+    slug: string;
+    image: string;
 }
 
-export default Destinations
+function Destinations() {
+    // Your destinations array
+    const destinations: Destination[] = [
+        {
+            name: "Βερολίνο",
+            slug: "berlin",
+            image: "/Berlin_post.png",
+        }
+
+    ];
+
+    return (
+        <div className="min-h-screen pt-22">
+            {/* Navbar */}
+            <Navbar />
+
+            {/* Grid of Destinations */}
+            <div className="p-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    {destinations.map((destination) => (
+                        <Link
+                            key={destination.slug}
+                            href={`/destinations/${destination.slug}`}
+                            className="flex flex-col items-center"
+                        >
+                            <Image
+                                className="rounded-lg shadow-xl"
+                                src={destination.image}
+                                width={300}
+                                height={300}
+                                alt={destination.name}
+                            />
+                        </Link>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Destinations;
