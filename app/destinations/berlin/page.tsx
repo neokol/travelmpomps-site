@@ -8,6 +8,7 @@ import { FaLanguage } from "react-icons/fa6";
 import Image from 'next/image';
 import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
+import Script from 'next/script'
 
 const berlinItems = [
     {
@@ -66,6 +67,12 @@ function Berlin() {
     return (
         <div className="min-h-screen">
             <div><Navbar /></div>
+            <Script
+                async
+                defer
+                src="https://widget.getyourguide.com/dist/pa.umd.production.min.js"
+                data-gyg-partner-id="0OAQQKO"
+            />
             {/* Content with Padding to Account for Navbar */}
             <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-40">
                 <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">
@@ -98,13 +105,14 @@ function Berlin() {
                     </h2>
                     <p>Όλες οι αεροπορικές εξυπηρετούν από το αεροδρόμιο του Βρανδεμβούργου BER. Η μεταφορά γίνεται με το τρένο είτε την γραμμή S9 (συχνότερα δρομολόγια) είτε το τρένο FEX (γρηγορότερο). Το πιο σημαντικό είναι ότι για την μεταφορά θα πρέπει να βγάλετε το εισιτήριο σας προτού επιβιβαστείτε στο τρένο. Θα επιλέξετε αυτό που ανήκει και στις τρεις ζώνες ABC και έχει κόστος 4,40 ευρώ.  </p>
                 </div>
+
                 <div className="mt-8">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         2. Μετακινήσεις εντός της πόλης
                     </h2>
                     <p>Το Βερολίνο είναι μια μεγάλη πόλη όπου θα χρησιμοποιήσετε αρκετά τα μέσα για τις μετακινήσεις σας εντός πόλης. Χωρίζεται σε 3 ζώνες όπου οι A και Β ανήκουν εντός του κέντρου της πόλης, ενώ στην C ανήκει το αεροδρόμιο ή το Potsdam.  Έτσι, θα πρέπει να επιλέξτε ανάμεσα στην επιλογή μεμονωμένων εισιτηρίων, ημερήσιων εισιτηρίων ή την επιλογή της Berlin Welcome Card ανάλογα με τις μέρες που θα διαθέσετε στην πόλη. Η Berlin Welcome Card παρέχει και διάφορες εκπτώσεις σε διάφορα αξιοθέατα.
                         Οι τιμές που κυμαίνονται στα μέσα είναι οι παρακάτω:
-                        <li>Μεμονωμένο εισιτήριο (short trip ticket: 3 στάσεις μετρό/6 στάσεις τραμ/λεωφορείο): 2,60 €</li>
+                        <li>Μεμονωμένο εισιτήριο (short: 3 στάσεις μετρό/6 στάσεις τραμ/λεωφορείο): 2,60 €</li>
                         <li>Μεμονωμένο εισιτήριο (2 ωρών): 3,80 €</li>
                         <li>Ημερήσιο εισιτήριο: 10,60 €</li>
                         <li>Berlin Welcome Card (3 ημέρες): 42.90 €</li>
@@ -112,6 +120,7 @@ function Berlin() {
                         Στην Berlin Welcome Card υπάρχει η δυνατότητα της έκδοσης κάρτας για από 2 έως 6 ημέρες.
                     </p>
                 </div>
+                <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-tour-ids="141648,6045,560843"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/berlin-l17/">GetYourGuide</a></span></div></div>
                 <div className="mt-8">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         3. Διαμονή
@@ -135,7 +144,7 @@ function Berlin() {
                         1η Ημέρα
                     </h3>
                     <p className="mb-4">
-                        Θα ξεκινήσουμε την περιήγηση μας από <strong>Alexanderplatz</strong>, την πιο κεντρική πλατεία του Βερολίνου. Θα βρείτε διάφορα εμπορικά μαγαζιά, εστιατόρια, fast food και πολυκαταστήματα. Εμείς θα ξεκινήσουμε με το <strong>Παγκόσμιο Ρολόι</strong>, όπου αναφέρεται η ώρα από διάφορες ζώνες το κόσμου. Το επόμενο κοντινό αξιοθέατο είναι ο <strong>Πύργος της Τηλεόρασης</strong>, το ψηλότερο κτήριο του Βερολίνου με ύψος 368 μέτρα. Το κόστος για την είσοδο είναι <strong>23,50 ευρώ</strong>. Λίγα μέτρα δίπλα από το παγκόσμιο ρολόι θα παρατηρήσετε ένα μαγαζί με συνήθως αρκετά μεγάλη ουρά, το <strong>CURRY61</strong>, όπου μπορείτε να δοκιμάσετε το παραδοσιακό <strong>curry wurst</strong>.
+                        Θα ξεκινήσουμε την περιήγηση μας από <strong>Alexanderplatz</strong>, την πιο κεντρική πλατεία του Βερολίνου. Θα βρείτε διάφορα εμπορικά μαγαζιά, εστιατόρια, fast food και πολυκαταστήματα. Εμείς θα ξεκινήσουμε με το <strong>Παγκόσμιο Ρολόι</strong>, όπου αναφέρεται η ώρα από διάφορες ζώνες το κόσμου. Το επόμενο κοντινό αξιοθέατο είναι ο <strong>Πύργος της Τηλεόρασης</strong>, το ψηλότερο κτήριο του Βερολίνου με ύψος 368 μέτρα. Το κόστος για την είσοδο είναι <strong>23,50 ευρώ</strong>. Θα ήταν καλό να κάνεις εκ των προτέρων την κράτηση σου από <a className="text-blue-600 underline" href='https://gyg.me/TTpMMAvX'>εδώ</a>. Λίγα μέτρα δίπλα από το παγκόσμιο ρολόι θα παρατηρήσετε ένα μαγαζί με συνήθως αρκετά μεγάλη ουρά, το <strong>CURRY61</strong>, όπου μπορείτε να δοκιμάσετε το παραδοσιακό <strong>curry wurst</strong>.
                     </p>
 
                     <p className="mb-4">
@@ -150,6 +159,7 @@ function Berlin() {
                         Τέλος, ακριβώς απέναντι από το δημαρχείο υπάρχει η περιοχή <strong>Nikolaiviertel</strong>. Είναι η πιο γραφική περιοχή στο Βερολίνο με τα πολύχρωμα σπιτάκια και την <strong>Art Nouveau</strong> αρχιτεκτονική. Μέσα σε αυτή την περιοχή υπάρχει και η <strong>St. Nicholas Church Museum</strong>, μια από τις παλαιότερες εκκλησίες της πόλης. Το κόστος για την είσοδο στην εκκλησία είναι <strong>7 ευρώ</strong>.
                     </p>
                 </div>
+
                 <div className="mt-8">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         2η Ημέρα
@@ -159,7 +169,7 @@ function Berlin() {
                     </p>
 
                     <p className="mb-4">
-                        Το πιο διάσημο μουσείο είναι αυτό της <strong>Περγάμου</strong>, το οποίο ήταν κλειστό για ανακαίνιση όταν το επισκεφτήκαμε εμείς. Τα υπόλοιπα μουσεία είναι: <strong>Παλαιό Μουσείο (Altes Museum)</strong>, <strong>Νέο Μουσείο (Neues Museum)</strong>, <strong>Παλαιά Εθνική Πινακοθήκη (Alte Nationalgalerie)</strong> και το <strong>Μουσείο Μπόντε (Bode-Museum)</strong>, γνωστό και ως <strong>Μουσείο Κάιζερ-Φρίντριχ (Kaiser-Friedrich-Museum)</strong>. Αν έχετε την <strong>Berlin Welcome Card</strong>, σας δίνει πρόσβαση σε όλα τα μουσεία.
+                        Το πιο διάσημο μουσείο είναι αυτό της <strong>Περγάμου</strong>, το οποίο ήταν κλειστό για ανακαίνιση όταν το επισκεφτήκαμε εμείς. Τα υπόλοιπα μουσεία είναι: <strong>Παλαιό Μουσείο (Altes Museum)</strong>, <strong>Νέο Μουσείο (Neues Museum)</strong>, <strong>Παλαιά Εθνική Πινακοθήκη (Alte Nationalgalerie)</strong> και το <strong>Μουσείο Μπόντε (Bode-Museum)</strong>, γνωστό και ως <strong>Μουσείο Κάιζερ-Φρίντριχ (Kaiser-Friedrich-Museum)</strong>. Αν έχετε την <strong>Berlin Welcome Card</strong>, σας δίνει πρόσβαση σε όλα τα μουσεία. Μπορείτε επίσης να κλείσετε ένα εισητήριο που σας δίνει πρόσβαση σε όλα χωρίς αναμονές από <a className="text-blue-600 underline" href='https://www.getyourguide.com/berlin-l17/berlin-museum-island-multiple-museum-entry-ticket-t204760/?partner_id=0OAQQKO&utm_medium=online_publisher'>εδώ</a>.
                     </p>
 
                     <p className="mb-4">
@@ -211,7 +221,7 @@ function Berlin() {
                     </p>
 
                     <p className="mb-4">
-                        Επόμενος σταθμός είναι ο <strong>Ζωολογικός Κήπος του Βερολίνου</strong>. Το κόστος της εισόδου είναι στα 17 ευρώ. Θα σας πάρει αρκετές ώρες να περιηγηθείτε σε όλο το πάρκο. Βγαίνοντας από την κεντρική πύλη του ζωολογικού, σίγουρα θα έχετε προσέξει το <strong>Kaiser Wilhelm Memorial Church</strong>. Ακόμα μπορούμε να πάμε στο <strong>KaDeWe</strong>, το δεύτερο μεγαλύτερο εμπορικό κέντρο της Ευρώπης. Όμως, μέσα έχει τα ακριβότερα brands του κόσμου. Αφού είστε εκεί, αξίζει μια επίσκεψη στο <strong>AERA</strong> για καφέ ή πρωινό και στο <strong>San Sebastian Café the Original</strong> για ένα cheesecake.
+                        Επόμενος σταθμός είναι ο <strong>Ζωολογικός Κήπος του Βερολίνου</strong>. Το κόστος της εισόδου είναι στα 17 ευρώ. Θα σας πάρει αρκετές ώρες να περιηγηθείτε σε όλο το πάρκο. Μπορείτε να κλείσετε τα εισητήρια σας από το επίσημο <a className="text-blue-600 underline" href='https://shop.zoo-berlin.de/en/categories/7'>site</a>. Βγαίνοντας από την κεντρική πύλη του ζωολογικού, σίγουρα θα έχετε προσέξει το <strong>Kaiser Wilhelm Memorial Church</strong>. Ακόμα μπορούμε να πάμε στο <strong>KaDeWe</strong>, το δεύτερο μεγαλύτερο εμπορικό κέντρο της Ευρώπης. Όμως, μέσα έχει τα ακριβότερα brands του κόσμου. Αφού είστε εκεί, αξίζει μια επίσκεψη στο <strong>AERA</strong> για καφέ ή πρωινό και στο <strong>San Sebastian Café the Original</strong> για ένα cheesecake.
                     </p>
 
                     <p className="mb-4">
@@ -242,11 +252,12 @@ function Berlin() {
                         Τέλος, ένα από τα πιο διάσημα αξιοθέατα του <strong>Potsdam</strong> είναι το πάρκο <strong>Schlosspark Sanssouci</strong> με το εντυπωσιακό <strong>ανάκτορο Sanssouci</strong>, έχοντας ως πρότυπο τις Βερσαλλίες. Η είσοδος στο παλάτι κοστίζει <strong>14 ευρώ</strong>. Βέβαια, η περιήγηση στο εσωτερικό του παλατιού δεν έχει τεράστιο ενδιαφέρον και θα μπορούσατε να την παραλείψετε.
                     </p>
                 </div>
+                <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/city.frame" data-gyg-location-id="17" data-gyg-locale-code="el-GR" data-gyg-widget="city" data-gyg-partner-id="0OAQQKO"></div></div>
 
             </div>
             <div className="py-0">
-                    <PageFooter />
-                  </div>
+                <PageFooter />
+            </div>
         </div>
 
 
