@@ -18,6 +18,10 @@ const slides = [
     {
         title: "3 Series",
         image: "/images/3.jpg",
+    },
+    {
+        title: "4 Series",
+        image: "/images/5.png",
     }
 ];
 
