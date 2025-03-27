@@ -54,7 +54,7 @@ function Navbar() {
                     className="px-3 py-2 text-[#2E2E2F] hover:text-[#F76808] transition-colors duration-200 font-bold"
                     onClick={() => setIsDropdownOpen(false)}
                 >
-                    Σχετικά με εμάς
+                    About us
                 </Link>
             </div>
 
