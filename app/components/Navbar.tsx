@@ -22,7 +22,7 @@ function Navbar() {
             </Link>
 
             {/* Navigation Links */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 sm:space-x-2 sm:hidden md:flex">
                 {/* Destinations Dropdown */}
                 <div
                     className="relative"
@@ -59,7 +59,7 @@ function Navbar() {
             </div>
 
             {/* Social Media Icons */}
-            <div className="flex items-center space-x-4 ml-auto">
+            <div className="flex items-center space-x-4 ml-auto sm:space-x-2 sm:hidden md:flex">
                 <a
                     href="https://tiktok.com/@travelmpomps"
                     target="_blank"

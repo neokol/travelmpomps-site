@@ -27,7 +27,7 @@ export const Carousel = () => {
             <Swiper
                 grabCursor={true}
                 centeredSlides={true}
-                slidesPerView={2}
+                slidesPerView={2} // Default to 1 slide on small screens
                 effect="coverflow"
                 loop={true}
                 pagination={{ clickable: true }}
@@ -39,7 +39,7 @@ export const Carousel = () => {
                     slideShadows: true,
                 }}
                 modules={[Pagination, EffectCoverflow]}
-                className="w-full max-w-4xl h-[440px]"
+                className="w-full max-w-4xl h-[440px] sm:h-[360px] md:h-[400px]"
             >
                 {slides.map((slide) => (
                     <SwiperSlide

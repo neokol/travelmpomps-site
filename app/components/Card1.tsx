@@ -10,34 +10,34 @@ const cards = [
     {
         name: 'Ταξίδια',
         icon: <Image
-                                        className="rounded-lg shadow-xl"
-                                        src="/travel.png"
-                                        width={150}
-                                        height={150}
-                                        alt="travel"
-                                    />, 
+            className="rounded-lg shadow-xl"
+            src="/travel.png"
+            width={150}
+            height={150}
+            alt="travel"
+        />,
         more: 'Αναλυτικό πρόγραμμα σε διάφορους προορισμούς',
     },
     {
         name: 'Φαγητό',
         icon: <Image
-        className="rounded-lg shadow-xl"
-        src="/food.png"
-        width={150}
-        height={150}
-        alt="travel"
-    />, // Larger size
+            className="rounded-lg shadow-xl"
+            src="/food.png"
+            width={150}
+            height={150}
+            alt="travel"
+        />, // Larger size
         more: 'Προτάσεις για εστιατόρια, street food, γλυκά, παγωτά από την Ελλάδα και το εξωτερικό',
     },
     {
         name: 'Εκδρομές',
         icon: <Image
-        className="rounded-lg shadow-xl"
-        src="/explore.png"
-        width={150}
-        height={150}
-        alt="travel"
-    />, // Larger size
+            className="rounded-lg shadow-xl"
+            src="/explore.png"
+            width={150}
+            height={150}
+            alt="travel"
+        />, // Larger size
         more: 'Ιδέες για εκδρομές σε κοντινούς και μακρινούς προορισμούς τόσο στην Ελλάδα όσο και στο εξωτερικό',
     },
 ];

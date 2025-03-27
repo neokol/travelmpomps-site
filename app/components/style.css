@@ -18,13 +18,17 @@ h4 {
 .cards {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+/* Set horizontal layout by default (for large screens) */
 .card-1-page .card {
     position: relative;
     perspective: 1000px;
-    width: 300px;
-    height: 300px;
+    width: 300px; /* Default width for larger screens */
+    height: 300px; /* Keep height equal to width for square shape */
+    margin: 10px; /* Add margin to space out cards */
 }
 
 .card-1-page .card header {
@@ -106,4 +110,49 @@ h4 {
 
 .card-1-page .card .back p {
     margin-top: 1rem; /* Adjust as needed */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        gap: 20px; /* Reduce gap between cards */
+        align-items: center; /* Center align cards */
+    }
+
+    .card-1-page .card {
+        width: 90%; /* Take up most of the screen width on small screens */
+        height: 90%; /* Maintain a square shape on mobile */
+        max-width: 300px; /* Max width to prevent it from being too large */
+        max-height: 300px; /* Max height for square shape */
+    }
+
+    .card-1-page .card header h2 {
+        font-size: 16px; /* Smaller font size on mobile */
+    }
+
+    .card-1-page .card .front,
+    .card-1-page .card .back {
+        padding: 20px; /* Adjust padding */
+    }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .card-1-page .card {
+        height: 250px; /* Maintain square shape with smaller height */
+        width: 220px; /* Maintain square shape with smaller width */
+    }
+
+    .card-1-page .card header h2 {
+        font-size: 18px; /* Smaller font size for very small screens */
+    }
+    .card-1-page .card p {
+        font-size: 16px; /* Smaller font size for very small screens */
+    }
+
+    .card-1-page .card .front,
+    .card-1-page .card .back {
+        padding: 16px; /* Further reduce padding */
+    }
 }
