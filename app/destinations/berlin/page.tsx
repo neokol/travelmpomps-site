@@ -7,6 +7,7 @@ import { GiPassport } from "react-icons/gi";
 import { FaLanguage } from "react-icons/fa6";
 import Image from 'next/image';
 import { ImageAccordion } from '@/app/components/ImageAccordion';
+import { PageFooter } from "@/app/components/Footer"
 
 const berlinItems = [
     {
@@ -243,6 +244,9 @@ function Berlin() {
                 </div>
 
             </div>
+            <div className="py-0">
+                    <PageFooter />
+                  </div>
         </div>
 
 

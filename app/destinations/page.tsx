@@ -4,6 +4,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
+import { PageFooter } from "../components/Footer"
+
 
 interface Destination {
     name: string;
@@ -46,6 +48,9 @@ function Destinations() {
                         </Link>
                     ))}
                 </div>
+            </div>
+            <div className="py-0">
+                <PageFooter />
             </div>
         </div>
     );
