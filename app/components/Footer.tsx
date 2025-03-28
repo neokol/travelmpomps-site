@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export const PageFooter = () => {
     return (
-        <div className="w-full py-8 bg-gray-100 text-center">
+        <div className="w-full py-8 bg-[#F5F1ED] text-center">
             {/* Section with text and lines */}
             <div className="flex items-center justify-center mb-8">
                 <hr className="w-20 border-t border-gray-300 mr-4" />
