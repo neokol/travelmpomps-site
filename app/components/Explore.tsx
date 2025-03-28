@@ -31,7 +31,6 @@ export const Explore = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrev = () => {
-        // No real sliding, but let's cycle through the array for demonstration
         setCurrentIndex((prev) =>
             prev <= 0 ? destinations.length - 1 : prev - 1
         );
@@ -57,11 +56,11 @@ export const Explore = () => {
                 <div className="relative">
                     {/* Scrollable Row of Cards */}
                     <div className="flex gap-6 overflow-x-auto py-4 no-scrollbar">
-                        {destinations.map((dest) => (
+                        {destinations.map((dest, index) => (
                             <div
                                 key={dest.title}
-                                className="min-w-[300px] flex-shrink-0 bg-white rounded-md
-                           overflow-hidden shadow-md border border-[#E3E3E3]"
+                                className={`min-w-[300px] flex-shrink-0 bg-white rounded-md
+                                overflow-hidden shadow-md border border-[#E3E3E3] ${index === currentIndex ? 'border-[#F76808]' : ''}`}
                                 style={{ width: "350px" }} // Card width
                             >
                                 {/* Image */}
@@ -88,8 +87,8 @@ export const Explore = () => {
                                         <Link href={dest.link}>
                                             <button
                                                 className="bg-[#F76808] text-white px-4 py-2
-                                   rounded-md hover:bg-[#22333B]
-                                   transition-colors"
+                                                rounded-md hover:bg-[#22333B]
+                                                transition-colors"
                                             >
                                                 Οδηγός
                                             </button>
@@ -105,9 +104,9 @@ export const Explore = () => {
                         onClick={handlePrev}
                         aria-label="Previous"
                         className="absolute left-2 top-1/2 -translate-y-1/2
-                       w-10 h-10 rounded-full bg-[#F76808] text-white
-                       flex items-center justify-center
-                       hover:bg-[#22333B] transition-colors"
+                        w-10 h-10 rounded-full bg-[#F76808] text-white
+                        flex items-center justify-center
+                        hover:bg-[#22333B] transition-colors"
                     >
                         &#8592;
                     </button>
@@ -117,9 +116,9 @@ export const Explore = () => {
                         onClick={handleNext}
                         aria-label="Next"
                         className="absolute right-2 top-1/2 -translate-y-1/2
-                       w-10 h-10 rounded-full bg-[#F76808] text-white
-                       flex items-center justify-center
-                       hover:bg-[#22333B] transition-colors"
+                        w-10 h-10 rounded-full bg-[#F76808] text-white
+                        flex items-center justify-center
+                        hover:bg-[#22333B] transition-colors"
                     >
                         &#8594;
                     </button>
