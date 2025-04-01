@@ -8,21 +8,21 @@ const destinations = [
         title: "Βερολίνο",
         image: "/images/1.jpg",
         description:
-            "Where golden deserts whisper ancient tales and lost cities rise from the sands of time.",
+            "Εξερευνήστε την πρωτεύουσα της Γερμανίας, ταξιδιωτικός οδηγός του που να πας και τι να δεις και να επισκεφθείς στο Βερολίνο.",
         link: "/destinations/berlin",
     },
     {
         title: "Βαρκελώνη",
-        image: "/images/2.jpg",
+        image: "/images/sagrada.png",
         description:
-            "Where we could spend a thousand summers and never grow tired (or full).",
+            "Εξερευνήστε το στολίδι της Καταλονίας, την πιο πολύχρωμη πόλη της Ευρώπης, την πόλη του Gaudi, Βαρκελώνη.",
         link: "/destinations/berlin",
     },
     {
         title: "Ρώμη",
-        image: "/images/3.jpg",
+        image: "/images/fontana.png",
         description:
-            "Love to hike? Then you’ll adore travelling through Peru – one of our favourite countries in South America.",
+            "Οδηγός για την αιώνια πόλη. Ένας αναλυτικός οδηγός για ένα ταξίδι must στην Ρώμη. Τι να δεις, τι να κάνεις και τι να προσέξεις στην Ρώμη.",
         link: "/destinations/berlin",
     },
 ];
@@ -43,7 +43,7 @@ export const Explore = () => {
     };
 
     return (
-        <div className="bg-[#F8F6F0] py-8">
+        <div className="bg-[#F5F1ED] py-8">
             {/* Outer container for heading + carousel */}
             <div className="max-w-6xl mx-auto px-4">
                 {/* Section Title */}

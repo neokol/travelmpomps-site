@@ -15,22 +15,22 @@ export default function Home() {
       <Navbar />
 
       {/* Card1 */}
-      <div className="py-0 md:py-6">
+      <div className="py-0 md:py-4">
         <Card1 />
       </div>
 
       {/* Explore Section */}
-      <div className="pt-50 md:pt-24">
+      <div className="pt-50 md:pt-10">
         <Explore />
       </div>
 
       {/* Carousel */}
-      <div className="pt-18 md:pt-24">
+      <div className="pt-10 md:pt-10">
         <Carousel />
       </div>
       
       {/* Footer */}
-      <div className="py-6 md:py-10">
+      <div className="pt-6 md:pt-10">
         <PageFooter />
       </div>
     </div>

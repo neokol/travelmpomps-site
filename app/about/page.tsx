@@ -38,7 +38,7 @@ function About() {
             </div>
 
             {/* Footer Section */}
-            <div className="py-70">
+            <div className="pt-70">
                 <PageFooter />
             </div>
         </div>

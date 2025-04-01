@@ -1,5 +1,7 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
+
 
 export const Hero = () => {
     return (
@@ -18,9 +20,12 @@ export const Hero = () => {
 
                 {/* Shorter button */}
                 <div className="flex">
+                <Link
+                    href={`/destinations/`}>
                     <button className="px-4 py-2 bg-[#F76808] text-white rounded-md hover:bg-[#22333B] transition-colors duration-200">
                         Explore
                     </button>
+                </Link>
                 </div>
             </div>
 

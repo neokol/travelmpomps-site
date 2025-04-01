@@ -255,7 +255,7 @@ function Berlin() {
                 <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/city.frame" data-gyg-location-id="17" data-gyg-locale-code="el-GR" data-gyg-widget="city" data-gyg-partner-id="0OAQQKO"></div></div>
 
             </div>
-            <div className="py-0">
+            <div className="pt-10">
                 <PageFooter />
             </div>
         </div>

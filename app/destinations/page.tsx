@@ -19,7 +19,17 @@ function Destinations() {
         {
             name: "Βερολίνο",
             slug: "berlin",
-            image: "/Berlin_post.png",
+            image: "/destinations/insta_berlin.png",
+        },
+        {
+            name: "Βαρκελώνη",
+            slug: "barcelona",
+            image: "/destinations/insta_barca.png",
+        },
+        {
+            name: "Ρώμη",
+            slug: "rome",
+            image: "/destinations/insta_rome.png",
         }
 
     ];
@@ -30,13 +40,13 @@ function Destinations() {
             <Navbar />
 
             {/* Grid of Destinations */}
-            <div className="p-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="p-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-0.5">
                     {destinations.map((destination) => (
                         <Link
                             key={destination.slug}
                             href={`/destinations/${destination.slug}`}
-                            className="flex flex-col items-center"
+                            className="flex justify-center"
                         >
                             <Image
                                 className="rounded-lg shadow-xl"
@@ -49,7 +59,7 @@ function Destinations() {
                     ))}
                 </div>
             </div>
-            <div className="py-0">
+            <div className="pt-10">
                 <PageFooter />
             </div>
         </div>
