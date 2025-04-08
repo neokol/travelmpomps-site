@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import { PageFooter } from "../components/Footer"
-
+import Head from 'next/head';
 
 interface Destination {
     name: string;
@@ -36,6 +36,19 @@ function Destinations() {
 
     return (
         <div className="min-h-screen pt-22">
+            <Head>
+                <title>Travel Guides </title>
+                <link
+                    rel="canonical"
+                    href="https://travelmpomps.gr/destinations/"
+                    key="canonical"
+                />
+                <meta
+                    name="description"
+                    content="Αναλυτικοί ταξιδιωτικοί οδηγοί"
+                    key="desc"
+                />
+            </Head>
             {/* Navbar */}
             <Navbar />
 

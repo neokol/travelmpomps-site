@@ -2,10 +2,24 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import { PageFooter } from "../components/Footer";
 import Image from 'next/image'; // Import the Image component from Next.js
+import Head from 'next/head';
 
 function About() {
     return (
         <div className="min-h-screen bg-[#F8F6FE]">
+            <Head>
+                <title>Travelmpomps About Us</title>
+                <link
+                    rel="canonical"
+                    href="https://travelmpomps.gr/about"
+                    key="canonical"
+                />
+                <meta
+                    name="description"
+                    content="Learn more about Travelmpomps"
+                    key="desc"
+                />
+            </Head>
             {/* Navbar */}
             <Navbar />
 

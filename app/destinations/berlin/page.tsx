@@ -9,6 +9,7 @@ import Image from 'next/image';
 import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
+import Head from 'next/head';
 
 const berlinItems = [
     {
@@ -66,6 +67,19 @@ const berlinImages = [
 function Berlin() {
     return (
         <div className="min-h-screen">
+            <Head>
+                <title>Βερολίνο Αξιοθέατα</title>
+                <link
+                    rel="canonical"
+                    href="https://travelmpomps.gr/destinations/berlin"
+                    key="canonical"
+                />
+                <meta
+                    name="description"
+                    content="Ταξιδωτικός Οδηγός για το Βερολίνο | Τι να κάνω και τι να δω στο Βερολίνο"
+                    key="desc"
+                />
+            </Head>
             <div><Navbar /></div>
             <Script
                 async
@@ -80,7 +94,8 @@ function Berlin() {
                 </h1>
                 <p className="text-[#2E2E2F]">
                     Εξερευνήστε το Βερολίνο, μια πόλη γεμάτη ιστορία, πολιτισμό και νέες
-                    εμπειρίες.
+                    εμπειρίες. Αναλυτικός οδηγός για 5 μέρες στο Βερολίνο. Όλα τα αξιοθέατα που μπορείτε να επισκεφτείτε
+                    στην επίσκεψη σας
                 </p>
                 {/* Main picture */}
                 <div className="flex justify-center my-8"> {/* Center the image */}
@@ -137,7 +152,7 @@ function Berlin() {
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         5. Οδηγός για Βερολίνο
                     </h2>
-                    <p className='text-justify'>Τα αξιοθέατα στο Βερολίνο έχουν αρκετά μεγάλη απόσταση μεταξύ τους οπότε ένας καλός προγραμματισμός είναι απαραίτητος αν θέλουμε να δούμε όσο τα περισσότερα γίνεται. </p>
+                    <p className='text-justify'>Τα αξιοθέατα στο Βερολίνο έχουν αρκετά μεγάλη απόσταση μεταξύ τους οπότε ένας καλός προγραμματισμός είναι απαραίτητος αν θέλουμε να δούμε όσο τα περισσότερα γίνεται. Ο παρακάτω οδηγός καλύπτει 5 μέρες στο Βερολίνο. Μπορείτε να προσαρμόσετε το δικό σας πρόγραμμα σύμφωνα με τα δικά σας ενδιαφέροντα </p>
                 </div>
                 <div className="mt-8">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
