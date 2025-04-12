@@ -76,7 +76,7 @@ function Berlin() {
                 />
                 <meta
                     name="description"
-                    content="Ταξιδωτικός Οδηγός για το Βερολίνο | Τι να κάνω και τι να δω στο Βερολίνο"
+                    content="Ταξιδωτικός Οδηγός για το Βερολίνο | Τι να δω και τι να κάνω στο Βερολίνο"
                     key="desc"
                 />
             </Head>
@@ -88,9 +88,9 @@ function Berlin() {
                 data-gyg-partner-id="0OAQQKO"
             />
             {/* Content with Padding to Account for Navbar */}
-            <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-40">
+            <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-60">
                 <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">
-                    Βερολίνο: Τι να κάνω και τι να δω
+                    Βερολίνο: Τι να δω και τι να κάνω
                 </h1>
                 <p className="text-[#2E2E2F]">
                     Εξερευνήστε το Βερολίνο, μια πόλη γεμάτη ιστορία, πολιτισμό και νέες
@@ -143,7 +143,7 @@ function Berlin() {
                     <p className='text-justify'>Για την διαμονή σας στο Βερολίνο προτιμήστε κάποιο ξενοδοχείο που βρίσκεται πολύ κοντά σε κάποια στάση του μετρό, για την ευκολότερη σας μετακίνηση. Η πιο δημοφιλής περιοχή είναι το Mitte, όπου βρίσκεται στο κέντρο της πόλης και έχετε πρόσβαση έτσι στα περισσότερα αξιοθέατα. </p>
                 </div>
                 <div className="mt-8">
-                    <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">4. Top 5 Αξιοθέατα</h2>
+                    <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">4. Top Αξιοθέατα στο Βερολίνο</h2>
                     <div className="flex justify-center">
                         <ImageAccordion items={berlinImages} />
                     </div>

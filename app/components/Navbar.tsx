@@ -53,7 +53,7 @@ function Navbar() {
                                         Βερολίνο
                                     </Link>
                                     <Link
-                                        href="/destinations/berlin"
+                                        href="/destinations/barcelona"
                                         onClick={handleNavItemClick}
                                         className="block px-4 py-2 text-[#2E2E2F] hover:bg-gray-100"
                                     >
