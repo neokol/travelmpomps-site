@@ -37,27 +37,27 @@ const barcelonaItems = [
 
 const barcelonaImages = [
     {
-        image: '/barcelona/sagrada-familia.JPEG',
+        image: '/barcelona/sagrada-familia.webp',
         header: 'Sagrada Familia',
         text: 'Gaudí’s awe-inspiring basilica, an emblem of Barcelona with towering spires and intricate facades.'
     },
     {
-        image: '/barcelona/casa-batllo.JPEG',
+        image: '/barcelona/casa-batllo.webp',
         header: 'Casa Batllo',
         text: 'A vibrant Modernist masterpiece by Gaudí, famous for its striking, nature-inspired design.'
     },
     {
-        image: '/barcelona/mercat-de-la-boqueria.JPEG',
+        image: '/barcelona/mercat-de-la-boqueria.webp',
         header: 'Mercat de la Boqueria',
         text: 'A lively, historic market brimming with local flavors, fresh produce, and Catalan specialties.'
     },
     {
-        image: '/barcelona/gothic-quarter.JPEG',
+        image: '/barcelona/gothic-quarter.webp',
         header: 'Gothic Quarter',
         text: 'Barcelona’s medieval core, where narrow cobblestone streets and hidden plazas reveal centuries of history.'
     },
     {
-        image: '/barcelona/fc-barcelona-museum.JPEG',
+        image: '/barcelona/fc-barcelona-museum.webp',
         header: 'FC Barcelona Museum',
         text: 'Immerse yourself in the rich legacy of one of the world’s greatest football clubs, showcasing trophies and memorabilia.'
     }
