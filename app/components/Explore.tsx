@@ -16,14 +16,14 @@ const destinations = [
         image: "/images/sagrada.png",
         description:
             "Εξερευνήστε το στολίδι της Καταλονίας, την πιο πολύχρωμη πόλη της Ευρώπης, την πόλη του Gaudi, Βαρκελώνη.",
-        link: "/destinations/berlin",
+        link: "/destinations/barcelona",
     },
     {
         title: "Ρώμη",
         image: "/images/fontana.png",
         description:
             "Οδηγός για την αιώνια πόλη. Ένας αναλυτικός οδηγός για ένα ταξίδι must στην Ρώμη. Τι να δεις, τι να κάνεις και τι να προσέξεις στην Ρώμη.",
-        link: "/destinations/berlin",
+        link: "/destinations/rome",
     },
 ];
 
