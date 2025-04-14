@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '@/app/components/Navbar'
+import { ImageGallery } from '@/app/components/ImageGallery'
 import { Widget2 } from '@/app/components/Widget2'
 import { FaCoins } from "react-icons/fa";
 import { VscRadioTower } from "react-icons/vsc";
@@ -35,6 +36,8 @@ const barcelonaItems = [
 ];
 
 
+
+
 const barcelonaImages = [
     {
         image: '/barcelona/sagrada-familia.webp',
@@ -63,6 +66,101 @@ const barcelonaImages = [
     }
 ];
 
+
+const firstDayImages = [
+    {
+        image: '/barcelona/cathedral-barcelona.webp',
+        header: 'Καθεδρικός'
+    },
+    {
+        image: '/barcelona/la-rambla.webp',
+        header: 'La Rambla'
+    },
+    {
+        image: '/barcelona/placa-reial.webp',
+        header: 'Placa Reial'
+    },
+    {
+        image: '/barcelona/world-kiss.webp',
+        header: 'The World Comes To Life With Each Kiss'
+    }
+];
+
+const secondDayImages = [
+    {
+        image: '/barcelona/palau-musica.webp',
+        header: 'Palau de la Musica'
+    },
+    {
+        image: '/barcelona/barceloneta.webp',
+        header: 'Barceloneta'
+    },
+    {
+        image: '/barcelona/ciutadella-park.webp',
+        header: 'Ciutadella Park'
+    },
+    {
+        image: '/barcelona/Santa-Maria-del-Mar.webp',
+        header: 'Santa Maria del Mar'
+    }
+];
+
+const thirdDayImages = [
+    {
+        image: '/barcelona/in-casa-batllo.webp',
+        header: 'Casa Batllo'
+    },
+    {
+        image: '/barcelona/casa-milas.webp',
+        header: 'Casa Milas'
+    },
+    {
+        image: '/barcelona/mercat.webp',
+        header: 'Mercat de la Boqueria'
+    },
+    {
+        image: '/barcelona/sant-pau.webp',
+        header: 'Sant Pau'
+    }
+];
+
+const fourthDayImages = [
+    {
+        image: '/barcelona/park-guell.webp',
+        header: 'Park Guell'
+    },
+    {
+        image: '/barcelona/casa-vicens.webp',
+        header: 'Casa Vicens'
+    },
+    {
+        image: '/barcelona/bellesguard.webp',
+        header: 'Torre Bellesguard'
+    },
+    {
+        image: '/barcelona/cosmo-caixa.webp',
+        header: 'CosmoCaixa'
+    }
+];
+
+const fifthDayImages = [
+    {
+        image: '/barcelona/barcelona-art.webp',
+        header: 'Art Museum'
+    },
+    {
+        image: '/barcelona/fc-barca.webp',
+        header: 'FC Barcelona'
+    },
+    {
+        image: '/barcelona/poble.webp',
+        header: 'Poble Espanyol'
+    },
+    {
+        image: '/barcelona/monjuic.webp',
+        header: 'Montjuïc Castle'
+    }
+];
 
 function Barcelona() {
     return (
@@ -190,7 +288,7 @@ function Barcelona() {
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Συνεχίστε στον <strong>καθεδρικό ναό της Βαρκελώνης</strong>, παράδειγμα γοτθικής αρχιτεκτονικής με ψηλά καμπαναριά και λεπτομερή λιθοδομή. Ο καθεδρικός ναός κατασκευάστηκε από τον 13ο έως τον 15ο αιώνα. Τα παρεκκλήσια του καθεδρικού ναού περιέχουν όμορφα γοτθικά τοιχώματα που ζωγράφισαν μεταξύ άλλων οι Guerau Gener, Lluís Borrassà, Gabriel Alemany και Bernat Martorell. Το κόστος της εισόδου είναι 14 ευρώ.
+                        Συνεχίστε στον <strong>καθεδρικό ναό της Βαρκελώνης</strong>, παράδειγμα γοτθικής αρχιτεκτονικής με ψηλά καμπαναριά και λεπτομερή λιθοδομή. Ο καθεδρικός ναός κατασκευάστηκε από τον 13ο έως τον 15ο αιώνα. Τα παρεκκλήσια του καθεδρικού ναού περιέχουν όμορφα γοτθικά τοιχώματα που ζωγράφισαν μεταξύ άλλων οι Guerau Gener, Lluís Borrassà, Gabriel Alemany και Bernat Martorell. Το κόστος της εισόδου είναι 14 ευρώ, εισητήρια διαθέσιμα <a className="text-blue-600 underline" href='https://gyg.me/w82nnlMW'>εδώ</a>
                     </p>
 
                     <p className="mb-4 text-justify">
@@ -200,7 +298,7 @@ function Barcelona() {
                     <p className="mb-4 text-justify">
                         <strong>Extra:</strong> Ένα ακόμα αξιοθέατο που αξίζει την προσοχή σας είναι το <strong>Palau Güell</strong>. Το κόστος είναι 12 ευρώ (δωρεάν με την <strong>Barcelona Card</strong>) και αποτελεί ένα από τα πρώτα έργα του Αντόνι Γκαουντί στη Βαρκελώνη. Βρίσκεται στην περιοχή Raval, λίγα μέτρα από τη <strong>La Rambla</strong>. Τμήματα της πρόσοψης του <strong>Palau Güell</strong> θυμίζουν βενετσιάνικο παλάτι, με τις δύο μεγάλες οβάλ πύλες στο μπροστινό μέρος να είναι ιδιαίτερα εντυπωσιακές.
                     </p>
-
+                    <ImageGallery images={firstDayImages} />
                 </div>
 
                 <div className="mt-8">
@@ -212,7 +310,7 @@ function Barcelona() {
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Το πρώτο μέρος της λίστας μας είναι το <strong>Palau de la Musica</strong>, ένα αρτ νουβό μουσικό παλάτι 2200 θέσεων. Πρόκειται για μια έκρηξη χρωμάτων και το μοναδικό θέατρο στην Ευρώπη που φωτίζεται πλήρως από φυσικό φως, με εκπληκτική ακουστική. Σίγουρα μην παραλείψετε να δοκιμάσετε στο <strong>Jon Cake</strong> ένα κομμάτι βασκικό cheesecake ή ένα cinnamon roll από το <strong>Demasié</strong>. Συνεχίζοντας, στο πιο διάσημο αξιοθέατο της περιοχής, το <strong>μουσείο του Πικάσο</strong> (δωρεάν με την <strong>Barcelona Card</strong>), θα βρείτε την πιο εκτεταμένη συλλογή Πικάσο στον κόσμο. Το μουσείο φιλοξενεί πάνω από 4000 κομμάτια που προέρχονται κυρίως από τα χρόνια διαμόρφωσης του Πικάσο, τη Μπλε Περίοδο και τη θητεία του στη Βαρκελώνη. Ένα δωρεάν σημείο ενδιαφέροντος είναι το <strong>El Born Center for Culture and Memory</strong>, όπου μπορείτε να περπατήσετε ανάμεσα στα διατηρημένα ερείπια μιας γειτονιάς του 1700.
+                        Το πρώτο μέρος της λίστας μας είναι το <strong>Palau de la Musica</strong>, ένα αρτ νουβό μουσικό παλάτι 2200 θέσεων, διαθέσιμα εισητήρια <a className="text-blue-600 underline" href='https://gyg.me/1ggX2CP8'>εδώ</a>. Πρόκειται για μια έκρηξη χρωμάτων και το μοναδικό θέατρο στην Ευρώπη που φωτίζεται πλήρως από φυσικό φως, με εκπληκτική ακουστική. Σίγουρα μην παραλείψετε να δοκιμάσετε στο <strong>Jon Cake</strong> ένα κομμάτι βασκικό cheesecake ή ένα cinnamon roll από το <strong>Demasié</strong>. Συνεχίζοντας, στο πιο διάσημο αξιοθέατο της περιοχής, το <strong>μουσείο του Πικάσο</strong> (δωρεάν με την <strong>Barcelona Card</strong>), θα βρείτε την πιο εκτεταμένη συλλογή Πικάσο στον κόσμο. Το μουσείο φιλοξενεί πάνω από 4000 κομμάτια που προέρχονται κυρίως από τα χρόνια διαμόρφωσης του Πικάσο, τη Μπλε Περίοδο και τη θητεία του στη Βαρκελώνη. Ένα δωρεάν σημείο ενδιαφέροντος είναι το <strong>El Born Center for Culture and Memory</strong>, όπου μπορείτε να περπατήσετε ανάμεσα στα διατηρημένα ερείπια μιας γειτονιάς του 1700.
                     </p>
 
                     <p className="mb-4 text-justify">
@@ -228,7 +326,7 @@ function Barcelona() {
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Στην προκυμαία μπορείτε να δείτε το εμπορικό κέντρο <strong>Maremagnum</strong> και, αν θέλετε, να επισκεφτείτε το <strong>Ενυδρείο της Βαρκελώνης</strong>. Το κόστος είναι στα 27 ευρώ και θεωρείται το μεγαλύτερο και σημαντικότερο Μουσείο Θαλάσσιας Επιστήμης της Μεσογείου, με πάνω από 11.000 θαλάσσια ζώα από 450 είδη και μια υποβρύχια σήραγγα μήκους 80 μέτρων.
+                        Στην προκυμαία μπορείτε να δείτε το εμπορικό κέντρο <strong>Maremagnum</strong> και, αν θέλετε, να επισκεφτείτε το <strong>Ενυδρείο της Βαρκελώνης</strong>. Το κόστος είναι στα 27 ευρώ και θεωρείται το μεγαλύτερο και σημαντικότερο Μουσείο Θαλάσσιας Επιστήμης της Μεσογείου, με πάνω από 11.000 θαλάσσια ζώα από 450 είδη και μια υποβρύχια σήραγγα μήκους 80 μέτρων. Προμηθευτείτε τα εισητήρια σας από <a className="text-blue-600 underline" href='https://gyg.me/xD8BKuqz'>εδώ</a>.
                     </p>
 
                     <p className="mb-4 text-justify">
@@ -238,7 +336,7 @@ function Barcelona() {
                     <p className="mb-4 text-justify">
                         <strong>Extra:</strong> Δύο ακόμα μουσεία που μπορείτε να βρείτε στην περιοχή είναι το <strong>Moco Museum</strong>, με έργα μοντέρνας τέχνης (ιδανικό για τους λάτρεις των Banksy, Hirst, Warhol, Kaws και Kusama), καθώς και το <strong>Μουσείο Σοκολάτας</strong>, το όνειρο κάθε chocoholic. Θα δείτε την τέχνη της παρασκευής σοκολάτας και εκπληκτικά γλυπτά φτιαγμένα από σοκολάτα.
                     </p>
-
+                    <ImageGallery images={secondDayImages} />
                 </div>
                 <div className="mt-8">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
@@ -249,7 +347,7 @@ function Barcelona() {
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Στη συνέχεια, αφού ανεβείτε τη <strong>La Ramblas</strong> και φτάσετε στην <strong>Placa de Catalunya</strong>, συνεχίστε στην <strong>Passeig de Gràcia</strong>. Πρόκειται για τον δρόμο με πολλά εμπορικά μαγαζιά, συμπεριλαμβανομένων ακριβών οίκων μόδας, όπως Gucci και Prada. Το σημαντικότερο, όμως, είναι ότι εδώ θα συναντήσετε τα δύο διάσημα έργα του Gaudi, το <strong>Casa Batlló</strong> και τη <strong>La Pedrera (Casa Milà)</strong>. Εμείς επιλέξαμε να επισκεφτούμε μόνο το πρώτο, καθώς το θεωρούμε το πιο εντυπωσιακό από τα τρία σπίτια του Gaudi (μαζί με το <strong>Casa Vicens</strong>). Το κόστος εισόδου είναι 35 ευρώ (29 για το <strong>Casa Milà</strong>). Κλείστε το εισιτήριο νωρίς online, καθώς υπάρχουν συγκεκριμένα slots. Το κτήριο είναι εντυπωσιακό, χωρίς καμία ευθεία γραμμή, και τα μπαλκόνια μοιάζουν να είναι φτιαγμένα από κόκαλα. Η οροφή θυμίζει πλάτη δράκου. Στο τέλος της περιήγησης, θα μπείτε σε ένα δωμάτιο γεμάτο οθόνες, όπου θα «βυθιστείτε» στο μυαλό του Gaudi.
+                        Στη συνέχεια, αφού ανεβείτε τη <strong>La Ramblas</strong> και φτάσετε στην <strong>Placa de Catalunya</strong>, συνεχίστε στην <strong>Passeig de Gràcia</strong>. Πρόκειται για τον δρόμο με πολλά εμπορικά μαγαζιά, συμπεριλαμβανομένων ακριβών οίκων μόδας, όπως Gucci και Prada. Το σημαντικότερο, όμως, είναι ότι εδώ θα συναντήσετε τα δύο διάσημα έργα του Gaudi, το <strong>Casa Batlló</strong> και τη <strong>La Pedrera (Casa Milà)</strong>. Εμείς επιλέξαμε να επισκεφτούμε μόνο το πρώτο, καθώς το θεωρούμε το πιο εντυπωσιακό από τα τρία σπίτια του Gaudi (μαζί με το <strong>Casa Vicens</strong>). Το κόστος εισόδου είναι 35 ευρώ (29 για το <strong>Casa Milà</strong>). Κλείστε το εισιτήριο νωρίς <a className="text-blue-600 underline" href='https://gyg.me/oqm4cvh2'>online</a>, καθώς υπάρχουν συγκεκριμένα slots. Το κτήριο είναι εντυπωσιακό, χωρίς καμία ευθεία γραμμή, και τα μπαλκόνια μοιάζουν να είναι φτιαγμένα από κόκαλα. Η οροφή θυμίζει πλάτη δράκου. Στο τέλος της περιήγησης, θα μπείτε σε ένα δωμάτιο γεμάτο οθόνες, όπου θα «βυθιστείτε» στο μυαλό του Gaudi.
                     </p>
 
                     <p className="mb-4 text-justify">
@@ -257,13 +355,13 @@ function Barcelona() {
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Ο δρόμος μπροστά από το καφέ, αν θέλετε να συνεχίσετε με τα πόδια, θα σας οδηγήσει στο επόμενο αξιοθέατο, το <strong>Monumental</strong>, μια παλιά αρένα ταυρομαχίας η οποία πλέον χρησιμοποιείται για συναυλίες. Εμείς τη θαυμάσαμε εξωτερικά και συνεχίσαμε προς τα πάνω (στην αντίθετη πλευρά της παραλίας) για να φτάσουμε στη <strong>Sagrada Familia</strong>, το πιο σημαντικό αξιοθέατο και σήμα κατατεθέν της πόλης. Καλό είναι να προμηθευτείτε το εισιτήριό σας online ώστε να μην περιμένετε στην ουρά (η είσοδος γίνεται από την πίσω πλευρά). Ένα ιδανικό σημείο για φωτογραφίες είναι το πάρκο ακριβώς πίσω από το μνημείο. Το κόστος εισόδου είναι 26 ευρώ. Έξω από τη <strong>Sagrada Familia</strong> θα βρείτε το <strong>BO&amp;MIE</strong>, έναν φούρνο με διάφορα αρτοσκευάσματα.
+                        Ο δρόμος μπροστά από το καφέ, αν θέλετε να συνεχίσετε με τα πόδια, θα σας οδηγήσει στο επόμενο αξιοθέατο, το <strong>Monumental</strong>, μια παλιά αρένα ταυρομαχίας η οποία πλέον χρησιμοποιείται για συναυλίες. Εμείς τη θαυμάσαμε εξωτερικά και συνεχίσαμε προς τα πάνω (στην αντίθετη πλευρά της παραλίας) για να φτάσουμε στη <strong>Sagrada Familia</strong>, το πιο σημαντικό αξιοθέατο και σήμα κατατεθέν της πόλης. Καλό είναι να προμηθευτείτε το εισιτήριό σας <a className="text-blue-600 underline" href='https://gyg.me/o9AKaDIX'>online</a> ώστε να μην περιμένετε στην ουρά (η είσοδος γίνεται από την πίσω πλευρά). Ένα ιδανικό σημείο για φωτογραφίες είναι το πάρκο ακριβώς πίσω από το μνημείο. Το κόστος εισόδου είναι 26 ευρώ. Έξω από τη <strong>Sagrada Familia</strong> θα βρείτε το <strong>BO&amp;MIE</strong>, έναν φούρνο με διάφορα αρτοσκευάσματα.
                     </p>
 
                     <p className="mb-4 text-justify">
                         Αν έχετε ακόμα αντοχές, συνεχίστε μέσω της <strong>Av. De Gaudi</strong> για να βρεθείτε μπροστά από το <strong>Recinte Modernista de Sant Pau</strong>. Χρησιμοποιήθηκε ως νοσοκομείο για έναν αιώνα και θεωρείται το κορυφαίο art-nouveau συγκρότημα της Ευρώπης. Το 1997 βραβεύτηκε ως Μνημείο Παγκόσμιας Κληρονομιάς από την UNESCO. Το κόστος εισόδου είναι 17 ευρώ.
                     </p>
-
+                    <ImageGallery images={thirdDayImages} />
                 </div>
                 <div className="mt-8">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
@@ -278,7 +376,7 @@ function Barcelona() {
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Επόμενο μέρος της λίστας μας είναι το <strong>Park Güell</strong>. Η απόσταση με τα πόδια είναι περίπου μισή ώρα, αλλά μπορείτε και να πάρετε λεωφορείο. Η είσοδος στο πάρκο είναι 18 ευρώ. Φροντίστε να έχετε κλείσει από νωρίς τα εισιτήρια online, καθώς εξαντλούνται γρήγορα. Ο τοπικός επιχειρηματίας και κόμης Eusebi Güell ανέθεσε στον Antoni Gaudí να σχεδιάσει μια κατοικημένη περιοχή για πλούσιες οικογένειες. Η ιδέα του Güell ήταν να αναδημιουργήσει τις δημοφιλείς βρετανικές κατοικίες, γι’ αυτό το ονόμασε <strong>Park Güell</strong> αντί για <em>Parc Güell</em>. Το πρώτο που θα συναντήσει κάποιος είναι τα δύο μοντερνιστικά κτίρια, το <strong>Casa del Guarda</strong> (όπου κοιμόντουσαν οι θυρωροί), που σήμερα είναι μουσείο, και το <strong>Pabelló de Aministració</strong>, το οποίο στεγάζει κατάστημα με σουβενίρ. Συνεχίζοντας, θα δείτε το πιο διάσημο στοιχείο στο <strong>Park Güell</strong>, τον δράκο μήκους 2,4 μέτρων, ένα σιντριβάνι καλυμμένο με την τεχνική <em>trencadís</em> του Γκαουντί. Το πάρκο είναι αρκετά μεγάλο και αξίζει να περιηγηθείτε σε όλη την έκτασή του.
+                        Επόμενο μέρος της λίστας μας είναι το <strong>Park Güell</strong>. Η απόσταση με τα πόδια είναι περίπου μισή ώρα, αλλά μπορείτε και να πάρετε λεωφορείο. Η είσοδος στο πάρκο είναι 18 ευρώ. Φροντίστε να έχετε κλείσει από νωρίς τα εισιτήρια <a className="text-blue-600 underline" href='https://gyg.me/18Wz5w0c'>online</a>, καθώς εξαντλούνται γρήγορα. Ο τοπικός επιχειρηματίας και κόμης Eusebi Güell ανέθεσε στον Antoni Gaudí να σχεδιάσει μια κατοικημένη περιοχή για πλούσιες οικογένειες. Η ιδέα του Güell ήταν να αναδημιουργήσει τις δημοφιλείς βρετανικές κατοικίες, γι’ αυτό το ονόμασε <strong>Park Güell</strong> αντί για <em>Parc Güell</em>. Το πρώτο που θα συναντήσει κάποιος είναι τα δύο μοντερνιστικά κτίρια, το <strong>Casa del Guarda</strong> (όπου κοιμόντουσαν οι θυρωροί), που σήμερα είναι μουσείο, και το <strong>Pabelló de Aministració</strong>, το οποίο στεγάζει κατάστημα με σουβενίρ. Συνεχίζοντας, θα δείτε το πιο διάσημο στοιχείο στο <strong>Park Güell</strong>, τον δράκο μήκους 2,4 μέτρων, ένα σιντριβάνι καλυμμένο με την τεχνική <em>trencadís</em> του Γκαουντί. Το πάρκο είναι αρκετά μεγάλο και αξίζει να περιηγηθείτε σε όλη την έκτασή του.
                     </p>
 
                     <p className="mb-4 text-justify">
@@ -292,7 +390,7 @@ function Barcelona() {
                     <p className="mb-4 text-justify">
                         <strong>Πώς να φτάσετε:</strong> Πάρτε το τοπικό τρένο <strong>L7</strong> από την <strong>Plaça Catalunya</strong> προς τον τερματικό σταθμό <strong>Avinguda del Tibidabo</strong>. Από εκεί, περπατήστε περίπου 200 μέτρα ανηφορικά κατά μήκος της Λεωφ. del Tibidabo, όπου θα βρείτε αρκετές στάσεις λεωφορείων στα δεξιά σας. Πάρτε το λεωφορείο <strong>196</strong>, το οποίο σας μεταφέρει στον σταθμό της κοιλάδας του <strong>τελεφερίκ del Tibidabo</strong>. Στη συνέχεια, πάρτε το τελεφερίκ για να φτάσετε στο λούνα παρκ και τα αξιοθέατα.
                     </p>
-
+                    <ImageGallery images={fourthDayImages} />
                 </div>
                 <div className="mt-8">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
@@ -317,7 +415,7 @@ function Barcelona() {
                     <p className="mb-4 text-justify">
                         <strong>Extra:</strong> Κοντά στην <strong>Placa Espanya</strong> θα βρείτε το <strong>Joan Miró Foundation</strong>. Το εισιτήριο κοστίζει 9 ευρώ και περιλαμβάνει πάνω από 10.000 πίνακες, σχέδια, γλυπτά, σκηνικά και χαλιά του Joan Miró — με τα πρώτα σχέδια να χρονολογούνται από το 1901. Στη βεράντα του τελευταίου ορόφου, μπορείτε να θαυμάσετε τα πολύχρωμα γλυπτά του Miró μαζί με μια εκπληκτική θέα της Βαρκελώνης.
                     </p>
-
+                    <ImageGallery images={fifthDayImages} />
                 </div>
                 <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/city.frame" data-gyg-location-id="45" data-gyg-locale-code="el-GR" data-gyg-widget="city" data-gyg-partner-id="0OAQQKO"></div></div>
 
