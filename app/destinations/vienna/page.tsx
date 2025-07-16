@@ -230,7 +230,7 @@ function Vienna() {
                         Η Vienna City Card είναι διαθέσιμη σε 4 διαφορετικές διάρκειες: € 17 (24 ώρες) / € 25 (48 ώρες) / € 29 (72 ώρες) / € 35 (7 ημερών).
                     </p>
                 </div>
-                <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-cmp="Barcelona-post" data-gyg-partner-id="0OAQQKO" data-gyg-tour-ids="50027,398519,155979"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/sagrada-familia-l2699/">GetYourGuide</a></span></div></div>
+                <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-q="vienna"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/vienna-l7/">GetYourGuide</a></span></div></div>
                 <div className="mt-8">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         3. Διαμονή
