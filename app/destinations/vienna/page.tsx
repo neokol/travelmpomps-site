@@ -7,7 +7,7 @@ import { VscRadioTower } from "react-icons/vsc";
 import { GiPassport } from "react-icons/gi";
 import { FaLanguage } from "react-icons/fa6";
 import Image from 'next/image';
-import { ImageAccordion } from '@/app/components/ImageAccordion';
+// import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
 import Head from 'next/head';
@@ -21,7 +21,7 @@ const barcelonaItems = [
     {
         name: 'Roaming',
         icon: <VscRadioTower className="w-5 h-5" />,
-        content: 'Η Ισπανία ανήκει στις χώρες που ισχύει το δωρεάν roaming, συνεπώς μπορείτε να χρησιμοποιείτε κανονικά τα λεπτά και τα δεδομένα σας',
+        content: 'Η Βιέννη ανήκει στις χώρες που ισχύει το δωρεάν roaming, συνεπώς μπορείτε να χρησιμοποιείτε κανονικά τα λεπτά και τα δεδομένα σας',
     },
     {
         name: 'Έγγραφα',
@@ -31,40 +31,40 @@ const barcelonaItems = [
     {
         name: 'Γλώσσα',
         icon: <FaLanguage className="w-5 h-5" />,
-        content: 'Φυσικά μιλάνε Ισπανικά/Καταλανικά, όμως στα περισσότερα μαγαζία μπορούσαν να μιλήσουν αγγλικά και ήταν αρκετά εύκολο να συννενοηθούμε',
+        content: 'Φυσικά μιλάνε Γερμανικά, όμως στα περισσότερα μαγαζία μπορούσαν να μιλήσουν αγγλικά και ήταν αρκετά εύκολο να συννενοηθούμε',
     },
 ];
 
 
 
 
-const barcelonaImages = [
-    {
-        image: '/barcelona/sagrada-familia.webp',
-        header: 'Sagrada Familia',
-        text: 'Gaudí’s awe-inspiring basilica, an emblem of Barcelona with towering spires and intricate facades.'
-    },
-    {
-        image: '/barcelona/casa-batllo.webp',
-        header: 'Casa Batllo',
-        text: 'A vibrant Modernist masterpiece by Gaudí, famous for its striking, nature-inspired design.'
-    },
-    {
-        image: '/barcelona/mercat-de-la-boqueria.webp',
-        header: 'Mercat de la Boqueria',
-        text: 'A lively, historic market brimming with local flavors, fresh produce, and Catalan specialties.'
-    },
-    {
-        image: '/barcelona/gothic-quarter.webp',
-        header: 'Gothic Quarter',
-        text: 'Barcelona’s medieval core, where narrow cobblestone streets and hidden plazas reveal centuries of history.'
-    },
-    {
-        image: '/barcelona/fc-barcelona-museum.webp',
-        header: 'FC Barcelona Museum',
-        text: 'Immerse yourself in the rich legacy of one of the world’s greatest football clubs, showcasing trophies and memorabilia.'
-    }
-];
+// const barcelonaImages = [
+//     {
+//         image: '/barcelona/sagrada-familia.webp',
+//         header: 'Sagrada Familia',
+//         text: 'Gaudí’s awe-inspiring basilica, an emblem of Barcelona with towering spires and intricate facades.'
+//     },
+//     {
+//         image: '/barcelona/casa-batllo.webp',
+//         header: 'Casa Batllo',
+//         text: 'A vibrant Modernist masterpiece by Gaudí, famous for its striking, nature-inspired design.'
+//     },
+//     {
+//         image: '/barcelona/mercat-de-la-boqueria.webp',
+//         header: 'Mercat de la Boqueria',
+//         text: 'A lively, historic market brimming with local flavors, fresh produce, and Catalan specialties.'
+//     },
+//     {
+//         image: '/barcelona/gothic-quarter.webp',
+//         header: 'Gothic Quarter',
+//         text: 'Barcelona’s medieval core, where narrow cobblestone streets and hidden plazas reveal centuries of history.'
+//     },
+//     {
+//         image: '/barcelona/fc-barcelona-museum.webp',
+//         header: 'FC Barcelona Museum',
+//         text: 'Immerse yourself in the rich legacy of one of the world’s greatest football clubs, showcasing trophies and memorabilia.'
+//     }
+// ];
 
 
 const firstDayImages = [
@@ -143,24 +143,7 @@ const fourthDayImages = [
     }
 ];
 
-const fifthDayImages = [
-    {
-        image: '/barcelona/barcelona-art.webp',
-        header: 'Art Museum'
-    },
-    {
-        image: '/barcelona/fc-barca.webp',
-        header: 'FC Barcelona'
-    },
-    {
-        image: '/barcelona/poble.webp',
-        header: 'Poble Espanyol'
-    },
-    {
-        image: '/barcelona/monjuic.webp',
-        header: 'Montjuïc Castle'
-    }
-];
+
 
 function Vienna() {
     return (
@@ -187,9 +170,23 @@ function Vienna() {
             />
             {/* Content with Padding to Account for Navbar */}
             <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-60">
+
                 <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">
                     Βιέννη τι να δω και τι να κάνω
                 </h1>
+
+                {/* Main picture */}
+                <div className="flex justify-center my-8"> {/* Center the image */}
+                    <Image
+                        src="/vienna/vienna-hero.jpg"
+                        width={1200} // Increase width for a wider image
+                        height={600} // Adjust height proportionally
+                        alt="vienna-palace"
+                        className="rounded-lg shadow-lg w-full max-w-4xl" // Make it responsive and add styling
+                        priority // Optimize loading for above-the-fold images
+                    />
+                </div>
+
                 <p className="text-[#2E2E2F] mb-4 text-justify">
                     Ανακαλύψτε την Βιέννη μέσα από τον αναλυτικό οδηγό για 4 ημέρες στην πρωτεύουσα της Αυστρίας. Το σπίτι των σνίτσελ, του Φρόιντ, του Μότσαρτ, των Αψβούργων, της όπερας, της τέχνης και πολλών ακόμα.
                 </p>
@@ -202,17 +199,7 @@ function Vienna() {
                 <p className="mb-4 text-justify">
                     Ανεξάρτητα από το πόσο καιρό σκοπεύετε να μείνετε στην πόλη, αυτός ο ταξιδιωτικός οδηγός για τη Βιέννη μπορεί να σας βοηθήσει να σχεδιάσετε το τέλειο ταξίδι στην πρωτεύουσα της Αυστρίας και να εξοικονομήσετε και μερικά χρήματα για μια αρκετά ακριβή πόλη.
                 </p>
-                {/* Main picture */}
-                <div className="flex justify-center my-8"> {/* Center the image */}
-                    <Image
-                        src="/barcelona/barcelona-hero.jpg"
-                        width={1200} // Increase width for a wider image
-                        height={600} // Adjust height proportionally
-                        alt="Barcelona-arc-de-triumph"
-                        className="rounded-lg shadow-lg w-full max-w-4xl" // Make it responsive and add styling
-                        priority // Optimize loading for above-the-fold images
-                    />
-                </div>
+
                 {/* Widget */}
 
                 <div className="mt-8">
@@ -292,7 +279,7 @@ function Vienna() {
                         <strong>Σνίτσελ:</strong>Αντί να πάτε στο τουριστικό και πολύ ακριβότερο, Figlmüller για το παραδοσιακό σνίτσελ μπορείτε να επιλέξετε το Schnitzel Wirt που κοστίζει μόνο 12,5 ευρώ και μπορούν άνετα να φάνε δύο άτομα.
                     </p>
                 </div>
-                <div className="mt-8">
+                {/* <div className="mt-8">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">5. Top Αξιοθέατα στην Βιέννη</h2>
                     <div className="flex justify-center">
                         <ImageAccordion items={barcelonaImages} />
@@ -312,10 +299,10 @@ function Vienna() {
                     <p className="mb-4 text-justify">
                         <strong>FC Barcelona Museum:</strong> Αν κάνετε ένα ταξίδι στην Βαρκελώνη αξίζει να επισκεφτείτε το μουσείο για το καμάρι της πόλης. Το μουσείο βρίσκεται δίπλα από το γήπεδο της μπασκετικής ομάδας και την μπουτίκ της ομάδας. Όλη η ιστορία της Barcelona μέσα από τρόπαια, στιγμές, πρόσωπα θα περάσουν από μπροστά σας. Από τον Messi και τον Puyol, τα τρόπαια του Champions League έως τον Cruyff και τον Laudrup.
                     </p>
-                </div>
+                </div> */}
                 <div className="mt-8">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
-                        6. Οδηγός για 4 ημερών για την Βιέννη
+                        5. Οδηγός 4 ημερών για την Βιέννη
                     </h2>
                 </div>
                 <div className="mt-8">
@@ -324,31 +311,27 @@ function Vienna() {
                         1η Ημέρα
                     </h3>
                     <p className="mb-4 text-justify">
-                        Αφού αφήσουμε τα πράγματα στο ξενοδοχείο, θα κατευθυνθούμε προς την πόλη ξεκινώντας από τα πιο κοντινά αξιοθέατα. Πρώτος μας σταθμός είναι το <strong>Palais Liechtenstein</strong> και το <strong>Liechtensteinpark</strong>. Αν υπάρχει κάποια δωρεάν έκθεση, αξίζει σίγουρα να την επισκεφθούμε και να δούμε το εσωτερικό του παλατιού.
+                        Η περιήγηση μας θα ξεκινήσει από το <strong>Palais Liechtenstein</strong> και το <strong>Liechtensteinpark</strong>. Αν υπάρχει κάποιο δωρεάν exhibition αξίζει να δούμε την έκθεση και το εσωτερικό του.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Στη συνέχεια, θα κατευθυνθούμε προς την <strong>Votive Church</strong>, μια καθολική εκκλησία νεογοτθικού ρυθμού, χτισμένη το 1879. Μπορούμε επίσης να επισκεφθούμε την <strong>Catholic Church Maria am Gestade</strong>, μια χαρακτηριστική γοτθική εκκλησία με εντυπωσιακή αρχιτεκτονική.
+                        Στη συνέχεια θα πάμε στην εντυπωσιακή <strong>Votive Church</strong>, μια καθολική εκκλησία νέο γοτθικού ρυθμού χτισμένη το 1879, η είσοδος είναι δωρεάν. Μπορούμε επίσης να δούμε την <strong>Catholic Church Maria am Gestade</strong>, μια εκκλησία γοτθικού ρυθμού.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Περίπου δύο χιλιόμετρα πιο μακριά, βρίσκεται το <strong>Hundertwasserhaus</strong>, τα πολύχρωμα και πρωτότυπα σπίτια που σχεδίασε ο Αυστριακός καλλιτέχνης Hundertwasser. Κοντά εκεί είναι και το <strong>Café Friedlich</strong> στο <strong>KunstHausWien Museum Hundertwasser</strong>, ιδανικό για ένα διάλειμμα με καφέ.
+                        Μετά θα συνεχίσουμε την περιήγηση στο κέντρο του ιστορικού κέντρου με την πλατεία <strong>Hoher Markt</strong> και το <strong>Ankeruhr (Anker clock)</strong>. Κάθε ώρα εμφανίζεται μια διαφορετική φιγούρα (στις 12 εμφανίζονται όλες μαζί με μουσική συνοδεία). Ένα όμορφο καφέ με πολύ ωραία γλυκά είναι το <strong>PARÉMI</strong>. Επίσης σε κοντινή απόσταση βρίσκεται και η εκκλησία <strong>Jesuit Church</strong> και η <strong>Holy Trinity Greek Orthodox Church</strong>, που βρίσκεται στην ελληνική συνοικία της Βιέννης.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Κατευθυνόμενοι προς το κέντρο της πόλης, μπορούμε να περάσουμε από το <strong>Wien Mitte The Mall</strong>, για λίγο shopping ή καφέ. Συνεχίζοντας, φτάνουμε στην πλατεία <strong>Hoher Markt</strong>, όπου βρίσκεται το <strong>Ankeruhr (Anker clock)</strong>. Κάθε ώρα εμφανίζεται μια διαφορετική φιγούρα, ενώ στις 12 το μεσημέρι όλες οι φιγούρες παρελαύνουν συνοδευόμενες από μουσική.
+                        Τέλος, συνεχίζοντας στην <strong>Stephansplatz</strong> θα δούμε τον Καθεδρικό Ναό του <strong>Αγ. Στεφάνου</strong>. Η εκκλησία αυτή χτίστηκε το 1147, κατά τον δεύτερο παγκόσμιο πόλεμο σχεδόν καταστράφηκε και χρειάστηκε ανοικοδόμηση το 1952. Το ύψος της είναι 107 μέτρα, ο ψηλότερος πύργος της είναι 137 μέτρα. Η είσοδος είναι δωρεάν αλλά υπάρχει εισιτήριο ώστε να ανεβείτε στους πύργους. Ακόμα, λίγα μέτρα μακριά υπάρχει η στήλη της πανώλης <strong>Column of Pest</strong>, μια στήλη που δημιουργήθηκε στην μνήμη όσων χάθηκαν από την πανώλη. Μια ακόμα εκκλησία που μπορείτε να εξερευνήσετε είναι αυτή του <strong>Αγ. Πέτρου (Peterskirche)</strong>.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Πριν προχωρήσουμε, αξίζει να περάσουμε από το <strong>PARÉMI</strong> για κάποιο φρέσκο κρουασάν και να δούμε την <strong>Jesuit Church</strong> και την <strong>Holy Trinity Greek Orthodox Church</strong>, που βρίσκεται στην ελληνική συνοικία της Βιέννης.
+                        Ακριβώς απέναντι από τον καθεδρικό υπάρχει ένα υποκατάστημα του <strong>Demel</strong> που δίνει σε πακέτο το διάσημο γλυκό <strong>Kaiserschmarrn</strong> και είναι ανοιχτό αρκετά πιο αργά από το κεντρικό κατάστημα.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Τέλος, στην <strong>Stephansplatz</strong>, θα επισκεφθούμε τον εντυπωσιακό <strong>Καθεδρικό Ναό του Αγίου Στεφάνου</strong>. Χτισμένος το 1147, ο ναός σχεδόν καταστράφηκε στον Β' Παγκόσμιο Πόλεμο και ανοικοδομήθηκε το 1952. Το ύψος του φτάνει τα 107 μέτρα, ενώ ο ψηλότερος πύργος φτάνει τα 137 μέτρα. Στον ναό φιλοξενείται και η διάσημη καμπάνα <strong>Pummerin</strong>, μία από τις μεγαλύτερες στην Ευρώπη.
-                    </p>
-
-                    <p className="mb-4 text-justify">
-                        Στην ίδια περιοχή, θα βρούμε τη <strong>Στήλη της Πανώλης (Column of Pest)</strong>, που ανεγέρθηκε προς τιμήν όσων έχασαν τη ζωή τους από την πανώλη, καθώς και τον όμορφο <strong>ναό του Αγίου Πέτρου</strong> δίπλα.
+                        Η μέρα μπορεί να κλείσει με το <strong>MuseumsQuartier</strong>. Η πλατεία των μουσείων αποτελεί ένα από τα πιο δημοφιλή μέρη στην πόλη. Αν δεν θέλετε να δείτε όλα τα μουσεία που υπάρχουν εκεί, μπορείτε να απολαύσετε το ποτό σας στον εξωτερικό χώρο, είτε στα πανέμορφα παγκάκια που έχουν δημιουργηθεί είτε στα μαγαζιά. Ακόμα μπορείτε να ανεβείτε δωρεάν στο <strong>MQ Libelle</strong> ακριβώς πάνω από το <strong>Leopold Museum</strong>. Το ασανσέρ βρίσκεται αριστερά από το μουσείο.
                     </p>
 
                     <ImageGallery images={firstDayImages} />
@@ -359,35 +342,19 @@ function Vienna() {
                         2η Ημέρα
                     </h3>
                     <p className="mb-4 text-justify">
-                        Η δεύτερη ημέρα θα συνεχιστεί με την εξερεύνηση της υπόλοιπης γοτθικής συνοικίας και της συνοικίας <strong>El Born</strong> που είναι ουσιαστικά η συνέχειά της, με σκοπό να φτάσουμε μέχρι την παραλία και το ενυδρείο της Βαρκελώνης. Αρχικά, αν θέλετε να ξεκινήσετε τη μέρα σας με brunch, μια καλή επιλογή είναι το <strong>Bloome By Sasha</strong> ή το <strong>Gringa All Day</strong>.
+                        Θα ξεκινήσουμε από το <strong>Belvedere</strong>, μνημείο της <strong>UNESCO</strong>, και αποτελείται από δύο κτήρια το <strong>Upper</strong> και το <strong>Lower Belvedere</strong>, αξίζει περισσότερο η επίσκεψη στο <strong>Upper Belvedere</strong>. Φιλοξενεί την έκθεση του <strong>Gustav Klimt</strong>, με το διάσημο πίνακα του <strong>«The Kiss»</strong>. Θα συνεχίσουμε με μία βόλτα στους κήπους με κατεύθυνση προς το <strong>Lower Belvedere</strong>. (Ακόμα πιο πάνω από το Upper Belvedere υπάρχει και το <strong>Belvedere 21</strong>). Στη συνέχεια θα προχωρήσουμε στο <strong>Σοβιετικό Πολεμικό Μνημείο</strong>.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Το πρώτο μέρος της λίστας μας είναι το <strong>Palau de la Musica</strong>, ένα αρτ νουβό μουσικό παλάτι 2200 θέσεων, διαθέσιμα εισητήρια <a className="text-blue-600 underline" href='https://gyg.me/1ggX2CP8'>εδώ</a>. Πρόκειται για μια έκρηξη χρωμάτων και το μοναδικό θέατρο στην Ευρώπη που φωτίζεται πλήρως από φυσικό φως, με εκπληκτική ακουστική. Σίγουρα μην παραλείψετε να δοκιμάσετε στο <strong>Jon Cake</strong> ένα κομμάτι βασκικό cheesecake ή ένα cinnamon roll από το <strong>Demasié</strong>. Συνεχίζοντας, στο πιο διάσημο αξιοθέατο της περιοχής, το <strong>μουσείο του Πικάσο</strong> (δωρεάν με την <strong>Barcelona Card</strong>), θα βρείτε την πιο εκτεταμένη συλλογή Πικάσο στον κόσμο. Το μουσείο φιλοξενεί πάνω από 4000 κομμάτια που προέρχονται κυρίως από τα χρόνια διαμόρφωσης του Πικάσο, τη Μπλε Περίοδο και τη θητεία του στη Βαρκελώνη. Ένα δωρεάν σημείο ενδιαφέροντος είναι το <strong>El Born Center for Culture and Memory</strong>, όπου μπορείτε να περπατήσετε ανάμεσα στα διατηρημένα ερείπια μιας γειτονιάς του 1700.
+                        Θα συνεχίσουμε με κατεύθυνση στην πλατεία <strong>Karlskirche</strong>. Αν χρειαστούμε ένα διάλλειμα για καφέ μπορούμε να κάνουμε μια στάση στο <strong>«No Panic Coffee»</strong>. Εκεί, θα βρούμε την εκκλησία <strong>Ναό του Αγίου Καρόλου</strong>, ο ναός διαθέτει έναν εντυπωσιακό τρούλο και πλευρικές ανάγλυφες στήλες. Η εκκλησία είναι αφιερωμένη στον <strong>Άγιο Κάρολο Μπορομέο</strong>, τον προστάτη του αυτοκράτορα, ο οποίος φρόντιζε να θεραπεύει όσους ήταν άρρωστοι από πανώλη. Στην ίδια πλατεία βρίσκεται και το <strong>Μουσείο της Βιέννης</strong>, ένα μουσείο για την Ιστορία της Βιέννης με δωρεάν είσοδο.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Συνεχίστε στο <strong>Passeig Del Born</strong>, έναν διάσημο δρόμο, γεμάτο δέντρα, ανάμεσα στη <strong>Santa Maria del Mar</strong> και την αγορά, που αποτελεί το επίκεντρο της γειτονιάς <strong>El Born</strong>. Τέλος, η <strong>Basílica de Santa Maria del Mar</strong> είναι μια ακόμα εντυπωσιακή εκκλησία γοτθικού ρυθμού.
+                        Επόμενος σταθμός είναι το <strong>Naschmarkt</strong>, την υπαίθρια αγορά της Βιέννης. Εδώ θα βρείτε λίγο οικονομικότερα souvenirs σε σχέση με την υπόλοιπη πόλη.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Επόμενο σημείο είναι η <strong>αψίδα του θριάμβου της Βαρκελώνης</strong>, παρόμοια με αυτή του Παρισιού. Παίρνοντας τον δρόμο προς την παραλία από την αψίδα, θα βρεθείτε στο <strong>Ciutadella Park</strong>, ένα καταπράσινο πάρκο μέσα στην πόλη. Αξίζει να περάσετε να δείτε το σιντριβάνι του Gaudi, ένα έργο από την εποχή που ήταν ακόμα φοιτητής, το οποίο σχεδιάστηκε ώστε να μοιάζει με τη Φοντάνα ντι Τρέβι της Ρώμης. Αν έχει καλό καιρό, μην χάσετε την ευκαιρία για μια βαρκάδα στη λίμνη. Το κόστος είναι 7 ευρώ για μισή ώρα.
-                    </p>
-
-                    <p className="mb-4 text-justify">
-                        Σε κοντινή απόσταση βρίσκεται η παραλία της Βαρκελώνης, η <strong>La Barceloneta</strong>, η διάσημη γειτονιά της πόλης με την παραλία. Μπορείτε να κατεβείτε στην παραλία και να περπατήσετε με στόχο να φτάσετε προς το διάσημο <strong>ξενοδοχείο W</strong>, που θα ξεχωρίζει από μακριά. Μπορείτε επίσης να περάσετε μέσα από τα στενά δρομάκια της γειτονιάς ώστε να φτάσετε στη <strong>Mercat de la Barceloneta</strong>, την υπαίθρια αγορά της περιοχής.
-                    </p>
-
-                    <p className="mb-4 text-justify">
-                        Στην προκυμαία μπορείτε να δείτε το εμπορικό κέντρο <strong>Maremagnum</strong> και, αν θέλετε, να επισκεφτείτε το <strong>Ενυδρείο της Βαρκελώνης</strong>. Το κόστος είναι στα 27 ευρώ και θεωρείται το μεγαλύτερο και σημαντικότερο Μουσείο Θαλάσσιας Επιστήμης της Μεσογείου, με πάνω από 11.000 θαλάσσια ζώα από 450 είδη και μια υποβρύχια σήραγγα μήκους 80 μέτρων. Προμηθευτείτε τα εισητήρια σας από <a className="text-blue-600 underline" href='https://gyg.me/xD8BKuqz'>εδώ</a>.
-                    </p>
-
-                    <p className="mb-4 text-justify">
-                        Τέλος, βγαίνοντας και με κατεύθυνση προς τη <strong>La Rambla</strong>, σε έναν κυκλικό κόμβο θα δείτε το <strong>μνημείο του Κολόμβου</strong>. Δίνεται η δυνατότητα να ανεβείτε και να δείτε τη θέα από ψηλά, με κόστος 8 ευρώ.
-                    </p>
-
-                    <p className="mb-4 text-justify">
-                        <strong>Extra:</strong> Δύο ακόμα μουσεία που μπορείτε να βρείτε στην περιοχή είναι το <strong>Moco Museum</strong>, με έργα μοντέρνας τέχνης (ιδανικό για τους λάτρεις των Banksy, Hirst, Warhol, Kaws και Kusama), καθώς και το <strong>Μουσείο Σοκολάτας</strong>, το όνειρο κάθε chocoholic. Θα δείτε την τέχνη της παρασκευής σοκολάτας και εκπληκτικά γλυπτά φτιαγμένα από σοκολάτα.
+                        Τέλος, το μουσείο <strong>Albertina</strong>, είναι ανοιχτό μέχρι τις 9 το βράδυ. Οπότε το απόγευμα μπορούμε να το επισκεφτούμε (είσοδος 20 ευρώ). Το μουσείο στεγάζεται σε ένα επιβλητικό παλάτι των <strong>Αψβούργων</strong> και περιλαμβάνει αριστουργήματα σύγχρονης τέχνης του ιμπρεσιονισμού και του μετα-ιμπρεσιονισμού, όπως ο <strong>Βαν Γκογκ</strong>, ο <strong>Μονέ</strong>, ο <strong>Τουλούζ-Λωτρέκ</strong>, ο <strong>Πικάσο</strong> και πολλών άλλων ακόμα. Ακόμα και αν δεν μπείτε στο μουσείο, το εξωτερικό του θα βρείτε πολύ κόσμο να κάθεται στα παγκάκια με την υπέροχη θέα της όπερας της Βιέννης. Ακριβώς από κάτω, υπάρχει η διάσημη καντίνα <strong>«Bitzinger Sausage Stand»</strong> με τα διάσημα hot-dog.
                     </p>
                     <ImageGallery images={secondDayImages} />
                 </div>
@@ -396,23 +363,31 @@ function Vienna() {
                         3η Ημέρα
                     </h3>
                     <p className="mb-4 text-justify">
-                        Η Τρίτη ημέρα μπορεί να ξεκινήσει από την <strong>Mercat de la Boqueria</strong>, τη διάσημη υπαίθρια αγορά της Βαρκελώνης. Είναι ένας εκπληκτικός συνδυασμός τουρισμού και ντόπιας κουλτούρας. Θα βρείτε φρούτα, λαχανικά, κρέατα, ψαρικά, αλλαντικά και οτιδήποτε σχετίζεται με το φαγητό. Αξίζει να έρθετε από νωρίς ώστε να αποφύγετε την πολυκοσμία.
+                        Η μέρα θα ξεκινήσει με το <strong>Austrian Parliament</strong> όπου δίνεται η δυνατότητα δωρεάν <strong>guided tour</strong>. Κλείστε από <a href="https://www.parlament.gv.at/erleben/fuehrungen/einzelpersonen/index.html?TERMIN_01TERMINART=F%C3%BChrung&TERMIN_01DATERANGE=2025-05-30T22%3A00%3A00.000Z&TERMIN_01DATERANGE=2025-05-31T23%3A59%3A59.999Z" className="text-blue-600 hover:underline">εδώ</a> το δωρεάν tour, σας δίνεται η δυνατότητα να δείτε το εσωτερικό και να σας μιλήσουν για το πολιτικό σύστημα της Αυστρίας. Το tour κλείνει με την αίθουσα που γίνονται οι συνελεύσεις της δικής τους Βουλής. Σχετικά με το εξωτερικό, έχει δημιουργηθεί ως αντίγραφο της <strong>Ακαδημίας των Αθηνών</strong>, με το άγαλμα της θεάς <strong>Αθηνάς</strong> στην είσοδο.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Στη συνέχεια, αφού ανεβείτε τη <strong>La Ramblas</strong> και φτάσετε στην <strong>Placa de Catalunya</strong>, συνεχίστε στην <strong>Passeig de Gràcia</strong>. Πρόκειται για τον δρόμο με πολλά εμπορικά μαγαζιά, συμπεριλαμβανομένων ακριβών οίκων μόδας, όπως Gucci και Prada. Το σημαντικότερο, όμως, είναι ότι εδώ θα συναντήσετε τα δύο διάσημα έργα του Gaudi, το <strong>Casa Batlló</strong> και τη <strong>La Pedrera (Casa Milà)</strong>. Εμείς επιλέξαμε να επισκεφτούμε μόνο το πρώτο, καθώς το θεωρούμε το πιο εντυπωσιακό από τα τρία σπίτια του Gaudi (μαζί με το <strong>Casa Vicens</strong>). Το κόστος εισόδου είναι 35 ευρώ (29 για το <strong>Casa Milà</strong>). Κλείστε το εισιτήριο νωρίς <a className="text-blue-600 underline" href='https://gyg.me/oqm4cvh2'>online</a>, καθώς υπάρχουν συγκεκριμένα slots. Το κτήριο είναι εντυπωσιακό, χωρίς καμία ευθεία γραμμή, και τα μπαλκόνια μοιάζουν να είναι φτιαγμένα από κόκαλα. Η οροφή θυμίζει πλάτη δράκου. Στο τέλος της περιήγησης, θα μπείτε σε ένα δωμάτιο γεμάτο οθόνες, όπου θα «βυθιστείτε» στο μυαλό του Gaudi.
+                        Από εκεί, θα συνεχίσουμε με το <strong>Rathauspark</strong>, το πάρκο μπροστά στο Δημαρχείο της Βιέννης, με τριανταφυλλιές που αφιερώνουν οι Βιεννέζοι σε αγαπημένα τους πρόσωπα. Εκεί βρίσκεται φυσικά το δημαρχείο <strong>«Rathaus»</strong>, ένα νέο-γοτθικό κτήριο. Ακριβώς απέναντι από το δημαρχείο υπάρχει ένα τεράστιο κτίριο που είναι το <strong>Burgtheater</strong> (Εθνικό Θέατρο Βιέννης).
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Λίγα μέτρα μακριά, θα βρείτε την <strong>Basílica de la Puríssima Concepció</strong>. Η είσοδος είναι δωρεάν και αξίζει να επισκεφτείτε τον κήπο της εκκλησίας. Ακριβώς απέναντι θα βρείτε το <strong>ONIS Coffee</strong>, μια εξαιρετική επιλογή αν θέλετε έναν καφέ πριν συνεχίσετε.
+                        Συνεχίζουμε στο <strong>Wiener Minoritenkirche</strong>, ένα κρυφό διαμάντι· στο εσωτερικό του θα δείτε ένα αντίγραφο του <strong>Μυστικού Δείπνου</strong> του Da Vinci. Συνεχίζουμε στο <strong>Palais Daun-Kinsky</strong>, ένα ακόμα δωρεάν αξιοθέατο, ιδανικό για φωτογραφίες. Δίπλα θα βρούμε το <strong>Ferstel Passage</strong>, πρόκειται για μια αγορά της Βιέννης, με πολλά μαγαζιά, καφέ και εστιατόρια.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Ο δρόμος μπροστά από το καφέ, αν θέλετε να συνεχίσετε με τα πόδια, θα σας οδηγήσει στο επόμενο αξιοθέατο, το <strong>Monumental</strong>, μια παλιά αρένα ταυρομαχίας η οποία πλέον χρησιμοποιείται για συναυλίες. Εμείς τη θαυμάσαμε εξωτερικά και συνεχίσαμε προς τα πάνω (στην αντίθετη πλευρά της παραλίας) για να φτάσουμε στη <strong>Sagrada Familia</strong>, το πιο σημαντικό αξιοθέατο και σήμα κατατεθέν της πόλης. Καλό είναι να προμηθευτείτε το εισιτήριό σας <a className="text-blue-600 underline" href='https://gyg.me/o9AKaDIX'>online</a> ώστε να μην περιμένετε στην ουρά (η είσοδος γίνεται από την πίσω πλευρά). Ένα ιδανικό σημείο για φωτογραφίες είναι το πάρκο ακριβώς πίσω από το μνημείο. Το κόστος εισόδου είναι 26 ευρώ. Έξω από τη <strong>Sagrada Familia</strong> θα βρείτε το <strong>BO&amp;MIE</strong>, έναν φούρνο με διάφορα αρτοσκευάσματα.
+                        Από εκεί θα συνεχίσουμε στην πλατεία <strong>Am Hof</strong>. Μια ιστορική πλατεία της Βιέννης. Εκεί το Πάσχα ή τα Χριστούγεννα στήνονται οι αντίστοιχες αγορές.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Αν έχετε ακόμα αντοχές, συνεχίστε μέσω της <strong>Av. De Gaudi</strong> για να βρεθείτε μπροστά από το <strong>Recinte Modernista de Sant Pau</strong>. Χρησιμοποιήθηκε ως νοσοκομείο για έναν αιώνα και θεωρείται το κορυφαίο art-nouveau συγκρότημα της Ευρώπης. Το 1997 βραβεύτηκε ως Μνημείο Παγκόσμιας Κληρονομιάς από την UNESCO. Το κόστος εισόδου είναι 17 ευρώ.
+                        Το <strong>must-see</strong> αξιοθέατο εδώ είναι το παλάτι <strong>Hofburg</strong> και το <strong>Sisi Museum</strong>. Μέχρι το 1918, το Hofburg ήταν το αυτοκρατορικό παλάτι των <strong>Αψβούργων</strong>, σήμερα είναι η έδρα του Ομοσπονδιακού Προέδρου της Αυστρίας. Πρώτα όμως θα περάσουμε από την <strong>Heldenplatz</strong> και το <strong>Neue Burg</strong>· στο παρελθόν από αυτό το μπαλκόνι ο <strong>Hitler</strong> βγήκε για να ανακοινώσει την προσάρτηση της χώρας στο Γερμανικό Ράιχ. Μετά θα επισκεφτούμε το μουσείο <strong>Sisi Museum</strong> (περιλαμβάνεται στο <strong>Sissy ticket</strong> εισιτήριο). Πρόκειται για την χειμερινή κατοικία της βασιλικής οικογένειας των Hofburg. Βασική φιγούρα γύρω από την οποία περιστρέφεται η περιήγηση είναι φυσικά η πριγκίπισσα <strong>Σίσσυ</strong>.
+                    </p>
+
+                    <p className="mb-4 text-justify">
+                        Από εκεί θα προχωρήσουμε προς το πάρκο του λαού <strong>Volksgarten</strong>. Στο κέντρο του πάρκου βρίσκεται το πιο ωραίο κτίσμα, ο νεοκλασικός ναός του <strong>Θησέα</strong>. Δημιουργήθηκε το 1821 και αποτελεί μικρής κλίμακας αντίγραφο του Ναού του Ηφαίστου. Ακόμα ένα πάρκο που θα επισκεφτούμε είναι το <strong>Burggarten</strong>, εκεί θα βρίσκεται και το <strong>Μνημείο του Μότσαρτ</strong>.
+                    </p>
+
+                    <p className="mb-4 text-justify">
+                        Τέλος, σε κοντινή απόσταση βρίσκεται και το <strong>Wien Mitte The Mall</strong> για ψώνια σε ένα μεγάλο εμπορικό κέντρο.
                     </p>
                     <ImageGallery images={thirdDayImages} />
                 </div>
@@ -421,57 +396,34 @@ function Vienna() {
                         4η Ημέρα
                     </h3>
                     <p className="mb-4 text-justify">
-                        Σε αυτή την ημέρα επιλέξαμε να εξερευνήσουμε την περιοχή <strong>Garcia</strong>. Αν θέλετε πρώτα ένα brunch, μπορείτε να επιλέξετε το <strong>EatMyTrip Brunch &amp; Coffee</strong>. Έπειτα, λίγα μέτρα μακριά θα βρείτε το <strong>Casa Vicens</strong>, ένα ακόμα σπίτι του <strong>Gaudi</strong>. Το κόστος εισόδου είναι 18 ευρώ. Το <strong>Casa Vicens</strong> είναι ένα από τα σημαντικά πρώιμα έργα του Αντόνι Γκαουντί που κατασκευάστηκε από το 1883 έως το 1889. Χτίστηκε ως η οικογενειακή κατοικία για τον Manuel Vicens, ο οποίος είχε επιχείρηση πλακιδίων στη Βαρκελώνη.
+                        Το <strong>σημαντικότερο αξιοθέατο</strong> εδώ θα είναι το <strong>παλάτι Schönbrunn</strong>. Πρόκειται για το παλάτι της <strong>Σίσσυ</strong>, <strong>Νο1 αξιοθέατο στη Βιέννη</strong>. Για να φτάσουμε εκεί θα πρέπει να πάρουμε το μετρό <strong>U4</strong> και να κατέβουμε στην ομώνυμη στάση.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Από εδώ είναι μια καλή ευκαιρία να εξερευνήσετε περαιτέρω την <strong>Garcia</strong> και να επισκεφθείτε την κεντρική πλατεία <strong>Plaça de la Vila de Gràcia</strong> καθώς και την <strong>Plaça de la Virreina</strong> με την εκκλησία <strong>San Joan Parish</strong>. Εδώ θα βρείτε αρκετά μαγαζιά για να δοκιμάσετε τα τοπικά tapas, μακριά από τις τουριστικές παγίδες.
+                        Το Παλάτι έχει σχεδόν <strong>απίστευτο αριθμό δωματίων</strong> - χτίστηκαν <strong>1.441 δωμάτια</strong> για τη θερινή κατοικία των αυτοκρατόρων. Σήμερα, μόνο <strong>45 είναι ανοιχτά στο κοινό</strong>, αλλά ακόμα κι έτσι, είναι εύκολο να φανταστείτε τη χλιδή του. Λόγω της ιστορίας, της αρχιτεκτονικής και του <strong>ροκοκό εσωτερικού</strong> σχεδιασμού, το <strong>Schönbrunn έχει ανακηρυχθεί Μνημείο Παγκόσμιας Κληρονομιάς της UNESCO</strong>.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Επόμενο μέρος της λίστας μας είναι το <strong>Park Güell</strong>. Η απόσταση με τα πόδια είναι περίπου μισή ώρα, αλλά μπορείτε και να πάρετε λεωφορείο. Η είσοδος στο πάρκο είναι 18 ευρώ. Φροντίστε να έχετε κλείσει από νωρίς τα εισιτήρια <a className="text-blue-600 underline" href='https://gyg.me/18Wz5w0c'>online</a>, καθώς εξαντλούνται γρήγορα. Ο τοπικός επιχειρηματίας και κόμης Eusebi Güell ανέθεσε στον Antoni Gaudí να σχεδιάσει μια κατοικημένη περιοχή για πλούσιες οικογένειες. Η ιδέα του Güell ήταν να αναδημιουργήσει τις δημοφιλείς βρετανικές κατοικίες, γι’ αυτό το ονόμασε <strong>Park Güell</strong> αντί για <em>Parc Güell</em>. Το πρώτο που θα συναντήσει κάποιος είναι τα δύο μοντερνιστικά κτίρια, το <strong>Casa del Guarda</strong> (όπου κοιμόντουσαν οι θυρωροί), που σήμερα είναι μουσείο, και το <strong>Pabelló de Aministració</strong>, το οποίο στεγάζει κατάστημα με σουβενίρ. Συνεχίζοντας, θα δείτε το πιο διάσημο στοιχείο στο <strong>Park Güell</strong>, τον δράκο μήκους 2,4 μέτρων, ένα σιντριβάνι καλυμμένο με την τεχνική <em>trencadís</em> του Γκαουντί. Το πάρκο είναι αρκετά μεγάλο και αξίζει να περιηγηθείτε σε όλη την έκτασή του.
+                        Στο εξωτερικό, οι <strong>κήποι είναι πανέμορφοι</strong> και μπορείτε να περιηγηθείτε <strong>χωρίς εισιτήριο</strong>. Μέσα στους κήπους υπάρχουν αρκετά μονοπάτια για να εξερευνήσετε το δάσος. Στην πίσω πλευρά του παλατιού, σε ένα λόφο, υπάρχει το <strong>Gloriette</strong> - ένα εξαιρετικό κτήριο του 1775 που σήμερα λειτουργεί ως καφέ και προσφέρει <strong>πανοραμική θέα στη Βιέννη</strong>. Εκεί βρίσκεται επίσης και ο <strong>Ζωολογικός Κήπος της Βιέννης</strong>, ένας από τους παλαιότερους στην Ευρώπη.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Μόλις φύγετε από το πάρκο, σε κοντινή απόσταση θα βρείτε άλλα δύο ιδιαίτερα σημεία. Το μουσείο επιστημών <strong>CosmoCaixa</strong>, με είσοδο 8 ευρώ, το οποίο διαθέτει ένα εντυπωσιακό «τεχνητό δάσος», καθώς και το <strong>Bellesguard</strong>. Αρχικά, για να φτάσετε στο μουσείο, μπορείτε να πάρετε λεωφορείο από το <strong>Park Güell</strong>. Από εκεί, σε περίπου 10 λεπτά με τα πόδια, φτάνετε στο <strong>Torre Bellesguard</strong>, που σχεδιάστηκε από τον Γκαουντί μεταξύ 1900 και 1909 στην περιοχή Sarrià-Sant Gervasi. Βρίσκεται στη θέση ενός κάστρου που έχτισε ο βασιλιάς Martin the Humane, με θέα που προσφέρει υπέροχη πανοραμική εικόνα της πόλης.
+                        Προτού επιστρέψουμε στο κέντρο, θα κατευθυνθούμε προς το <strong>Stadtpark</strong>, που περιλαμβάνει πολλά αγάλματα διάσημων καλλιτεχνών, συνθετών και συγγραφέων - όπως το <strong>επιχρυσωμένο μπρούντζινο μνημείο του Γιόχαν Στράους ΙΙ</strong>. Για να φτάσουμε εκεί θα πάρουμε πάλι το <strong>U4</strong> και θα κατέβουμε στη στάση <strong>Stadtpark</strong>.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        <strong>Extra:</strong> Αν έχετε χρόνο, μπορείτε να επισκεφτείτε το <strong>Tidibao</strong>. Εκεί βρίσκεται το πάρκο αναψυχής, με ρόδα και τρενάκι λούνα παρκ, καθώς και το <strong>Museu Automates del Tibidabo</strong> (μουσείο μηχανημάτων αυτόματης πώλησης) στον χώρο του λούνα παρκ. Σε κοντινή απόσταση, θα βρείτε την εκκλησία <strong>Sagrada Corazón</strong>, που βασίστηκε στην <strong>Sacre Coeur</strong> του Παρισιού.
+                        Θα πάρουμε ξανά το μετρό <strong>U4</strong>, θα αλλάξουμε στη γραμμή <strong>U1</strong> και θα κατέβουμε στο <strong>Vorgartenstraße</strong> για να επισκεφτούμε την εκκλησία <strong>St. Francis of Assisi</strong>. Από εκεί μπορούμε να ακολουθήσουμε τον δρόμο προς τη γέφυρα και τον <strong>Δούναβη</strong>, όπου θα έχετε την καλύτερη θέα της εκκλησίας.
                     </p>
 
                     <p className="mb-4 text-justify">
-                        <strong>Πώς να φτάσετε:</strong> Πάρτε το τοπικό τρένο <strong>L7</strong> από την <strong>Plaça Catalunya</strong> προς τον τερματικό σταθμό <strong>Avinguda del Tibidabo</strong>. Από εκεί, περπατήστε περίπου 200 μέτρα ανηφορικά κατά μήκος της Λεωφ. del Tibidabo, όπου θα βρείτε αρκετές στάσεις λεωφορείων στα δεξιά σας. Πάρτε το λεωφορείο <strong>196</strong>, το οποίο σας μεταφέρει στον σταθμό της κοιλάδας του <strong>τελεφερίκ del Tibidabo</strong>. Στη συνέχεια, πάρτε το τελεφερίκ για να φτάσετε στο λούνα παρκ και τα αξιοθέατα.
+                        Από εκεί θα συνεχίσουμε προς το <strong>Prater</strong>, το μεγαλύτερο λούνα παρκ της πόλης και ένα από τα μεγαλύτερα στον κόσμο. Εκεί βρίσκεται η <strong>Riesenrad</strong>, η διάσημη ρόδα με ύψος <strong>200 μέτρων</strong>.
+                    </p>
+
+                    <p className="mb-4 text-justify">
+                        Τέλος, θα επισκεφτούμε το <strong>Hundertwasserhaus</strong>, τα εντυπωσιακά πολύχρωμα σπίτια του Αυστριακού <strong>Hundertwasser</strong>. Σε κοντινή απόσταση βρίσκεται και το <strong>Café Friedlich im KunstHausWien Museum Hundertwasser</strong>, το καφέ του μουσείου.
                     </p>
                     <ImageGallery images={fourthDayImages} />
                 </div>
-                <div className="mt-8">
-                    <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
-                        5η Ημέρα
-                    </h3>
-                    <p className="mb-4 text-justify">
-                        Αυτή την ημέρα θα εξερευνήσουμε το μουσείο της ποδοσφαιρικής ομάδας της <strong>Barcelona</strong> και τα αξιοθέατα γύρω από το <strong>Montjuïc</strong>. Το πρώτο μέρος που επισκεφτήκαμε είναι το <strong>Μουσείο της Barcelona</strong>. Για να φτάσουμε εκεί, πήραμε το μετρό <strong>L5</strong> και κατεβήκαμε στη στάση <strong>Collblanc</strong>. Δυστυχώς, όταν το επισκεφτήκαμε, το γήπεδο της Barcelona, το <strong>Camp Nou</strong>, ήταν υπό ανακατασκευή, οπότε δεν υπήρχε η δυνατότητα να το δούμε από κοντά. Αφού ολοκληρώσαμε την περιήγηση στο μουσείο, συνεχίσαμε στην επίσημη μπουτίκ της ομάδας για τα απαραίτητα ψώνια και προχωρήσαμε στον επόμενο προορισμό.
-                    </p>
-
-                    <p className="mb-4 text-justify">
-                        Επιβιβαστήκαμε ξανά στο μετρό <strong>L3</strong> από τη στάση <strong>Palau Reial</strong> και κατεβήκαμε στην <strong>Placa Espanya</strong>. Εκεί θα δείτε ένα εντυπωσιακό κτήριο που μοιάζει με γήπεδο, το <strong>Arenas de Barcelona</strong>, το οποίο λειτουργεί ως εμπορικό κέντρο. Από την άλλη πλευρά βρίσκεται το σιντριβάνι του <strong>Montjuïc</strong> και το <strong>Μουσείο Τέχνης της Καταλονίας</strong>. Η θέα από το κτήριο είναι υπέροχη και αξίζει να ανεβείτε μέχρι επάνω. Το εσωτερικό του μουσείου δεν μας εντυπωσίασε, οπότε δεν θα χάσετε πολλά αν δεν μπείτε.
-                    </p>
-
-                    <p className="mb-4 text-justify">
-                        Επόμενο στη λίστα μας είναι το <strong>Ισπανικό χωριό (Poble Espanyol)</strong> με κόστος εισόδου 15 ευρώ. Πρόκειται για ένα υπαίθριο μουσείο με αντίγραφα 117 κτιρίων πραγματικής κλίμακας από διαφορετικές ισπανικές περιοχές. Θα βρείτε μια τυπική ανδαλουσιανή συνοικία, ένα τμήμα της Οδού του Αγίου Ιακώβου και παραδείγματα ρωμανικής μοναστικής αρχιτεκτονικής. Επίσης, έχει έναν χαρακτηριστικό δρόμο με πολύχρωμες ομπρέλες που κρέμονται στον ουρανό, αριστερά από την είσοδο.
-                    </p>
-
-                    <p className="mb-4 text-justify">
-                        Αφού τελειώσετε την περιήγηση, βγείτε και αναζητήστε το λεωφορείο <strong>150</strong>, το οποίο θα σας μεταφέρει στο <strong>κάστρο του Montjuïc</strong>. Το κάστρο είναι εντυπωσιακό και καλοδιατηρημένο και προσφέρει πανοραμική θέα σε όλη τη Βαρκελώνη. Υπάρχει και η επιλογή του <strong>teleferic</strong>, αλλά εμείς δεν το προτιμήσαμε. Καθώς το λεωφορείο ανεβαίνει ή κατεβαίνει, κάνει στάση ακριβώς μπροστά από το <strong>Ολυμπιακό Στάδιο της Βαρκελώνης</strong>. Η είσοδος εκεί είναι ελεύθερη και χρησιμοποιείται προσωρινά ως έδρα της <strong>Barcelona</strong>.
-                    </p>
-
-                    <p className="mb-4 text-justify">
-                        <strong>Extra:</strong> Κοντά στην <strong>Placa Espanya</strong> θα βρείτε το <strong>Joan Miró Foundation</strong>. Το εισιτήριο κοστίζει 9 ευρώ και περιλαμβάνει πάνω από 10.000 πίνακες, σχέδια, γλυπτά, σκηνικά και χαλιά του Joan Miró — με τα πρώτα σχέδια να χρονολογούνται από το 1901. Στη βεράντα του τελευταίου ορόφου, μπορείτε να θαυμάσετε τα πολύχρωμα γλυπτά του Miró μαζί με μια εκπληκτική θέα της Βαρκελώνης.
-                    </p>
-                    <ImageGallery images={fifthDayImages} />
-                </div>
-                <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/city.frame" data-gyg-location-id="45" data-gyg-locale-code="el-GR" data-gyg-widget="city" data-gyg-partner-id="0OAQQKO"></div></div>
-
             </div>
             <div className="pt-10">
                 <PageFooter />
