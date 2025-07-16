@@ -19,10 +19,10 @@ const destinations = [
         link: "/destinations/barcelona",
     },
     {
-        title: "Ρώμη",
-        image: "/images/fontana.png",
+        title: "Βιέννη",
+        image: "/images/vienna.jpg",
         description:
-            "Οδηγός για την αιώνια πόλη. Ένας αναλυτικός οδηγός για ένα ταξίδι must στην Ρώμη. Τι να δεις, τι να κάνεις και τι να προσέξεις στην Ρώμη.",
+            "Οδηγός για την παραμυθένια Βιέννη. Ένας αναλυτικός οδηγός για ένα ταξίδι must στην Βιέννη.",
         link: "/destinations/rome",
     },
 ];
