@@ -27,8 +27,8 @@ function Destinations() {
             image: "/destinations/insta_barca.png",
         },
         {
-            name: "Ρώμη",
-            slug: "rome",
+            name: "Βιέννη",
+            slug: "vienna",
             image: "/destinations/insta_rome.png",
         }
 
