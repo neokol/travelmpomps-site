@@ -69,77 +69,77 @@ const barcelonaItems = [
 
 const firstDayImages = [
     {
-        image: '/barcelona/cathedral-barcelona.webp',
-        header: 'Καθεδρικός'
+        image: '/vienna/Stephansplatz.jpg',
+        header: 'Stephansplatz'
     },
     {
-        image: '/barcelona/la-rambla.webp',
-        header: 'La Rambla'
+        image: '/vienna/demel.jpg',
+        header: 'Demel'
     },
     {
-        image: '/barcelona/placa-reial.webp',
-        header: 'Placa Reial'
+        image: '/vienna/Votive_Church.png',
+        header: 'Votive Church'
     },
     {
-        image: '/barcelona/world-kiss.webp',
-        header: 'The World Comes To Life With Each Kiss'
+        image: '/vienna/MuseumsQuartier.png',
+        header: 'MuseumsQuartier'
     }
 ];
 
 const secondDayImages = [
     {
-        image: '/barcelona/palau-musica.webp',
-        header: 'Palau de la Musica'
+        image: '/vienna/Karlskirche.jpg',
+        header: 'Karlskirche'
     },
     {
-        image: '/barcelona/barceloneta.webp',
-        header: 'Barceloneta'
+        image: '/vienna/Palais_Daun-Kinsky.png',
+        header: 'Palais Daun-Kinsky'
     },
     {
-        image: '/barcelona/ciutadella-park.webp',
-        header: 'Ciutadella Park'
+        image: '/vienna/Albertina.png',
+        header: 'Albertina'
     },
     {
-        image: '/barcelona/Santa-Maria-del-Mar.webp',
-        header: 'Santa Maria del Mar'
+        image: '/vienna/Belvedere.png',
+        header: 'Belvedere'
     }
 ];
 
 const thirdDayImages = [
     {
-        image: '/barcelona/in-casa-batllo.webp',
-        header: 'Casa Batllo'
+        image: '/vienna/Karlskirche.jpg',
+        header: 'Karlskirche'
     },
     {
-        image: '/barcelona/casa-milas.webp',
-        header: 'Casa Milas'
+        image: '/vienna/Hofburg.jpg',
+        header: 'Hofburg'
     },
     {
-        image: '/barcelona/mercat.webp',
-        header: 'Mercat de la Boqueria'
+        image: '/vienna/Austrian_Parliament.jpg',
+        header: 'Austrian Parliament'
     },
     {
-        image: '/barcelona/sant-pau.webp',
-        header: 'Sant Pau'
+        image: '/vienna/Sisi_museum.png',
+        header: 'Sisi Museum'
     }
 ];
 
 const fourthDayImages = [
     {
-        image: '/barcelona/park-guell.webp',
-        header: 'Park Guell'
+        image: '/vienna/Gloriette.jpg',
+        header: 'Gloriette'
     },
     {
-        image: '/barcelona/casa-vicens.webp',
-        header: 'Casa Vicens'
+        image: '/vienna/Stadtpark.png',
+        header: 'Stadtpark'
     },
     {
-        image: '/barcelona/bellesguard.webp',
-        header: 'Torre Bellesguard'
+        image: '/vienna/Hundertwasser.png',
+        header: 'Hundertwasser'
     },
     {
-        image: '/barcelona/cosmo-caixa.webp',
-        header: 'CosmoCaixa'
+        image: '/vienna/Schonbrunn_Inside.png',
+        header: 'Schonbrunn'
     }
 ];
 
