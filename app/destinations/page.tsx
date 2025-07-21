@@ -29,7 +29,7 @@ function Destinations() {
         {
             name: "Βιέννη",
             slug: "vienna",
-            image: "/destinations/insta_rome.png",
+            image: "/destinations/insta_vienna.jpg",
         }
 
     ];
