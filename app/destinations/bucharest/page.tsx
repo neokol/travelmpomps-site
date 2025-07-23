@@ -322,7 +322,7 @@ function Bucharest() {
                         <ul className="list-disc pl-6 space-y-2">
                             <li><strong>Galaxy:</strong> Χώρος με νεροτσουλήθρες, ιδανικός για οικογένειες με παιδιά</li>
                             <li><strong>The Palm:</strong> Κύριος χώρος με πισίνες (εσωτερικές & εξωτερικές), για επισκέπτες άνω των 14 ετών. Περιλαμβάνει πρόσβαση και στο Galaxy.</li>
-                            <li><strong>Elysium:</strong> Exclusive ζώνη με σάουνες, εγκαταστάσεις spa, pool bar και εστιατόριο. Πρόσβαση σε όλες τις ζώνες.</li>
+                            <li><strong>Elysium:</strong> Exclusive ζώνη με σάουνες, εγκαταστάσεις spa,ντους calla, κρεβάτια υπέρυθρης ακτινοβολίας, pool bar και εστιατόριο με δέντρο μάνγκο. Πρόσβαση σε όλες τις ζώνες.</li>
                         </ul>
                     </div>
 
@@ -332,19 +332,19 @@ function Bucharest() {
                             <li><strong>Τιμές (The Palm):</strong> 20€ (3 ώρες), 26€ (4.5 ώρες), 33€ (ολόκληρη ημέρα)</li>
                             <li><strong>Κράτηση:</strong> <a href="https://www.therme.ro/shop/wizard" className="text-blue-600 hover:underline">Online κράτηση</a></li>
                             <li><strong>Μετακίνηση:</strong> Λεωφορείο 442 από την Piata Presei</li>
-                            <li><strong>Τοποθεσία:</strong> Κοντά στο αεροδρόμιο Henri Coandă (OTP), ιδανικό για επίσκεψη πριν την αναχώρηση</li>
+                            <li><strong>Τοποθεσία:</strong> Κοντά στο αεροδρόμιο Henri Coandă (OTP), μπορεί να συνδιαστεί η επίσκεψη σας πριν την αναχώρηση</li>
                         </ul>
                     </div>
 
                     <div className="border-t-2 border-gray-200 pt-4 mb-6">
                         <h3 className="text-xl font-bold mb-4">Επιλογή Β: Μονοήμερη Εκδρομή στην Τρανσυλβανία</h3>
                         <p className="mb-4 text-justify">
-                            Εναλλακτική λύση για όσους επιθυμούν να εξερευνήσουν περισσότερα. Οι οργανωμένες εκδρομές συνήθως περιλαμβάνουν:
+                            Εναλλακτική λύση για όσους επιθυμούν να δουν την Τρανσυλβανία. Οι οργανωμένες εκδρομές συνήθως περιλαμβάνουν:
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
                             <li><strong>Κάστρο Peleș:</strong> Εντυπωσιακό νεο-αναγεννησιακό κάστρο</li>
-                            <li><strong>Μπρασόβ (Brașov):</strong> Μεσαιωνική πόλη με τη Μαύρη Εκκλησία</li>
-                            <li><strong>Κάστρο Μπραν (Bran Castle):</strong> Το θρυλικό "Κάστρο του Δράκουλα"</li>
+                            <li><strong>Μπρασόβ (Brașov):</strong> Μια μικρή μεσαιωνική πόλη με τη Μαύρη Εκκλησία</li>
+                            <li><strong>Κάστρο Μπραν (Bran Castle):</strong> Το θρυλικό "Κάστρο του Δράκουλα", συνδεδεμένο με τον θρύλο του Βλαντ Τέπες.</li>
                         </ul>
                     </div>
                     <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="2" data-gyg-partner-id="0OAQQKO" data-gyg-tour-ids="151028,135264"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/bucharest-l111/">GetYourGuide</a></span></div></div>

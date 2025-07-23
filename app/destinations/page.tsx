@@ -30,6 +30,11 @@ function Destinations() {
             name: "Βιέννη",
             slug: "vienna",
             image: "/destinations/insta_vienna.jpg",
+        },
+        {
+            name: "Βουκουρέστι",
+            slug: "bucharest",
+            image: "/destinations/insta_bucharest.jpg",
         }
 
     ];

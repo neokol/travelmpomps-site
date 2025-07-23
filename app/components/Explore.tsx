@@ -23,8 +23,8 @@ const destinations = [
         image: "/images/vienna.jpg",
         description:
             "Οδηγός για την παραμυθένια Βιέννη. Ένας αναλυτικός οδηγός για ένα ταξίδι must στην Βιέννη.",
-        link: "/destinations/rome",
-    },
+        link: "/destinations/vienna",
+    }
 ];
 
 export const Explore = () => {
