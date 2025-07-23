@@ -206,7 +206,7 @@ function Bucharest() {
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Ξεκινήστε την ημέρα σας με έναν καφέ και ένα παραδοσιακό ρουμανικό <strong>"covrigi"</strong> (είδος κουλουριού) σε ένα από τα πολλά καφέ της Παλιάς Πόλης. Αυτό που μας εντυπωσίασε ήταν το <strong>Scovergăria Micăi</strong> με πολλούς ντόπιους να το προτιμούν.
+                        Ξεκινήστε την ημέρα σας με έναν καφέ και ένα παραδοσιακό ρουμανικό <strong>covrigi</strong> (είδος κουλουριού) σε ένα από τα πολλά καφέ της Παλιάς Πόλης. Αυτό που μας εντυπωσίασε ήταν το <strong>Scovergăria Micăi</strong> με πολλούς ντόπιους να το προτιμούν.
                     </p>
 
                     <p className="mb-4 text-justify">
@@ -222,15 +222,15 @@ function Bucharest() {
                     </p>
 
                     <ul className="list-disc pl-6 mb-4 space-y-2">
-                        <li><strong>Manuc's Inn</strong>: Ένα από τα παλαιότερα και πιο ιστορικά πανδοχεία της πόλης, ιδανικό για έναν καφέ ή ένα ποτό.</li>
-                        <li><strong>St. Anthony's Church</strong>: Μια από τις παλαιότερες εκκλησίες του Βουκουρεστίου, με ενδιαφέρουσα ιστορία.</li>
+                        <li><strong>Manucs Inn</strong>: Ένα από τα παλαιότερα και πιο ιστορικά πανδοχεία της πόλης, ιδανικό για έναν καφέ ή ένα ποτό.</li>
+                        <li><strong>St. Anthonys Church</strong>: Μια από τις παλαιότερες εκκλησίες του Βουκουρεστίου, με ενδιαφέρουσα ιστορία.</li>
                         <li><strong>Cărturești Carusel</strong>: Ένα από τα ομορφότερα βιβλιοπωλεία του κόσμου, με εντυπωσιακή αρχιτεκτονική και τεράστια ποικιλία βιβλίων. Μπορείτε να το επισκεφτείτε πρωινές ώρες ώστε να αποφύγετε την πολυκοσμία.</li>
-                        <li><strong>The Church of the "Stavropoleos" Monastery</strong>: Ένα μικρό αλλά εκπληκτικό παράδειγμα ρουμανικής αρχιτεκτονικής, γνωστό για τις περίτεχνες τοιχογραφίες του.</li>
+                        <li><strong>The Church of the Stavropoleos Monastery</strong>: Ένα μικρό αλλά εκπληκτικό παράδειγμα ρουμανικής αρχιτεκτονικής, γνωστό για τις περίτεχνες τοιχογραφίες του.</li>
                         <li><strong>Art Safari</strong></li>
                         <li><strong>National Museum of Romanian History</strong>: Βρίσκεται σε ένα ιστορικό κτίριο και φιλοξενεί μια εντυπωσιακή συλλογή που καλύπτει την ιστορία της Ρουμανίας από τους προϊστορικούς χρόνους μέχρι σήμερα.</li>
                         <li><strong>Macca - Vilacrosse Passage</strong>: Μια όμορφη στοά με καφέ και εστιατόρια.</li>
                         <li><strong>St Nicholas Russian Church</strong>: Μια εντυπωσιακή ρωσική ορθόδοξη εκκλησία με χρυσούς τρούλους, που ξεχωρίζει στην καρδιά της πόλης.</li>
-                        <li><strong>The New "Saint George" Church</strong>: Μια σημαντική εκκλησία με πλούσια ιστορία, που συνδέεται με τη ρουμανική μοναρχία.</li>
+                        <li><strong>The New Saint George Church</strong>: Μια σημαντική εκκλησία με πλούσια ιστορία, που συνδέεται με τη ρουμανική μοναρχία.</li>
                     </ul>
 
                     <p className="mb-4 text-justify">
@@ -250,7 +250,7 @@ function Bucharest() {
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Ξεκινήστε την περιήγησή σας από την περιοχή της <strong>Πλατείας Επανάστασης</strong>. Εδώ μπορείτε να δείτε την εντυπωσιακή <strong>Central University Library Carol I</strong>. Ακριβώς δίπλα βρίσκεται το <strong>Romanian Athenaeum</strong>, ένα εκπληκτικό κτίριο που στεγάζει τη Φιλαρμονική <strong>"George Enescu"</strong> και φιλοξενεί πολλές συναυλίες. Η είσοδος κοστίζει <strong>10 lei</strong> (μόνο μετρητά) για να δείτε το εσωτερικό του.
+                        Ξεκινήστε την περιήγησή σας από την περιοχή της <strong>Πλατείας Επανάστασης</strong>. Εδώ μπορείτε να δείτε την εντυπωσιακή <strong>Central University Library Carol I</strong>. Ακριβώς δίπλα βρίσκεται το <strong>Romanian Athenaeum</strong>, ένα εκπληκτικό κτίριο που στεγάζει τη Φιλαρμονική <strong>George Enescu</strong> και φιλοξενεί πολλές συναυλίες. Η είσοδος κοστίζει <strong>10 lei</strong> (μόνο μετρητά) για να δείτε το εσωτερικό του.
                     </p>
 
                     <p className="mb-4 text-justify">
@@ -262,7 +262,7 @@ function Bucharest() {
                     </p>
 
                     <p className="mb-4 text-justify">
-                        Συνεχίζοντας βορειότερα (με τα πόδια ή μέσο μεταφοράς), θα φτάσετε στο <strong>Arcul de Triumf</strong> - την αψίδα του θριάμβου του Βουκουρεστίου. Κοντά βρίσκεται το <strong>"Dimitrie Gusti" National Village Museum</strong>, ένα μοναδικό υπαίθριο μουσείο με παραδοσιακά ρουμανικά σπίτια, εκκλησίες και αγροκτήματα από όλη τη χώρα.
+                        Συνεχίζοντας βορειότερα (με τα πόδια ή μέσο μεταφοράς), θα φτάσετε στο <strong>Arcul de Triumf</strong> - την αψίδα του θριάμβου του Βουκουρεστίου. Κοντά βρίσκεται το <strong>Dimitrie Gusti National Village Museum</strong>, ένα μοναδικό υπαίθριο μουσείο με παραδοσιακά ρουμανικά σπίτια, εκκλησίες και αγροκτήματα από όλη τη χώρα.
                     </p>
 
                     <p className="mb-4 text-justify">
@@ -305,7 +305,7 @@ function Bucharest() {
                         <ul className="list-disc pl-6 space-y-2">
                             <li><strong>Κάστρο Peleș:</strong> Εντυπωσιακό νεο-αναγεννησιακό κάστρο</li>
                             <li><strong>Μπρασόβ (Brașov):</strong> Μια μικρή μεσαιωνική πόλη με τη Μαύρη Εκκλησία</li>
-                            <li><strong>Κάστρο Μπραν (Bran Castle):</strong> Το θρυλικό "Κάστρο του Δράκουλα", συνδεδεμένο με τον θρύλο του Βλαντ Τέπες.</li>
+                            <li><strong>Κάστρο Μπραν (Bran Castle):</strong> Το θρυλικό Κάστρο του Δράκουλα, συνδεδεμένο με τον θρύλο του Βλαντ Τέπες.</li>
                         </ul>
                     </div>
                     <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="2" data-gyg-partner-id="0OAQQKO" data-gyg-tour-ids="151028,135264"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/bucharest-l111/">GetYourGuide</a></span></div></div>
