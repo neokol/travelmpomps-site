@@ -69,80 +69,41 @@ const barcelonaItems = [
 
 const firstDayImages = [
     {
-        image: '/vienna/Stephansplatz.jpg',
-        header: 'Stephansplatz'
+        image: '/bucharest/river.jpg',
+        header: 'Dambovita River'
     },
     {
-        image: '/vienna/demel.jpg',
-        header: 'Demel'
+        image: '/bucharest/curturesti.jpg',
+        header: 'Cărturești Carusel'
     },
     {
-        image: '/vienna/Votive_Church.png',
-        header: 'Votive Church'
+        image: '/bucharest/museum.jpg',
+        header: 'National Museum'
     },
     {
-        image: '/vienna/MuseumsQuartier.png',
-        header: 'MuseumsQuartier'
+        image: '/bucharest/monastery.jpg',
+        header: 'Stavropoleos Monastery'
     }
 ];
 
 const secondDayImages = [
     {
-        image: '/vienna/Karlskirche.jpg',
-        header: 'Karlskirche'
+        image: '/bucharest/athenium.jpg',
+        header: 'Romanian Athenaeum'
     },
     {
-        image: '/vienna/Palais_Daun-Kinsky.png',
-        header: 'Palais Daun-Kinsky'
+        image: '/bucharest/village.jpg',
+        header: 'Village Museum'
     },
     {
-        image: '/vienna/Albertina.png',
-        header: 'Albertina'
+        image: '/bucharest/arc.jpg',
+        header: 'Arcul de Triumf'
     },
     {
-        image: '/vienna/Belvedere.png',
-        header: 'Belvedere'
+        image: '/bucharest/biblioteca.jpg',
+        header: 'University Library'
     }
 ];
-
-const thirdDayImages = [
-    {
-        image: '/vienna/Karlskirche.jpg',
-        header: 'Karlskirche'
-    },
-    {
-        image: '/vienna/Hofburg.jpg',
-        header: 'Hofburg'
-    },
-    {
-        image: '/vienna/Austrian_Parliament.jpg',
-        header: 'Austrian Parliament'
-    },
-    {
-        image: '/vienna/Sisi_museum.png',
-        header: 'Sisi Museum'
-    }
-];
-
-const fourthDayImages = [
-    {
-        image: '/vienna/Gloriette.jpg',
-        header: 'Gloriette'
-    },
-    {
-        image: '/vienna/Stadtpark.png',
-        header: 'Stadtpark'
-    },
-    {
-        image: '/vienna/Hundertwasser.png',
-        header: 'Hundertwasser'
-    },
-    {
-        image: '/vienna/Schonbrunn_Inside.png',
-        header: 'Schonbrunn'
-    }
-];
-
 
 
 function Bucharest() {
