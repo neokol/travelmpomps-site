@@ -1,52 +1,30 @@
-import Navbar from "./components/Navbar";
-import { Carousel } from "./components/Carousel";
-import { Card1 } from "./components/Card1";
-import { PageFooter } from "./components/Footer"
-import { Hero } from "./components/Hero";
-import { Explore } from "./components/Explore";
-import Head from 'next/head';
+import DestinationsSection from "./components/DestinationSection";
+import { PageFooter } from "./components/Footer";
+import JourneySection from "./components/JourneySection";
+import LandingHero from "./components/LandingHero";
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#F8F6FE]">
-      <Head>
-        <title>Travel Tips - Travel Guides</title>
-        <link
-          rel="canonical"
-          href="https://travelmpomps.gr"
-          key="canonical"
-        />
-        <meta
-          name="description"
-          content="Travel guides, travel suggestions and travel itineraries"
-          key="desc"
-        />
-      </Head>
-      {/* Hero Section */}
-      <div className="pt-20 md:pt-24"><Hero /></div>  {/* Ensure spacing between Hero and Navbar */}
-      
-      {/* Navbar */}
-      <Navbar />
-
-      {/* Card1 */}
-      <div className="py-0 md:py-4">
-        <Card1 />
-      </div>
-
-      {/* Explore Section */}
-      <div className="pt-50 md:pt-10">
-        <Explore />
-      </div>
-
-      {/* Carousel */}
-      <div className="pt-10 md:pt-10">
-        <Carousel />
-      </div>
-      
-      {/* Footer */}
+    <main>
+      <LandingHero />
+      {/* Other sections of your page will go here */}
+      <JourneySection />
+      <section className="w-full">
+        <div className="relative w-full h-[100px] md:h-[300px]"> {/* Adjust height as needed */}
+          <Image
+            src="/images/travel_quote.png" // Replace with your image path
+            alt="Travel Quote"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+      </section>
+      <DestinationsSection />
       <div className="pt-6 md:pt-10">
         <PageFooter />
       </div>
-    </div>
+    </main>
   );
 }
