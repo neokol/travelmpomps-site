@@ -18,13 +18,13 @@ export const PageFooter = () => {
             {/* Social Media Icons */}
             <div className="flex justify-center gap-8 mb-8">
                 <a href="https://instagram.com/travelmpomps/">
-                    <BsInstagram className="text-4xl text-[#22333B] hover:text-[#F76808] transition-all duration-300" />
+                    <BsInstagram className="text-4xl text-[#22333B] hover:text-[#E101A7] transition-all duration-300" />
                 </a>
                 <a href="https://tiktok.com/@travelmpomps">
-                    <AiFillTikTok className="text-4xl text-[#22333B] hover:text-[#F76808] transition-all duration-300" />
+                    <AiFillTikTok className="text-4xl text-[#22333B] hover:text-black transition-all duration-300" />
                 </a>
                 <a href="https://youtube.com/@Travelmpomps">
-                    <SiYoutubeshorts className="text-4xl text-[#22333B] hover:text-[#F76808] transition-all duration-300" />
+                    <SiYoutubeshorts className="text-4xl text-[#22333B] hover:text-[#FE0032] transition-all duration-300" />
                 </a>
             </div>
 
