@@ -59,18 +59,18 @@ function Destinations() {
 
             {/* Grid of Destinations */}
             <div className="p-12">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-0.5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 justify-items-center">
                     {destinations.map((destination) => (
                         <Link
                             key={destination.slug}
                             href={`/destinations/${destination.slug}`}
-                            className="flex justify-center"
+                            className="flex justify-center p-1"
                         >
                             <Image
-                                className="rounded-lg shadow-xl"
+                                className="w-full h-auto rounded-lg shadow-xl hover:scale-105 transition-transform duration-300"
                                 src={destination.image}
-                                width={300}
-                                height={300}
+                                width={250}
+                                height={250}
                                 alt={destination.name}
                             />
                         </Link>
