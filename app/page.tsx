@@ -11,7 +11,7 @@ export default function Home() {
       {/* Other sections of your page will go here */}
       <JourneySection />
       <section className="w-full">
-        <div className="relative w-full h-[100px] md:h-[300px]"> {/* Adjust height as needed */}
+        <div className="relative w-full h-[100px] md:h-[300px] bg-[#F7F7F7]"> {/* Adjust height as needed */}
           <Image
             src="/images/travel_quote.png" // Replace with your image path
             alt="Travel Quote"
