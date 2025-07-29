@@ -20,11 +20,11 @@ export default function LandingHero() {
 
             {/* Hero Content */}
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center z-1 px-4">
-                <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6">
+                <h1 className="text-white text-xl sm:text-3xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
                     Ολοκληρωμένοι Οδηγοί Ταξιδιού
                 </h1>
 
-                <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-4 md:mb-8 tracking-wide rounded-full px-4 py-2 md:px-8 md:py-4 bg-[rgba(190,188,188,0.3)]">
+                <h3 className="text-white text-lg sm:text-xl md:text-2xl lg:text-xl font-bold mb-4 md:mb-8 tracking-wide rounded-full px-4 py-2 md:px-8 md:py-4 bg-[rgba(190,188,188,0.3)]">
                     Αναλυτικά Προγράμματα και Πρακτικές Συμβουλές για την Περιπέτειά σας
                 </h3>
                 <Link
