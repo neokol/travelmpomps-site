@@ -10,6 +10,7 @@ import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
 import Head from 'next/head';
+import { Metadata } from 'next';
 
 const berlinItems = [
     {
@@ -63,6 +64,11 @@ const berlinImages = [
     }
 ];
 
+export const metadata: Metadata = {
+    title: "Βερολίνο, τι να δω και τι να κάνω  | Travelmpomps",
+    description: "Ταξιδωτικός Οδηγός για το Βερολίνο - Τι να δω και τι να κάνω στο Βερολίνο",
+    keywords: "Βερολίνο, Γερμανία, ταξιδιωτικός οδηγός, αξιοθέατα, μεταφορές, διαμονή, δραστηριότητες",
+}
 
 function Berlin() {
     return (

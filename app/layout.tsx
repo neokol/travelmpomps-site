@@ -35,7 +35,18 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     description: "Δωρεάν Ολοκληρωμένος ταξιδιωτικός οδηγός για προορισμούς στην Ευρώπη και την Ελλάδα. Ανακαλύψτε τα καλύτερα μέρη για να επισκεφθείτε, να φάτε και να διασκεδάσετε.",
-  }
+    images: [
+      {
+        url: "/images/open-graph.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Title",
+      }
+    ]
+  },
+  icons: {
+    icon: "/travelmpomps.png"
+  },
 };
 
 export default function RootLayout({

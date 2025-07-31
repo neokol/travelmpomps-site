@@ -6,12 +6,18 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import { PageFooter } from "../components/Footer"
 import Head from 'next/head';
+import { Metadata } from "next";
 
 interface Destination {
     name: string;
     slug: string;
     image: string;
 }
+
+export const metadata: Metadata = {
+    title: "Προορισμοί | Travelmpomps",
+}
+
 
 function Destinations() {
     // Your destinations array

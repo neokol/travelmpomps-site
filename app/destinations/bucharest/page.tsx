@@ -11,6 +11,7 @@ import Image from 'next/image';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
 import Head from 'next/head';
+import { Metadata } from 'next';
 
 const barcelonaItems = [
     {
@@ -105,6 +106,11 @@ const secondDayImages = [
     }
 ];
 
+export const metadata: Metadata = {
+    title: "Βουκουρέστι, τι να δω και τι να κάνω  | Travelmpomps",
+    description: "Ταξιδωτικός Οδηγός για το Βουκουρέστι - Τι να δω και τι να κάνω στο Βουκουρέστι",
+    keywords: "Βουκουρέστι, Ρουμανία, ταξιδιωτικός οδηγός, αξιοθέατα, μεταφορές, διαμονή, δραστηριότητες",
+}
 
 function Bucharest() {
     return (

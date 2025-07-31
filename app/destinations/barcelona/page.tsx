@@ -11,6 +11,7 @@ import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
 import Head from 'next/head';
+import { Metadata } from 'next';
 
 const barcelonaItems = [
     {
@@ -161,6 +162,12 @@ const fifthDayImages = [
         header: 'Montjuïc Castle'
     }
 ];
+
+export const metadata: Metadata = {
+    title: "Βαρκελώνη, τι να δω και τι να κάνω  | Travelmpomps",
+    description: "Ταξιδωτικός Οδηγός για την Βαρκελώνη - Τι να δω και τι να κάνω στην Βαρκελώνη",
+    keywords: "Βαρκελώνη, Ισπανία, ταξιδιωτικός οδηγός, αξιοθέατα, μεταφορές, διαμονή, δραστηριότητες"
+}
 
 function Barcelona() {
     return (

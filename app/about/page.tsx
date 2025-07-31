@@ -3,6 +3,12 @@ import Navbar from '../components/Navbar';
 import { PageFooter } from "../components/Footer";
 import Image from 'next/image'; // Import the Image component from Next.js
 import Head from 'next/head';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Σχετικά με εμάς | Travelmpomps",
+}
+
 
 function About() {
     return (

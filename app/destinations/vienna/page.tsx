@@ -11,6 +11,7 @@ import Image from 'next/image';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
 import Head from 'next/head';
+import { Metadata } from 'next';
 
 const barcelonaItems = [
     {
@@ -143,7 +144,11 @@ const fourthDayImages = [
     }
 ];
 
-
+export const metadata: Metadata = {
+    title: "Βιέννη, τι να δω και τι να κάνω  | Travelmpomps",
+    description: "Ταξιδωτικός Οδηγός για την Βιέννη - Τι να δω και τι να κάνω στην Βιέννη",
+    keywords: "Βιέννη, Αυστρία, ταξιδιωτικός οδηγός, αξιοθέατα, μεταφορές, διαμονή, δραστηριότητες"
+}
 
 function Vienna() {
     return (
