@@ -13,8 +13,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://travelmpomps.gr"),
   title: "Travelmpomps | Travel Tips",
   description: "Travel Tips",
+  keywords: [
+    "travel",
+    "tips",
+    "advice",
+    "destinations",
+    "travelmpomps",
+    "travel guide",
+    "ταξιδιωτικός οδηγός",
+    "ταξίδια",
+    "τι να κάνω",
+    "τι να δω",
+    "προορισμοί",
+    "ταξιδιωτικές συμβουλές",
+    "ταξιδιωτικά tips",
+    "ταξίδια στην Ευρώπη",
+    "ταξίδια στην Ελλάδα"
+  ],
+  openGraph: {
+    description: "Δωρεάν Ολοκληρωμένος ταξιδιωτικός οδηγός για προορισμούς στην Ευρώπη και την Ελλάδα. Ανακαλύψτε τα καλύτερα μέρη για να επισκεφθείτε, να φάτε και να διασκεδάσετε.",
+  }
 };
 
 export default function RootLayout({
