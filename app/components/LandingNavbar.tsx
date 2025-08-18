@@ -92,7 +92,7 @@ function LandingNavbar() {
                         About
                     </Link>
                     <Link
-                        href="/blog"
+                        href="/"
                         onClick={handleNavItemClick}
                         className="px-3 py-2 font-bold text-white hover:text-[#F76808] transition-colors duration-200"
                     >
@@ -173,7 +173,7 @@ function LandingNavbar() {
                                 About
                             </Link>
                             <Link
-                                href="/blog"
+                                href="/"
                                 onClick={handleNavItemClick}
                                 className="block px-4 py-3 font-bold text-white hover:text-[#F76808] text-xl"
                             >
