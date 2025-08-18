@@ -41,27 +41,27 @@ const barcelonaItems = [
 
 const barcelonaImages = [
     {
-        image: '/barcelona/sagrada-familia.webp',
+        image: '/barcelona/sagrada-familia.png',
         header: 'Sagrada Familia',
         text: 'Gaudí’s awe-inspiring basilica, an emblem of Barcelona with towering spires and intricate facades.'
     },
     {
-        image: '/barcelona/casa-batllo.webp',
+        image: '/barcelona/casa-batllo.png',
         header: 'Casa Batllo',
         text: 'A vibrant Modernist masterpiece by Gaudí, famous for its striking, nature-inspired design.'
     },
     {
-        image: '/barcelona/mercat-de-la-boqueria.webp',
+        image: '/barcelona/mercat-de-la-boqueria.png',
         header: 'Mercat de la Boqueria',
         text: 'A lively, historic market brimming with local flavors, fresh produce, and Catalan specialties.'
     },
     {
-        image: '/barcelona/gothic-quarter.webp',
+        image: '/barcelona/gothic-quarter.png',
         header: 'Gothic Quarter',
         text: 'Barcelona’s medieval core, where narrow cobblestone streets and hidden plazas reveal centuries of history.'
     },
     {
-        image: '/barcelona/fc-barcelona-museum.webp',
+        image: '/barcelona/fc-barcelona-museum.png',
         header: 'FC Barcelona Museum',
         text: 'Immerse yourself in the rich legacy of one of the world’s greatest football clubs, showcasing trophies and memorabilia.'
     }
@@ -70,95 +70,95 @@ const barcelonaImages = [
 
 const firstDayImages = [
     {
-        image: '/barcelona/cathedral-barcelona.webp',
+        image: '/barcelona/cathedral-barcelona.png',
         header: 'Καθεδρικός'
     },
     {
-        image: '/barcelona/la-rambla.webp',
+        image: '/barcelona/la-rambla.png',
         header: 'La Rambla'
     },
     {
-        image: '/barcelona/placa-reial.webp',
+        image: '/barcelona/placa-reial.png',
         header: 'Placa Reial'
     },
     {
-        image: '/barcelona/world-kiss.webp',
+        image: '/barcelona/world-kiss.png',
         header: 'The World Comes To Life With Each Kiss'
     }
 ];
 
 const secondDayImages = [
     {
-        image: '/barcelona/palau-musica.webp',
+        image: '/barcelona/palau-musica.jpg',
         header: 'Palau de la Musica'
     },
     {
-        image: '/barcelona/barceloneta.webp',
+        image: '/barcelona/barceloneta.png',
         header: 'Barceloneta'
     },
     {
-        image: '/barcelona/ciutadella-park.webp',
+        image: '/barcelona/ciutadella-park.jpg',
         header: 'Ciutadella Park'
     },
     {
-        image: '/barcelona/Santa-Maria-del-Mar.webp',
+        image: '/barcelona/Santa-Maria-del-Mar.png',
         header: 'Santa Maria del Mar'
     }
 ];
 
 const thirdDayImages = [
     {
-        image: '/barcelona/in-casa-batllo.webp',
+        image: '/barcelona/in-casa-batllo.png',
         header: 'Casa Batllo'
     },
     {
-        image: '/barcelona/casa-milas.webp',
+        image: '/barcelona/casa-milas.png',
         header: 'Casa Milas'
     },
     {
-        image: '/barcelona/mercat.webp',
+        image: '/barcelona/mercat.png',
         header: 'Mercat de la Boqueria'
     },
     {
-        image: '/barcelona/sant-pau.webp',
+        image: '/barcelona/sant-pau.png',
         header: 'Sant Pau'
     }
 ];
 
 const fourthDayImages = [
     {
-        image: '/barcelona/park-guell.webp',
+        image: '/barcelona/park-guell.png',
         header: 'Park Guell'
     },
     {
-        image: '/barcelona/casa-vicens.webp',
+        image: '/barcelona/casa-vicens.png',
         header: 'Casa Vicens'
     },
     {
-        image: '/barcelona/bellesguard.webp',
+        image: '/barcelona/bellesguard.png',
         header: 'Torre Bellesguard'
     },
     {
-        image: '/barcelona/cosmo-caixa.webp',
+        image: '/barcelona/cosmo-caixa.png',
         header: 'CosmoCaixa'
     }
 ];
 
 const fifthDayImages = [
     {
-        image: '/barcelona/barcelona-art.webp',
+        image: '/barcelona/barcelona-art.png',
         header: 'Art Museum'
     },
     {
-        image: '/barcelona/fc-barca.webp',
+        image: '/barcelona/fc-barca.png',
         header: 'FC Barcelona'
     },
     {
-        image: '/barcelona/poble.webp',
+        image: '/barcelona/poble.png',
         header: 'Poble Espanyol'
     },
     {
-        image: '/barcelona/monjuic.webp',
+        image: '/barcelona/monjuic.png',
         header: 'Montjuïc Castle'
     }
 ];
