@@ -13,6 +13,7 @@ export default function LandingHero() {
                 fill
                 className="object-cover"
                 priority
+                quality={80}
             />
 
             <LandingNavbar />
