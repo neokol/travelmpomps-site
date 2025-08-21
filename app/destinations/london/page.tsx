@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '@/app/components/Navbar'
-import { ImageGallery } from '@/app/components/ImageGallery'
+// import { ImageGallery } from '@/app/components/ImageGallery'
 import { Widget2 } from '@/app/components/Widget2'
 import { FaCoins } from "react-icons/fa";
 import { VscRadioTower } from "react-icons/vsc";
