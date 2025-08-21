@@ -22,7 +22,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             slug: 'bucharest',
             name: 'Bucharest',
             lastUpdated: '2025-07-31'
-        }
+        },
+        {
+            slug: 'london',
+            name: 'London',
+            lastUpdated: '2025-08-22'
+        },
     ];
 
     return [
