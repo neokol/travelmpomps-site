@@ -26,7 +26,7 @@ export default function JourneySection() {
         },
         {
             title: "Λονδίνο",
-            description: "London Bridge",
+            description: "Tower Bridge",
             image: "/images/5.png"
         }
     ];
