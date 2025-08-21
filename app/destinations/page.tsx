@@ -39,6 +39,11 @@ function Destinations() {
             name: "Βουκουρέστι",
             slug: "bucharest",
             image: "/destinations/insta_bucharest.jpg",
+        },
+        {
+            name: "Λονδίνο",
+            slug: "london",
+            image: "/destinations/insta_london.jpg",
         }
 
     ];
