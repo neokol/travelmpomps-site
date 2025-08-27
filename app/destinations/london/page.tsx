@@ -202,7 +202,7 @@ function London() {
                                 <li><strong>The Notting Hill Bookshop</strong>: Το βιβλιοπωλείο από την ομώνυμη ταινία</li>
                                 <li><strong>Westbourne Grove</strong>: Όμορφος εμπορικός δρόμος</li>
                                 <li><strong>Notting Hill Bag</strong>: Μαγαζί με τσάντες και χρωματιστά κτίρια</li>
-                                <li><strong>Cheeky Scone</strong>: Viral μαγαζί με σcones διάφορων γεύσεων</li>
+                                <li><strong>Cheeky Scone</strong>: Viral μαγαζί με scones διάφορων γεύσεων</li>
                             </ul>
                         </div>
 
