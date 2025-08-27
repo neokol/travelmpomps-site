@@ -28,6 +28,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             name: 'London',
             lastUpdated: '2025-08-22'
         },
+        {
+            slug: 'budapest',
+            name: 'Budapest',
+            lastUpdated: '2025-08-27'
+        },
     ];
 
     return [

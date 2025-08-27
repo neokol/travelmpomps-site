@@ -80,6 +80,13 @@ function Navbar() {
                                     >
                                         Λονδίνο
                                     </Link>
+                                    <Link
+                                        href="/destinations/budapest"
+                                        onClick={handleNavItemClick}
+                                        className="block px-4 py-2 text-[#2E2E2F] hover:bg-gray-100"
+                                    >
+                                        Βουδαπέστη
+                                    </Link>
                                     {/* Add more dropdown links as needed */}
                                 </div>
                             )}
