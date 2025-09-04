@@ -49,6 +49,11 @@ function Destinations() {
             name: "Βουδαπέστη",
             slug: "budapest",
             image: "/destinations/insta_budapest.jpg",
+        },
+        {
+            name: "Κρακοβία",
+            slug: "krakow",
+            image: "/destinations/insta_krakow.jpg",
         }
 
     ];

@@ -33,6 +33,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             name: 'Budapest',
             lastUpdated: '2025-08-27'
         },
+        {
+            slug: 'krakow',
+            name: 'Krakow',
+            lastUpdated: '2025-09-04'
+        },
     ];
 
     return [
