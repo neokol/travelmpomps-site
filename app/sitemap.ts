@@ -38,6 +38,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             name: 'Krakow',
             lastUpdated: '2025-09-04'
         },
+        {
+            slug: 'warsaw',
+            name: 'Warsaw',
+            lastUpdated: '2025-09-12'
+        },
     ];
 
     return [

@@ -54,6 +54,11 @@ function Destinations() {
             name: "Κρακοβία",
             slug: "krakow",
             image: "/destinations/insta_krakow.jpg",
+        },
+        {
+            name: "Βαρσοβία",
+            slug: "warsaw",
+            image: "/destinations/insta_warsaw.jpg",
         }
 
     ];
