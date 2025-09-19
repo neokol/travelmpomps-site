@@ -59,6 +59,11 @@ function Destinations() {
             name: "Βαρσοβία",
             slug: "warsaw",
             image: "/destinations/insta_warsaw.jpg",
+        },
+        {
+            name: "Ρώμη",
+            slug: "rome",
+            image: "/destinations/insta_rome.jpg",
         }
 
     ];
@@ -66,7 +71,7 @@ function Destinations() {
     return (
         <div className="min-h-screen pt-22">
             <Head>
-                <title>Travel Guides </title>
+                <title>Ταξιδιωτικοί Οδηγοί</title>
                 <link
                     rel="canonical"
                     href="https://travelmpomps.gr/destinations/"
