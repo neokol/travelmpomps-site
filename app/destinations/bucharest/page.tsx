@@ -190,7 +190,7 @@ function Bucharest() {
                 <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-tour-ids="444964,492833,982185"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/bucharest-l111/">GetYourGuide</a></span></div></div>
                 <div className="mt-8">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
-                        3. Διαμονή
+                        3. Διαμονή στο Βουκουρέστι
                     </h2>
                     <p className="mb-4 text-justify">
                         Η Παλιά Πόλη του Βουκουρεστίου είναι η ιδανική περιοχή για διαμονή, ειδικά αν επισκέπτεστε την πόλη για πρώτη φορά.
