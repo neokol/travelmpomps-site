@@ -127,7 +127,7 @@ function LandingNavbar() {
                         About
                     </Link>
                     <Link
-                        href="/"
+                        href="/blog"
                         onClick={handleNavItemClick}
                         className="px-3 py-2 font-bold text-white hover:text-[#F76808] transition-colors duration-200"
                     >
