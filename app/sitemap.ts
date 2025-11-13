@@ -74,6 +74,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date('2025-07-31'),
             changeFrequency: 'yearly' as const,
             priority: 0.5,
+        },
+        {
+            url: `${baseUrl}/blog`,
+            lastModified: new Date('2025-11-13'),
+            changeFrequency: 'yearly' as const,
+            priority: 0.5,
+        },
+        {
+            url: `${baseUrl}/blog/christougenna-londino`,
+            lastModified: new Date('2025-11-13'),
+            changeFrequency: 'yearly' as const,
+            priority: 0.7,
         }
     ]
 }
