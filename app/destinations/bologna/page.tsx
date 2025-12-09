@@ -2,9 +2,9 @@ import React from 'react';
 // import Navbar from '../components/Navbar';
 // import { PageFooter } from "../components/Footer";
 import Image from 'next/image'; // Import the Image component from Next.js
-import Head from 'next/head';
+// import Head from 'next/head';
 import { Metadata } from 'next';
-import Link from "next/link";
+// import Link from "next/link";
 import Navbar from '@/app/components/Navbar';
 import { PageFooter } from '@/app/components/Footer';
 import Script from 'next/script'
