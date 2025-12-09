@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
-import Head from 'next/head';
+// import Head from 'next/head';
 import { Metadata } from 'next';
 
 const barcelonaItems = [
@@ -164,15 +164,33 @@ const fifthDayImages = [
 ];
 
 export const metadata: Metadata = {
-    title: "Βαρκελώνη, τι να δω και τι να κάνω  | Travelmpomps",
-    description: "Ταξιδωτικός Οδηγός για την Βαρκελώνη - Τι να δω και τι να κάνω στην Βαρκελώνη",
-    keywords: "Βαρκελώνη, Ισπανία, ταξιδιωτικός οδηγός, αξιοθέατα, μεταφορές, διαμονή, δραστηριότητες, βαρκελώνη αξιοθέατα"
+    // Τίτλος: Πλήρης και ενημερωμένος
+    title: "Βαρκελώνη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+
+    // Περιγραφή: Εστιάζουμε στον Γκαουντί (που ψάχνουν όλοι), στη Sagrada Família 
+    // και στο φαγητό (tapas), που είναι η ψυχή της πόλης.
+    description: "Ταξίδι στην καρδιά της Καταλονίας. Ο απόλυτος οδηγός για τη Βαρκελώνη: Sagrada Família, Park Güell, Γοτθική Συνοικία και τα καλύτερα tapas bars.",
+
+    // Canonical URL
+    alternates: {
+        canonical: 'https://travelmpomps.gr/destinations/barcelona',
+    },
+
+    // Open Graph (Social Media)
+    openGraph: {
+        title: 'Βαρκελώνη: Γκαουντί, Παραλίες και Tapas',
+        description: 'Ολα όσα πρέπει να δείτε στη Βαρκελώνη. Πλήρης οδηγός για αξιοθέατα, φαγητό και διαμονή στην πρωτεύουσα της Καταλονίας.',
+        url: 'https://travelmpomps.gr/destinations/barcelona',
+        siteName: 'Travelmpomps',
+        locale: 'el_GR',
+        type: 'article',
+    },
 }
 
 function Barcelona() {
     return (
         <div className="min-h-screen">
-            <Head>
+            {/* <Head>
                 <title>Βαρκελώνη Αξιοθέατα</title>
                 <link
                     rel="canonical"
@@ -184,7 +202,7 @@ function Barcelona() {
                     content="Ταξιδωτικός Οδηγός για την Βαρκελώνη | Τι να δω και τι να κάνω στην Βαρκελώνη"
                     key="desc"
                 />
-            </Head>
+            </Head> */}
             <div><Navbar /></div>
             <Script
                 async
@@ -195,7 +213,7 @@ function Barcelona() {
             {/* Content with Padding to Account for Navbar */}
             <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-60">
                 <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">
-                    Βαρκελώνη τι να δω και τι να κάνω
+                    Ταξίδι στη Βαρκελώνη: Η Πόλη του Γκαουντί και της Μεσογειακής Ζωής
                 </h1>
                 <p className="text-[#2E2E2F]">
                     Ανακαλύψτε την Βαρκελώνη μέσα από τον αναλυτικό οδηγό για 5 ημέρες στην πρωτεύουσα της Καταλονίας. Από την Sagrada Familia, την Γοτθική συνοικία έως την Barceloneta και την La Ramblas η Βαρκελώνη συνδυάζει την ιστορία με την νυχτερινή ζωή και την καλό φαγητό.

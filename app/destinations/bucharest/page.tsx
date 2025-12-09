@@ -10,7 +10,7 @@ import Image from 'next/image';
 // import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
-import Head from 'next/head';
+// import Head from 'next/head';
 import { Metadata } from 'next';
 
 const barcelonaItems = [
@@ -35,37 +35,6 @@ const barcelonaItems = [
         content: 'Φυσικά μιλάνε Ρουμανικά, όμως στα περισσότερα μαγαζία μπορούσαν να μιλήσουν αγγλικά και ήταν αρκετά εύκολο να συννενοηθούμε',
     },
 ];
-
-
-
-
-// const barcelonaImages = [
-//     {
-//         image: '/barcelona/sagrada-familia.webp',
-//         header: 'Sagrada Familia',
-//         text: 'Gaudí’s awe-inspiring basilica, an emblem of Barcelona with towering spires and intricate facades.'
-//     },
-//     {
-//         image: '/barcelona/casa-batllo.webp',
-//         header: 'Casa Batllo',
-//         text: 'A vibrant Modernist masterpiece by Gaudí, famous for its striking, nature-inspired design.'
-//     },
-//     {
-//         image: '/barcelona/mercat-de-la-boqueria.webp',
-//         header: 'Mercat de la Boqueria',
-//         text: 'A lively, historic market brimming with local flavors, fresh produce, and Catalan specialties.'
-//     },
-//     {
-//         image: '/barcelona/gothic-quarter.webp',
-//         header: 'Gothic Quarter',
-//         text: 'Barcelona’s medieval core, where narrow cobblestone streets and hidden plazas reveal centuries of history.'
-//     },
-//     {
-//         image: '/barcelona/fc-barcelona-museum.webp',
-//         header: 'FC Barcelona Museum',
-//         text: 'Immerse yourself in the rich legacy of one of the world’s greatest football clubs, showcasing trophies and memorabilia.'
-//     }
-// ];
 
 
 const firstDayImages = [
@@ -107,15 +76,32 @@ const secondDayImages = [
 ];
 
 export const metadata: Metadata = {
-    title: "Βουκουρέστι, τι να δω και τι να κάνω  | Travelmpomps",
-    description: "Ταξιδωτικός Οδηγός για το Βουκουρέστι - Τι να δω και τι να κάνω στο Βουκουρέστι",
-    keywords: "Βουκουρέστι, Ρουμανία, ταξιδιωτικός οδηγός, αξιοθέατα, μεταφορές, διαμονή, δραστηριότητες",
+    // Τίτλος: Δυνατός, με χρονολογία και ξεκάθαρη υπόσχεση
+    title: "Βουκουρέστι: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+
+    // Περιγραφή: Εδώ παίζουμε με τα "δυνατά χαρτιά" του Βουκουρεστίου: Therme & Παλιά Πόλη
+    description: "Ανακαλύψτε το «Μικρό Παρίσι» της Ανατολής. Ο απόλυτος οδηγός για το Βουκουρέστι: Therme, Παλάτι της Βουλής, φαγητό και νυχτερινή ζωή στην Παλιά Πόλη.",
+
+    // Canonical URL
+    alternates: {
+        canonical: 'https://travelmpomps.gr/destinations/bucharest',
+    },
+
+    // Open Graph (Social Media)
+    openGraph: {
+        title: 'Βουκουρέστι: Ο απόλυτος οδηγός για Therme και αξιοθέατα',
+        description: 'Τι να κάνετε στο Βουκουρέστι; Όλα τα tips για ένα οικονομικό και πολυτελές city break στη Ρουμανία.',
+        url: 'https://travelmpomps.gr/destinations/bucharest',
+        siteName: 'Travelmpomps',
+        locale: 'el_GR',
+        type: 'article',
+    },
 }
 
 function Bucharest() {
     return (
         <div className="min-h-screen">
-            <Head>
+            {/* <Head>
                 <title>Βουκουρέστι Αξιοθέατα</title>
                 <link
                     rel="canonical"
@@ -127,7 +113,7 @@ function Bucharest() {
                     content="Ταξιδωτικός Οδηγός για το Βουκουρέστι | Τι να δω και τι να κάνω στο Βουκουρέστι"
                     key="desc"
                 />
-            </Head>
+            </Head> */}
             <div><Navbar /></div>
             <Script
                 async
@@ -139,7 +125,7 @@ function Bucharest() {
             <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-60">
 
                 <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">
-                    Βουκουρέστι, τι να δω και τι να κάνω
+                    Ταξίδι στο Βουκουρέστι: Therme, Αξιοθέατα και Tips για το «Μικρό Παρίσι»
                 </h1>
 
                 {/* Main picture */}

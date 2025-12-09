@@ -10,7 +10,7 @@ import Image from 'next/image';
 // import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
-import Head from 'next/head';
+// import Head from 'next/head';
 import { Metadata } from 'next';
 
 const barcelonaItems = [
@@ -75,15 +75,33 @@ const barcelonaItems = [
 // ];
 
 export const metadata: Metadata = {
-    title: "Λονδίνο, τι να δω και τι να κάνω  | Travelmpomps",
-    description: "Ταξιδωτικός Οδηγός για το Λονδίνο - Τι να δω και τι να κάνω στο Λονδίνο",
-    keywords: "Λονδίνο, Αγγλία, ταξιδιωτικός οδηγός, αξιοθέατα, μεταφορές, διαμονή, δραστηριότητες, Λονδίνο αξιοθέατα, Λονδίνο ταξίδια, Λονδίνο διαμονή, Λονδίνο μεταφορές",
+    // Τίτλος: Δυνατός και ξεκάθαρος
+    title: "Λονδίνο: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+
+    // Περιγραφή: Στο Λονδίνο πρέπει να καλύψεις τα "Big Three" (Big Ben, London Eye)
+    // αλλά και τα "δωρεάν" μουσεία, γιατί είναι ακριβή πόλη και αυτό ενδιαφέρει πολύ.
+    description: "Ταξίδι στην πρωτεύουσα της Αγγλίας. Ο απόλυτος οδηγός για το Λονδίνο: Αξιοθέατα (Big Ben, London Eye), δωρεάν μουσεία, αγορές και tips για οικονομική διαμονή.",
+
+    // Canonical URL
+    alternates: {
+        canonical: 'https://travelmpomps.gr/destinations/london',
+    },
+
+    // Open Graph (Social Media)
+    openGraph: {
+        title: 'Λονδίνο: Αξιοθέατα, Μουσεία και Tips',
+        description: 'Ο απόλυτος οδηγός για το Λονδίνο. Μάθετε πώς να δείτε τα βασικά αξιοθέατα και πού να φάτε οικονομικά.',
+        url: 'https://travelmpomps.gr/destinations/london',
+        siteName: 'Travelmpomps',
+        locale: 'el_GR',
+        type: 'article',
+    },
 }
 
 function London() {
     return (
         <div className="min-h-screen">
-            <Head>
+            {/* <Head>
                 <title>Λονδίνο Αξιοθέατα</title>
                 <link
                     rel="canonical"
@@ -95,7 +113,7 @@ function London() {
                     content="Ταξιδωτικός Οδηγός για το Λονδίνο | Τι να δω και τι να κάνω στο Λονδίνο"
                     key="desc"
                 />
-            </Head>
+            </Head> */}
             <div><Navbar /></div>
             <Script
                 async
@@ -107,7 +125,7 @@ function London() {
             <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-60">
 
                 <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">
-                    Λονδίνο, τι να δω και τι να κάνω
+                    Ταξίδι στο Λονδίνο: Οδηγός για Αξιοθέατα, Μουσεία και Εμπειρίες
                 </h1>
 
                 {/* Main picture */}

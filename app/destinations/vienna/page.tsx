@@ -10,7 +10,7 @@ import Image from 'next/image';
 // import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
-import Head from 'next/head';
+// import Head from 'next/head';
 import { Metadata } from 'next';
 
 const barcelonaItems = [
@@ -145,15 +145,33 @@ const fourthDayImages = [
 ];
 
 export const metadata: Metadata = {
-    title: "Βιέννη, τι να δω και τι να κάνω  | Travelmpomps",
-    description: "Ταξιδωτικός Οδηγός για την Βιέννη - Τι να δω και τι να κάνω στην Βιέννη",
-    keywords: "Βιέννη, Αυστρία, ταξιδιωτικός οδηγός, αξιοθέατα, μεταφορές, διαμονή, δραστηριότητες"
+    // Τίτλος: Ελκυστικός και πλήρης
+    title: "Βιέννη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+
+    // Περιγραφή: Αναφέρουμε τα ανάκτορα (Schönbrunn/Belvedere), την κουλτούρα του καφέ 
+    // και τη μουσική, που είναι ταυτισμένα με τη Βιέννη.
+    description: "Ταξίδι στην αυτοκρατορική πρωτεύουσα. Ο απόλυτος οδηγός για τη Βιέννη: Ανάκτορα Schönbrunn και Belvedere, όπερα, βιεννέζικα καφέ και schnitzel.",
+
+    // Canonical URL
+    alternates: {
+        canonical: 'https://travelmpomps.gr/destinations/vienna',
+    },
+
+    // Open Graph (Social Media)
+    openGraph: {
+        title: 'Βιέννη: Ανάκτορα, Μουσεία και Βιεννέζικη Κουλτούρα',
+        description: 'Ανακαλύψτε τη μαγεία της Βιέννης. Πλήρης οδηγός για αξιοθέατα, φαγητό και διαμονή στην πόλη της μουσικής.',
+        url: 'https://travelmpomps.gr/destinations/vienna',
+        siteName: 'Travelmpomps',
+        locale: 'el_GR',
+        type: 'article',
+    },
 }
 
 function Vienna() {
     return (
         <div className="min-h-screen">
-            <Head>
+            {/* <Head>
                 <title>Βιέννη Αξιοθέατα</title>
                 <link
                     rel="canonical"
@@ -165,7 +183,7 @@ function Vienna() {
                     content="Ταξιδωτικός Οδηγός για την Βιέννη | Τι να δω και τι να κάνω στην Βιέννη"
                     key="desc"
                 />
-            </Head>
+            </Head> */}
             <div><Navbar /></div>
             <Script
                 async
@@ -177,7 +195,7 @@ function Vienna() {
             <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-60">
 
                 <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">
-                    Βιέννη τι να δω και τι να κάνω
+                    Ταξίδι στη Βιέννη: Η Αυτοκρατορική Πρωτεύουσα της Τέχνης και της Μουσικής
                 </h1>
 
                 {/* Main picture */}

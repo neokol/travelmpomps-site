@@ -10,7 +10,7 @@ import Image from 'next/image';
 // import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
-import Head from 'next/head';
+// import Head from 'next/head';
 import { Metadata } from 'next';
 
 const barcelonaItems = [
@@ -75,15 +75,33 @@ const barcelonaItems = [
 // ];
 
 export const metadata: Metadata = {
-    title: "Κρακοβία, τι να δω και τι να κάνω  | Travelmpomps",
-    description: "Ταξιδωτικός Οδηγός για την Κρακοβία - Τι να δω και τι να κάνω στην Κρακοβία",
-    keywords: "Κρακοβία, Πολωνία, ταξιδιωτικός οδηγός, αξιοθέατα, μεταφορές, διαμονή, δραστηριότητες, Κρακοβία αξιοθέατα, Κρακοβία ταξίδια, Κρακοβία διαμονή, Κρακοβία μεταφορές",
+    // Τίτλος: Κλασικός και δυνατός για SEO
+    title: "Κρακοβία: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+
+    // Περιγραφή: Εδώ πρέπει να βάλουμε τις λέξεις-κλειδιά που ψάχνουν όλοι:
+    // "Wawel", "Kazimierz" (Εβραϊκή Συνοικία) και "Άουσβιτς/Αλατωρυχεία" (γιατί όλοι πάνε από εκεί).
+    description: "Ταξίδι στην καρδιά της Πολωνίας. Ο απόλυτος οδηγός για την Κρακοβία: Παλιά Πόλη, Κάστρο Wawel, Εβραϊκή Συνοικία (Kazimierz) και κοντινές εκδρομές.",
+
+    // Canonical URL
+    alternates: {
+        canonical: 'https://travelmpomps.gr/destinations/krakow',
+    },
+
+    // Open Graph (Social Media)
+    openGraph: {
+        title: 'Κρακοβία: Αξιοθέατα, Φαγητό και Ιστορία',
+        description: 'Ολα όσα πρέπει να δείτε στην Κρακοβία. Από το κάστρο του Δράκου μέχρι την μποέμικη συνοικία Kazimierz.',
+        url: 'https://travelmpomps.gr/destinations/krakow',
+        siteName: 'Travelmpomps',
+        locale: 'el_GR',
+        type: 'article',
+    },
 }
 
 function Krakow() {
     return (
         <div className="min-h-screen">
-            <Head>
+            {/* <Head>
                 <title>Κρακοβία Αξιοθέατα</title>
                 <link
                     rel="canonical"
@@ -95,7 +113,7 @@ function Krakow() {
                     content="Ταξιδωτικός Οδηγός για τη Κρακοβία | Τι να δω και τι να κάνω στην Κρακοβία"
                     key="desc"
                 />
-            </Head>
+            </Head> */}
             <div><Navbar /></div>
             <Script
                 async
@@ -107,7 +125,7 @@ function Krakow() {
             <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-60">
 
                 <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">
-                    Κρακοβία τι να δω και τι να κάνω
+                    Ταξίδι στην Κρακοβία: Μεσαιωνική Γοητεία και Σύγχρονη Ζωή
                 </h1>
 
                 {/* Main picture */}
@@ -277,7 +295,7 @@ function Krakow() {
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         2η Ημέρα
                     </h3>
-                
+
 
                     <div className="mb-6">
                         <p className="mb-4 text-justify">

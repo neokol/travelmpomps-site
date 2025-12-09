@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import { PageFooter } from "../components/Footer"
-import Head from 'next/head';
+// import Head from 'next/head';
 import { Metadata } from "next";
 
 interface Destination {
@@ -13,7 +13,27 @@ interface Destination {
 }
 
 export const metadata: Metadata = {
-    title: "Προορισμοί | Travelmpomps",
+    // Τίτλος: Πρέπει να δείχνει ότι εδώ θα βρουν ΤΑ ΠΑΝΤΑ.
+    title: "Κορυφαίοι Ταξιδιωτικοί Προορισμοί & Οδηγοί (2025) | Travelmpomps",
+
+    // Περιγραφή: Αναφέρουμε γενικά την Ευρώπη και μερικές δημοφιλείς πόλεις ως "δόλωμα",
+    // καθώς και λέξεις όπως "city breaks" και "tips".
+    description: "Ανακαλύψτε τους καλύτερους προορισμούς για το επόμενο ταξίδι σας. Πλήρεις οδηγοί για Ευρώπη (Ρώμη, Λονδίνο, Βιέννη κ.α.), tips για οικονομικά city breaks και κρυμμένα διαμάντια.",
+
+    // Canonical URL
+    alternates: {
+        canonical: 'https://travelmpomps.gr/destinations',
+    },
+
+    // Open Graph (Social Media)
+    openGraph: {
+        title: 'Βρείτε τον επόμενο ταξιδιωτικό προορισμό | Travelmpomps',
+        description: 'Όλοι οι ταξιδιωτικοί οδηγοί συγκεντρωμένοι. Οργανώστε το τέλειο ταξίδι σε Ευρώπη και κόσμο με τους οδηγούς του Travelmpomps.',
+        url: 'https://travelmpomps.gr/destinations',
+        siteName: 'Travelmpomps',
+        locale: 'el_GR',
+        type: 'website', // <--- ΠΡΟΣΟΧΗ: Εδώ βάζουμε website γιατί είναι σελίδα κατηγορίας
+    },
 }
 
 
@@ -70,7 +90,7 @@ function Destinations() {
 
     return (
         <div className="min-h-screen pt-22">
-            <Head>
+            {/* <Head>
                 <title>Ταξιδιωτικοί Οδηγοί</title>
                 <link
                     rel="canonical"
@@ -82,13 +102,20 @@ function Destinations() {
                     content="Αναλυτικοί ταξιδιωτικοί οδηγοί"
                     key="desc"
                 />
-            </Head>
+            </Head> */}
             {/* Navbar */}
             <Navbar />
 
             {/* Grid of Destinations */}
             <div className="p-12">
+                <h1 className="text-3xl md:text-3xl font-bold text-[#2E2E2F] mb-4 text-center">
+                    Ανακαλύψτε τον Επόμενο Προορισμό σας
+                </h1>
+                {/* <p className="text-gray-600 max-w-2xl mx-auto">
+                    Εξερευνήστε τους αναλυτικούς οδηγούς μας για τις ομορφότερες πόλεις της Ευρώπης και οργανώστε το ταξίδι των ονείρων σας.
+                </p> */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 justify-items-center">
+                    
                     {destinations.map((destination) => (
                         <Link
                             key={destination.slug}

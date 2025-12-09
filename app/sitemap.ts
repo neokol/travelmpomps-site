@@ -6,47 +6,47 @@ export default function sitemap(): MetadataRoute.Sitemap {
         {
             slug: 'berlin',
             name: 'Berlin',
-            lastUpdated: '2025-07-31'
+            lastUpdated: '2025-12-09'
         },
         {
             slug: 'barcelona',
             name: 'Barcelona',
-            lastUpdated: '2025-07-31'
+            lastUpdated: '2025-12-09'
         },
         {
             slug: 'vienna',
             name: 'Vienna',
-            lastUpdated: '2025-07-31'
+            lastUpdated: '2025-12-09'
         },
         {
             slug: 'bucharest',
             name: 'Bucharest',
-            lastUpdated: '2025-07-31'
+            lastUpdated: '2025-12-09'
         },
         {
             slug: 'london',
             name: 'London',
-            lastUpdated: '2025-08-22'
+            lastUpdated: '2025-12-09'
         },
         {
             slug: 'budapest',
             name: 'Budapest',
-            lastUpdated: '2025-08-27'
+            lastUpdated: '2025-12-09'
         },
         {
             slug: 'krakow',
             name: 'Krakow',
-            lastUpdated: '2025-09-04'
+            lastUpdated: '2025-12-09'
         },
         {
             slug: 'warsaw',
             name: 'Warsaw',
-            lastUpdated: '2025-09-12'
+            lastUpdated: '2025-12-09'
         },
         {
             slug: 'rome',
             name: 'Rome',
-            lastUpdated: '2025-09-18'
+            lastUpdated: '2025-12-09'
         },
         {
             slug: 'bologna',

@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
-import Head from 'next/head';
+// import Head from 'next/head';
 import { Metadata } from 'next';
 
 const berlinItems = [
@@ -65,15 +65,32 @@ const berlinImages = [
 ];
 
 export const metadata: Metadata = {
-    title: "Βερολίνο, τι να δω και τι να κάνω  | Travelmpomps",
-    description: "Ταξιδωτικός Οδηγός για το Βερολίνο - Τι να δω και τι να κάνω στο Βερολίνο",
-    keywords: "Βερολίνο, Γερμανία, ταξιδιωτικός οδηγός, αξιοθέατα, μεταφορές, διαμονή, δραστηριότητες",
+    // Πιο δυνατός τίτλος με χρονολογία
+    title: "Βερολίνο: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+
+    // Η περιγραφή πρέπει να δείχνει την ποικιλία του Βερολίνου (Ιστορία + Vibes)
+    description: "Ανακαλύψτε το Βερολίνο: Από το Τείχος και την Πύλη του Βραδεμβούργου μέχρι τα κρυμμένα μπαρ και τα μουσεία. Ο απόλυτος οδηγός για αξιοθέατα, φαγητό και διαμονή.",
+
+    // Canonical URL
+    alternates: {
+        canonical: 'https://travelmpomps.gr/destinations/berlin',
+    },
+
+    // Open Graph για Social Media
+    openGraph: {
+        title: 'Βερολίνο: Ο απόλυτος ταξιδιωτικός οδηγός',
+        description: 'Τι να δω στο Βερολίνο; Πλήρης οδηγός για 3 ή 4 ημέρες στην γερμανική πρωτεύουσα.',
+        url: 'https://travelmpomps.gr/destinations/berlin',
+        siteName: 'Travelmpomps',
+        locale: 'el_GR',
+        type: 'article',
+    },
 }
 
 function Berlin() {
     return (
         <div className="min-h-screen">
-            <Head>
+            {/* <Head>
                 <title>Βερολίνο Αξιοθέατα</title>
                 <link
                     rel="canonical"
@@ -85,7 +102,7 @@ function Berlin() {
                     content="Ταξιδωτικός Οδηγός για το Βερολίνο | Τι να δω και τι να κάνω στο Βερολίνο"
                     key="desc"
                 />
-            </Head>
+            </Head> */}
             <div><Navbar /></div>
             <Script
                 async
@@ -96,7 +113,7 @@ function Berlin() {
             {/* Content with Padding to Account for Navbar */}
             <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-60">
                 <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">
-                    Βερολίνο: Τι να δω και τι να κάνω
+                    Ταξίδι στο Βερολίνο: Αξιοθέατα, Ιστορία και Εναλλακτική Ζωή
                 </h1>
                 <p className="text-[#2E2E2F]">
                     Εξερευνήστε το Βερολίνο, μια πόλη γεμάτη ιστορία, πολιτισμό και νέες
@@ -132,14 +149,17 @@ function Berlin() {
                         2. Μετακινήσεις στο Βερολίνο
                     </h2>
                     <p className='text-justify'>Το Βερολίνο είναι μια μεγάλη πόλη όπου θα χρησιμοποιήσετε αρκετά τα μέσα για τις μετακινήσεις σας εντός πόλης. Χωρίζεται σε 3 ζώνες όπου οι A και Β ανήκουν εντός του κέντρου της πόλης, ενώ στην C ανήκει το αεροδρόμιο ή το Potsdam.  Έτσι, θα πρέπει να επιλέξτε ανάμεσα στην επιλογή μεμονωμένων εισιτηρίων, ημερήσιων εισιτηρίων ή την επιλογή της Berlin Welcome Card ανάλογα με τις μέρες που θα διαθέσετε στην πόλη. Η Berlin Welcome Card παρέχει και διάφορες εκπτώσεις σε διάφορα αξιοθέατα.
-                        Οι τιμές που κυμαίνονται στα μέσα είναι οι παρακάτω:
-                        <li>Μεμονωμένο εισιτήριο (short: 3 στάσεις μετρό/6 στάσεις τραμ/λεωφορείο): 2,60 €</li>
-                        <li>Μεμονωμένο εισιτήριο (2 ωρών): 3,80 €</li>
-                        <li>Ημερήσιο εισιτήριο: 10,60 €</li>
-                        <li>Berlin Welcome Card (3 ημέρες): 42.90 €</li>
-                        <li>Berlin Welcome Card + Museum Islands (3 ημέρες): 62.50 €</li>
+                        Οι τιμές που κυμαίνονται στα μέσα είναι οι παρακάτω:</p>
+                        <ul className="list-disc pl-6 space-y-3 text-[#2E2E2F] mt-4 mb-3">
+                            <li>Μεμονωμένο εισιτήριο (short: 3 στάσεις μετρό/6 στάσεις τραμ/λεωφορείο): 2,60 €</li>
+                            <li>Μεμονωμένο εισιτήριο (2 ωρών): 3,80 €</li>
+                            <li>Ημερήσιο εισιτήριο: 10,60 €</li>
+                            <li>Berlin Welcome Card (3 ημέρες): 42.90 €</li>
+                            <li>Berlin Welcome Card + Museum Islands (3 ημέρες): 62.50 €</li>
+                        </ul>
                         Στην Berlin Welcome Card υπάρχει η δυνατότητα της έκδοσης κάρτας για από 2 έως 6 ημέρες.
-                    </p>
+
+                    
                 </div>
                 <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-tour-ids="141648,6045,560843"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/berlin-l17/">GetYourGuide</a></span></div></div>
                 <div className="mt-8">

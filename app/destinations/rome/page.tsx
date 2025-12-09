@@ -10,7 +10,7 @@ import Image from 'next/image';
 // import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
-import Head from 'next/head';
+// import Head from 'next/head';
 import { Metadata } from 'next';
 
 const barcelonaItems = [
@@ -75,15 +75,33 @@ const barcelonaItems = [
 // ];
 
 export const metadata: Metadata = {
-    title: "Ρώμη, τι να δω και τι να κάνω  | Travelmpomps",
-    description: "Ταξιδωτικός Οδηγός για την Ρώμη - Τι να δω και τι να κάνω στην Ρώμη",
-    keywords: "Ρώμη, Ιταλία, ταξιδιωτικός οδηγός, αξιοθέατα, μεταφορές, διαμονή, δραστηριότητες, Ρώμη αξιοθέατα, Ρώμη ταξίδια, Ρώμη διαμονή, Ρώμη μεταφορές",
+    // Τίτλος: Κλασικός, περιεκτικός και με χρονολογία
+    title: "Ρώμη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+
+    // Περιγραφή: Πρέπει να χωρέσουμε τα "βαριά χαρτιά" της Ρώμης.
+    // Αναφέρουμε Κολοσσαίο, Βατικανό (Μουσεία), Fontana di Trevi και φυσικά πίτσα/pasta.
+    description: "Ταξίδι στην Αιώνια Πόλη. Ο απόλυτος οδηγός για τη Ρώμη: Κολοσσαίο, Βατικανό, Fontana di Trevi, τα καλύτερα μέρη για αυθεντική Carbonara και tips διαμονής.",
+
+    // Canonical URL
+    alternates: {
+        canonical: 'https://travelmpomps.gr/destinations/rome',
+    },
+
+    // Open Graph (Social Media)
+    openGraph: {
+        title: 'Ρώμη: Αξιοθέατα, Βατικανό και Φαγητό',
+        description: 'Ολα όσα πρέπει να δείτε στη Ρώμη. Πλήρης οδηγός για 3 ή 4 ημέρες γεμάτες ιστορία και ιταλικές γεύσεις.',
+        url: 'https://travelmpomps.gr/destinations/rome',
+        siteName: 'Travelmpomps',
+        locale: 'el_GR',
+        type: 'article',
+    },
 }
 
 function Rome() {
     return (
         <div className="min-h-screen">
-            <Head>
+            {/* <Head>
                 <title>Ρώμη Αξιοθέατα - Ρώμη τι να δω</title>
                 <link
                     rel="canonical"
@@ -95,7 +113,7 @@ function Rome() {
                     content="Ρώμη Αξιοθέατα | Ταξιδωτικός Οδηγός για τη Ρώμη | Τι να δω και τι να κάνω στην Ρώμη"
                     key="desc"
                 />
-            </Head>
+            </Head> */}
             <div><Navbar /></div>
             <Script
                 async
@@ -107,7 +125,7 @@ function Rome() {
             <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-60">
 
                 <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">
-                    Ρώμη τι να δω και τι να κάνω
+                    Ταξίδι στη Ρώμη: Αξιοθέατα, Βατικανό και Γαστρονομία στην Αιώνια Πόλη
                 </h1>
 
                 {/* Main picture */}

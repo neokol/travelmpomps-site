@@ -10,7 +10,7 @@ import Image from 'next/image';
 // import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
-import Head from 'next/head';
+// import Head from 'next/head';
 import { Metadata } from 'next';
 
 const barcelonaItems = [
@@ -75,15 +75,32 @@ const barcelonaItems = [
 // ];
 
 export const metadata: Metadata = {
-    title: "Βουδαπέστη, τι να δω και τι να κάνω  | Travelmpomps",
-    description: "Ταξιδωτικός Οδηγός για την Βουδαπέστη - Τι να δω και τι να κάνω στην Βουδαπέστη",
-    keywords: "Βουδαπέστη, Ουγγαρία, ταξιδιωτικός οδηγός, αξιοθέατα, μεταφορές, διαμονή, δραστηριότητες, Βουδαπέστη αξιοθέατα, Βουδαπέστη ταξίδια, Βουδαπέστη διαμονή, Βουδαπέστη μεταφορές",
+    // Τίτλος: Προσθέτουμε το "Πλήρης Οδηγός 2025" για κύρος
+    title: "Βουδαπέστη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+
+    // Περιγραφή: Πρέπει να αναφέρουμε τα "Highlights" που ψάχνει ο κόσμος
+    description: "Ταξίδι στο «Μαργαριτάρι του Δούναβη». Ο απόλυτος οδηγός για τη Βουδαπέστη: Θερμά λουτρά (Széchenyi), Κοινοβούλιο, κρουαζιέρα στον Δούναβη και Ruin Bars.",
+
+    // Canonical URL
+    alternates: {
+        canonical: 'https://travelmpomps.gr/destinations/budapest',
+    },
+
+    // Open Graph (Social Media)
+    openGraph: {
+        title: 'Βουδαπέστη: Λουτρά, Αξιοθέατα και Ruin Bars',
+        description: 'Ολα όσα πρέπει να ξέρετε για τη Βουδαπέστη. Πού να φάτε, ποια λουτρά να επιλέξετε και τα καλύτερα αξιοθέατα.',
+        url: 'https://travelmpomps.gr/destinations/budapest',
+        siteName: 'Travelmpomps',
+        locale: 'el_GR',
+        type: 'article',
+    },
 }
 
 function Budapest() {
     return (
         <div className="min-h-screen">
-            <Head>
+            {/* <Head>
                 <title>Βουδαπέστη Αξιοθέατα</title>
                 <link
                     rel="canonical"
@@ -95,7 +112,7 @@ function Budapest() {
                     content="Ταξιδωτικός Οδηγός για τη Βουδαπέστη | Τι να δω και τι να κάνω στην Βουδαπέστη"
                     key="desc"
                 />
-            </Head>
+            </Head> */}
             <div><Navbar /></div>
             <Script
                 async
@@ -107,7 +124,7 @@ function Budapest() {
             <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-60">
 
                 <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">
-                    Βουδαπέστη τι να δω και τι να κάνω
+                    Ταξίδι στη Βουδαπέστη: Αξιοθέατα, Λουτρά και Κρουαζιέρα στον Δούναβη
                 </h1>
 
                 {/* Main picture */}

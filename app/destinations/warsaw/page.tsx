@@ -10,7 +10,7 @@ import Image from 'next/image';
 // import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
-import Head from 'next/head';
+// import Head from 'next/head';
 import { Metadata } from 'next';
 
 const barcelonaItems = [
@@ -75,15 +75,33 @@ const barcelonaItems = [
 // ];
 
 export const metadata: Metadata = {
-    title: "Βαρσοβία, τι να δω και τι να κάνω  | Travelmpomps",
-    description: "Ταξιδωτικός Οδηγός για την Βαρσοβία - Τι να δω και τι να κάνω στην Βαρσοβία",
-    keywords: "Βαρσοβία, Πολωνία, ταξιδιωτικός οδηγός, αξιοθέατα, μεταφορές, διαμονή, δραστηριότητες, Βαρσοβία αξιοθέατα, Βαρσοβία ταξίδια, Βαρσοβία διαμονή, Βαρσοβία μεταφορές",
+    // Τίτλος: Δυνατός, με χρονολογία
+    title: "Βαρσοβία: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+
+    // Περιγραφή: Εδώ συνδυάζουμε το ιστορικό με το μοντέρνο στοιχείο.
+    // Αναφέρουμε το Παλάτι του Πολιτισμού (το σήμα κατατεθέν) και την Παλιά Πόλη.
+    description: "Ταξίδι στη Βαρσοβία, την πόλη των αντιθέσεων. Ο απόλυτος οδηγός: Παλιά Πόλη, Παλάτι Πολιτισμού, Μουσείο Εξέγερσης και τα καλύτερα μέρη για φαγητό.",
+
+    // Canonical URL
+    alternates: {
+        canonical: 'https://travelmpomps.gr/destinations/warsaw',
+    },
+
+    // Open Graph (Social Media)
+    openGraph: {
+        title: 'Βαρσοβία: Η πόλη που αναγεννήθηκε - Αξιοθέατα και Tips',
+        description: 'Ουρανοξύστες, ιστορία και pierogi. Πλήρης οδηγός για ένα αξέχαστο και οικονομικό ταξίδι στη Βαρσοβία.',
+        url: 'https://travelmpomps.gr/destinations/warsaw',
+        siteName: 'Travelmpomps',
+        locale: 'el_GR',
+        type: 'article',
+    },
 }
 
 function Warsaw() {
     return (
         <div className="min-h-screen">
-            <Head>
+            {/* <Head>
                 <title>Βαρσοβία Αξιοθέατα</title>
                 <link
                     rel="canonical"
@@ -95,7 +113,7 @@ function Warsaw() {
                     content="Βαρσοβία Αξιοθέατα | Ταξιδωτικός Οδηγός για τη Βαρσοβία | Τι να δω και τι να κάνω στην Βαρσοβία"
                     key="desc"
                 />
-            </Head>
+            </Head> */}
             <div><Navbar /></div>
             <Script
                 async
@@ -107,7 +125,7 @@ function Warsaw() {
             <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-60">
 
                 <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">
-                    Βαρσοβία τι να δω και τι να κάνω
+                    Ταξίδι στη Βαρσοβία: Η «Πόλη του Φοίνικα» και των Αντιθέσεων
                 </h1>
 
                 {/* Main picture */}
@@ -299,7 +317,7 @@ function Warsaw() {
                     <ul className="list-disc pl-6 space-y-2">
                         <li><strong>Charlotte Bouillon</strong>: all day εστιατόριο, με πολύ καλό brunch, μπορείτε να δοκιμάσετε κρουασάν</li>
                     </ul>
-                    
+
                 </div>
                 <div className="mt-8 mb-8">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
