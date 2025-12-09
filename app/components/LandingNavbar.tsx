@@ -115,6 +115,13 @@ function LandingNavbar() {
                                     >
                                         Ρώμη
                                     </Link>
+                                    <Link
+                                        href="/destinations/bologna"
+                                        onClick={handleNavItemClick}
+                                        className="block px-4 py-2 text-white"
+                                    >
+                                        Μπολόνια
+                                    </Link>
                                     {/* Add more dropdown links as needed */}
                                 </div>
                             )}

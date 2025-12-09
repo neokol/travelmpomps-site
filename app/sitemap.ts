@@ -48,6 +48,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             name: 'Rome',
             lastUpdated: '2025-09-18'
         },
+        {
+            slug: 'bologna',
+            name: 'Bologna',
+            lastUpdated: '2025-12-09'
+        },
     ];
 
     return [
