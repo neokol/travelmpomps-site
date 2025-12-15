@@ -76,7 +76,7 @@ const barcelonaItems = [
 
 export const metadata: Metadata = {
     // Τίτλος: Δυνατός και ξεκάθαρος
-    title: "Λονδίνο: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+    title: "Λονδίνο: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
 
     // Περιγραφή: Στο Λονδίνο πρέπει να καλύψεις τα "Big Three" (Big Ben, London Eye)
     // αλλά και τα "δωρεάν" μουσεία, γιατί είναι ακριβή πόλη και αυτό ενδιαφέρει πολύ.
@@ -84,17 +84,23 @@ export const metadata: Metadata = {
 
     // Canonical URL
     alternates: {
-        canonical: 'https://travelmpomps.gr/destinations/london',
+        canonical: '/destinations/london',
     },
 
     // Open Graph (Social Media)
     openGraph: {
         title: 'Λονδίνο: Αξιοθέατα, Μουσεία και Tips',
         description: 'Ο απόλυτος οδηγός για το Λονδίνο. Μάθετε πώς να δείτε τα βασικά αξιοθέατα και πού να φάτε οικονομικά.',
-        url: 'https://travelmpomps.gr/destinations/london',
-        siteName: 'Travelmpomps',
-        locale: 'el_GR',
+        url: '/destinations/london',
         type: 'article',
+        images: [
+            {
+                url: '/images/londonguide2.jpg', 
+                width: 1200,
+                height: 630,
+                alt: 'Λονδίνο: Ταξιδιωτικός Οδηγός 2025',
+            },
+        ],
     },
 }
 

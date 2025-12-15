@@ -76,7 +76,7 @@ const barcelonaItems = [
 
 export const metadata: Metadata = {
     // Τίτλος: Κλασικός και δυνατός για SEO
-    title: "Κρακοβία: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+    title: "Κρακοβία: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
 
     // Περιγραφή: Εδώ πρέπει να βάλουμε τις λέξεις-κλειδιά που ψάχνουν όλοι:
     // "Wawel", "Kazimierz" (Εβραϊκή Συνοικία) και "Άουσβιτς/Αλατωρυχεία" (γιατί όλοι πάνε από εκεί).
@@ -84,17 +84,23 @@ export const metadata: Metadata = {
 
     // Canonical URL
     alternates: {
-        canonical: 'https://travelmpomps.gr/destinations/krakow',
+        canonical: '/destinations/krakow',
     },
 
     // Open Graph (Social Media)
     openGraph: {
         title: 'Κρακοβία: Αξιοθέατα, Φαγητό και Ιστορία',
         description: 'Ολα όσα πρέπει να δείτε στην Κρακοβία. Από το κάστρο του Δράκου μέχρι την μποέμικη συνοικία Kazimierz.',
-        url: 'https://travelmpomps.gr/destinations/krakow',
-        siteName: 'Travelmpomps',
-        locale: 'el_GR',
+        url: '/destinations/krakow',
         type: 'article',
+        images: [
+            {
+                url: '/images/krakow-hero.jpg', 
+                width: 1200,
+                height: 630,
+                alt: 'Κρακοβία: Ταξιδιωτικός Οδηγός 2025',
+            },
+        ],
     },
 }
 

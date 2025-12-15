@@ -146,7 +146,7 @@ const fourthDayImages = [
 
 export const metadata: Metadata = {
     // Τίτλος: Ελκυστικός και πλήρης
-    title: "Βιέννη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+    title: "Βιέννη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
 
     // Περιγραφή: Αναφέρουμε τα ανάκτορα (Schönbrunn/Belvedere), την κουλτούρα του καφέ 
     // και τη μουσική, που είναι ταυτισμένα με τη Βιέννη.
@@ -154,17 +154,23 @@ export const metadata: Metadata = {
 
     // Canonical URL
     alternates: {
-        canonical: 'https://travelmpomps.gr/destinations/vienna',
+        canonical: '/destinations/vienna',
     },
 
     // Open Graph (Social Media)
     openGraph: {
         title: 'Βιέννη: Ανάκτορα, Μουσεία και Βιεννέζικη Κουλτούρα',
         description: 'Ανακαλύψτε τη μαγεία της Βιέννης. Πλήρης οδηγός για αξιοθέατα, φαγητό και διαμονή στην πόλη της μουσικής.',
-        url: 'https://travelmpomps.gr/destinations/vienna',
-        siteName: 'Travelmpomps',
-        locale: 'el_GR',
+        url: '/destinations/vienna',
         type: 'article',
+        images: [
+            {
+                url: '/vienna/vienna-hero.jpg', 
+                width: 1200,
+                height: 630,
+                alt: 'Βιέννη: Ταξιδιωτικός Οδηγός 2025',
+            },
+        ],
     },
 }
 

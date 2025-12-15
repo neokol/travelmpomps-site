@@ -76,7 +76,7 @@ const barcelonaItems = [
 
 export const metadata: Metadata = {
     // Τίτλος: Κλασικός, περιεκτικός και με χρονολογία
-    title: "Ρώμη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+    title: "Ρώμη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
 
     // Περιγραφή: Πρέπει να χωρέσουμε τα "βαριά χαρτιά" της Ρώμης.
     // Αναφέρουμε Κολοσσαίο, Βατικανό (Μουσεία), Fontana di Trevi και φυσικά πίτσα/pasta.
@@ -84,17 +84,23 @@ export const metadata: Metadata = {
 
     // Canonical URL
     alternates: {
-        canonical: 'https://travelmpomps.gr/destinations/rome',
+        canonical: '/destinations/rome',
     },
 
     // Open Graph (Social Media)
     openGraph: {
         title: 'Ρώμη: Αξιοθέατα, Βατικανό και Φαγητό',
         description: 'Ολα όσα πρέπει να δείτε στη Ρώμη. Πλήρης οδηγός για 3 ή 4 ημέρες γεμάτες ιστορία και ιταλικές γεύσεις.',
-        url: 'https://travelmpomps.gr/destinations/rome',
-        siteName: 'Travelmpomps',
-        locale: 'el_GR',
+        url: '/destinations/rome',
         type: 'article',
+        images: [
+            {
+                url: '/images/rome-hero.png', 
+                width: 1200,
+                height: 630,
+                alt: 'Ρώμη: Ταξιδιωτικός Οδηγός 2025',
+            },
+        ],
     },
 }
 

@@ -10,35 +10,24 @@ import { PageFooter } from '@/app/components/Footer';
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-    // Τίτλος: Πρόσθεσα το "Φαγητό" γιατί στη Μπολόνια αυτό ψάχνουν όλοι!
-    title: "Μπολόνια: Τι να δω και πού να φάω (Οδηγός 2025) | Travelmpomps",
-
-    // Περιγραφή: Χτυπάμε στο συναίσθημα (γεύσεις) και την πληροφορία (αξιοθέατα)
+    title: "Μπολόνια: Τι να δω και πού να φάω (Οδηγός 2025)",
     description: "Ανακαλύψτε την Μπολόνια, την πρωτεύουσα του φαγητού. Πλήρης οδηγός με τα κορυφαία αξιοθέατα, αυθεντικές γεύσεις, διαμονή και tips για ένα αξέχαστο ταξίδι στην Ιταλία.",
-
-    // Προσοχή: Υπέθεσα ότι το url σου θα είναι /bologna (με λατινικά).
-    // Αν το έχεις /mpolonia, άλλαξέ το εδώ.
     alternates: {
-        canonical: 'https://travelmpomps.gr/destinations/bologna',
+        canonical: '/destinations/bologna',
     },
-
-    // Για Facebook, Viber, WhatsApp κλπ.
     openGraph: {
         title: 'Μπολόνια: Ο απόλυτος οδηγός για φαγητό και αξιοθέατα',
         description: 'Μάθετε τα πάντα για την Μπολόνια: Πύργοι, στοές και τα καλύτερα μέρη για αυθεντική ιταλική κουζίνα.',
-        url: 'https://travelmpomps.gr/destinations/bologna',
-        siteName: 'Travelmpomps',
-        locale: 'el_GR',
+        url: '/destinations/bologna',
         type: 'article',
-        // Προαιρετικά: Εδώ μπορείς να βάλεις και μια εικόνα για να φαίνεται στα social media
-        // images: [
-        //   {
-        //     url: 'https://travelmpomps.gr/images/bologna-cover.jpg',
-        //     width: 1200,
-        //     height: 630,
-        //     alt: 'Θέα της Μπολόνια',
-        //   },
-        // ],
+        images: [
+            {
+                url: '/images/bologna-main.jpg', // Η κύρια εικόνα του άρθρου
+                width: 1200,
+                height: 630,
+                alt: 'Μπολόνια 2025: Ταξιδιωτικός Οδηγός',
+            },
+        ],
     },
 }
 
@@ -46,20 +35,6 @@ export const metadata: Metadata = {
 function Bologna() {
     return (
         <div className="min-h-screen bg-[#F8F6FE]">
-            {/* <Head>
-                <title>Χριστούγεννα στο Λονδίνο</title>
-                <link
-                    rel="canonical"
-                    href="https://travelmpomps.gr/blog/christougenna-londino"
-                    key="canonical"
-                />
-                <meta
-                    name="description"
-                    content="Christmas in London"
-                    key="desc"
-                />
-            </Head> */}
-            {/* Navbar */}
             <Script
                 async
                 defer
@@ -211,7 +186,7 @@ function Bologna() {
                         {/* ΑΡΙΣΤΕΡΗ ΕΙΚΟΝΑ */}
                         <div className="relative w-full h-full rounded-l-2xl overflow-hidden shadow-lg">
                             <Image
-                                src="/images/window-bologna.jpg" 
+                                src="/images/window-bologna.jpg"
                                 alt="Το κρυφό παράθυρο Finestrella στο κανάλι της Μπολόνια"
                                 fill
                                 className="object-cover"
@@ -294,7 +269,7 @@ function Bologna() {
                     </div>
                     <div data-gyg-href="https://widget.getyourguide.com/default/city.frame" data-gyg-location-id="1431" data-gyg-locale-code="el-GR" data-gyg-widget="city" data-gyg-partner-id="0OAQQKO"></div>
                 </section>
-                
+
             </main>
 
             {/* Footer Section */}

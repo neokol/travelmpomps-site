@@ -66,24 +66,30 @@ const berlinImages = [
 
 export const metadata: Metadata = {
     // Πιο δυνατός τίτλος με χρονολογία
-    title: "Βερολίνο: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+    title: "Βερολίνο: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
 
     // Η περιγραφή πρέπει να δείχνει την ποικιλία του Βερολίνου (Ιστορία + Vibes)
     description: "Ανακαλύψτε το Βερολίνο: Από το Τείχος και την Πύλη του Βραδεμβούργου μέχρι τα κρυμμένα μπαρ και τα μουσεία. Ο απόλυτος οδηγός για αξιοθέατα, φαγητό και διαμονή.",
 
     // Canonical URL
     alternates: {
-        canonical: 'https://travelmpomps.gr/destinations/berlin',
+        canonical: '/destinations/berlin',
     },
 
     // Open Graph για Social Media
     openGraph: {
         title: 'Βερολίνο: Ο απόλυτος ταξιδιωτικός οδηγός',
         description: 'Τι να δω στο Βερολίνο; Πλήρης οδηγός για 3 ή 4 ημέρες στην γερμανική πρωτεύουσα.',
-        url: 'https://travelmpomps.gr/destinations/berlin',
-        siteName: 'Travelmpomps',
-        locale: 'el_GR',
+        url: '/destinations/berlin',
         type: 'article',
+        images: [
+            {
+                url: '/images/4.jpeg', 
+                width: 1200,
+                height: 630,
+                alt: 'Βερολίνο: Ταξιδιωτικός Οδηγός 2025',
+            },
+        ],
     },
 }
 

@@ -76,7 +76,7 @@ const barcelonaItems = [
 
 export const metadata: Metadata = {
     // Τίτλος: Δυνατός, με χρονολογία
-    title: "Βαρσοβία: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+    title: "Βαρσοβία: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
 
     // Περιγραφή: Εδώ συνδυάζουμε το ιστορικό με το μοντέρνο στοιχείο.
     // Αναφέρουμε το Παλάτι του Πολιτισμού (το σήμα κατατεθέν) και την Παλιά Πόλη.
@@ -84,17 +84,25 @@ export const metadata: Metadata = {
 
     // Canonical URL
     alternates: {
-        canonical: 'https://travelmpomps.gr/destinations/warsaw',
+        canonical: '/destinations/warsaw',
     },
 
     // Open Graph (Social Media)
     openGraph: {
         title: 'Βαρσοβία: Η πόλη που αναγεννήθηκε - Αξιοθέατα και Tips',
         description: 'Ουρανοξύστες, ιστορία και pierogi. Πλήρης οδηγός για ένα αξέχαστο και οικονομικό ταξίδι στη Βαρσοβία.',
-        url: 'https://travelmpomps.gr/destinations/warsaw',
+        url: '/destinations/warsaw',
         siteName: 'Travelmpomps',
         locale: 'el_GR',
         type: 'article',
+        images: [
+            {
+                url: '/images/warsaw-hero.jpeg', 
+                width: 1200,
+                height: 630,
+                alt: 'Βαρσοβία: Ταξιδιωτικός Οδηγός 2025',
+            },
+        ],
     },
 }
 

@@ -83,17 +83,23 @@ export const metadata: Metadata = {
 
     // Canonical URL
     alternates: {
-        canonical: 'https://travelmpomps.gr/destinations/budapest',
+        canonical: '/destinations/budapest',
     },
 
     // Open Graph (Social Media)
     openGraph: {
         title: 'Βουδαπέστη: Λουτρά, Αξιοθέατα και Ruin Bars',
         description: 'Ολα όσα πρέπει να ξέρετε για τη Βουδαπέστη. Πού να φάτε, ποια λουτρά να επιλέξετε και τα καλύτερα αξιοθέατα.',
-        url: 'https://travelmpomps.gr/destinations/budapest',
-        siteName: 'Travelmpomps',
-        locale: 'el_GR',
+        url: '/destinations/budapest',
         type: 'article',
+        images: [
+            {
+                url: '/images/budapesthero.jpg', 
+                width: 1200,
+                height: 630,
+                alt: 'Βουδαπέστη: Ταξιδιωτικός Οδηγός 2025',
+            },
+        ],
     },
 }
 

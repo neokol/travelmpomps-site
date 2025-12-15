@@ -14,8 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://travelmpomps.gr"),
-  title: "Travelmpomps | Travel Tips",
-  description: "Travel Tips",
+  title: {
+    default: "Travelmpomps | Ταξιδιωτικοί Οδηγοί & Tips", // Ο τίτλος της Αρχικής (αν δεν ορίσεις άλλον)
+    template: "%s | Travelmpomps", // Αυτό μπαίνει αυτόματα στις υπόλοιπες σελίδες!
+  },
+  description: "Δωρεάν Ολοκληρωμένος ταξιδιωτικός οδηγός για προορισμούς στην Ευρώπη και την Ελλάδα.",
   keywords: [
     "travel",
     "tips",
@@ -34,18 +37,26 @@ export const metadata: Metadata = {
     "ταξίδια στην Ελλάδα"
   ],
   openGraph: {
-    description: "Δωρεάν Ολοκληρωμένος ταξιδιωτικός οδηγός για προορισμούς στην Ευρώπη και την Ελλάδα. Ανακαλύψτε τα καλύτερα μέρη για να επισκεφθείτε, να φάτε και να διασκεδάσετε.",
+    title: 'Travelmpomps',
+    description: "Δωρεάν Ολοκληρωμένος ταξιδιωτικός οδηγός για προορισμούς στην Ευρώπη και την Ελλάδα.",
+    url: 'https://travelmpomps.gr',
+    siteName: 'Travelmpomps',
+    locale: 'el_GR',
+    type: 'website',
     images: [
       {
-        url: "/images/open-graph.jpg",
+        url: "/travelmpomps.png",
         width: 1200,
         height: 630,
-        alt: "Title",
+        alt: "Travelmpomps Travel Guide",
       }
     ]
   },
   icons: {
     icon: "/travelmpomps.png"
+  },
+  verification: {
+    google: "7q-1UM39MUG1YlU0DE2iqnmXXicGjIZtUAtc3C7Nokk",
   },
 };
 
@@ -55,10 +66,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-        <head>
+    <html lang="el">
+        {/* <head>
           <meta name="google-site-verification" content="7q-1UM39MUG1YlU0DE2iqnmXXicGjIZtUAtc3C7Nokk" />
-      </head>
+      </head> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

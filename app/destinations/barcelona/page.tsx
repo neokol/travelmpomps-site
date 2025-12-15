@@ -165,25 +165,30 @@ const fifthDayImages = [
 
 export const metadata: Metadata = {
     // Τίτλος: Πλήρης και ενημερωμένος
-    title: "Βαρκελώνη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+    title: "Βαρκελώνη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
 
-    // Περιγραφή: Εστιάζουμε στον Γκαουντί (που ψάχνουν όλοι), στη Sagrada Família 
-    // και στο φαγητό (tapas), που είναι η ψυχή της πόλης.
+
     description: "Ταξίδι στην καρδιά της Καταλονίας. Ο απόλυτος οδηγός για τη Βαρκελώνη: Sagrada Família, Park Güell, Γοτθική Συνοικία και τα καλύτερα tapas bars.",
 
     // Canonical URL
     alternates: {
-        canonical: 'https://travelmpomps.gr/destinations/barcelona',
+        canonical: '/destinations/barcelona',
     },
 
     // Open Graph (Social Media)
     openGraph: {
         title: 'Βαρκελώνη: Γκαουντί, Παραλίες και Tapas',
         description: 'Ολα όσα πρέπει να δείτε στη Βαρκελώνη. Πλήρης οδηγός για αξιοθέατα, φαγητό και διαμονή στην πρωτεύουσα της Καταλονίας.',
-        url: 'https://travelmpomps.gr/destinations/barcelona',
-        siteName: 'Travelmpomps',
-        locale: 'el_GR',
+        url: '/destinations/barcelona',
         type: 'article',
+        images: [
+            {
+                url: '/barcelona/barcelona-hero.jpg', // Η κύρια εικόνα του άρθρου
+                width: 1200,
+                height: 630,
+                alt: 'Βαρκελώνη: Ταξιδιωτικός Οδηγός 2025',
+            },
+        ]
     },
 }
 

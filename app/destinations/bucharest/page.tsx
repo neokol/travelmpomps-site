@@ -77,24 +77,30 @@ const secondDayImages = [
 
 export const metadata: Metadata = {
     // Τίτλος: Δυνατός, με χρονολογία και ξεκάθαρη υπόσχεση
-    title: "Βουκουρέστι: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+    title: "Βουκουρέστι: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
 
     // Περιγραφή: Εδώ παίζουμε με τα "δυνατά χαρτιά" του Βουκουρεστίου: Therme & Παλιά Πόλη
     description: "Ανακαλύψτε το «Μικρό Παρίσι» της Ανατολής. Ο απόλυτος οδηγός για το Βουκουρέστι: Therme, Παλάτι της Βουλής, φαγητό και νυχτερινή ζωή στην Παλιά Πόλη.",
 
     // Canonical URL
     alternates: {
-        canonical: 'https://travelmpomps.gr/destinations/bucharest',
+        canonical: '/destinations/bucharest',
     },
 
     // Open Graph (Social Media)
     openGraph: {
         title: 'Βουκουρέστι: Ο απόλυτος οδηγός για Therme και αξιοθέατα',
         description: 'Τι να κάνετε στο Βουκουρέστι; Όλα τα tips για ένα οικονομικό και πολυτελές city break στη Ρουμανία.',
-        url: 'https://travelmpomps.gr/destinations/bucharest',
-        siteName: 'Travelmpomps',
-        locale: 'el_GR',
+        url: '/destinations/bucharest',
         type: 'article',
+        images: [
+            {
+                url: '/bucharest/bucharest-hero.jpg', 
+                width: 1200,
+                height: 630,
+                alt: 'Βουκουρέστι: Ταξιδιωτικός Οδηγός 2025',
+            },
+        ],
     },
 }
 
