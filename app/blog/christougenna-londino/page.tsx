@@ -2,50 +2,55 @@ import React from 'react';
 // import Navbar from '../components/Navbar';
 // import { PageFooter } from "../components/Footer";
 import Image from 'next/image'; // Import the Image component from Next.js
-import Head from 'next/head';
 import { Metadata } from 'next';
 import Link from "next/link";
 import Navbar from '@/app/components/Navbar';
 import { PageFooter } from '@/app/components/Footer';
 
 export const metadata: Metadata = {
-    title: "Χριστούγεννα στο Λονδίνο",
-    description: "Τι να κάνετε και να δείτε στο Λονδίνο τα Χριστούγεννα. Οδηγός για τις καλύτερες χριστουγεννιάτικες αγορές, φωτισμούς και διαδρομές στην πόλη.",
-    keywords: "Λονδίνο, Χριστούγεννα, Χριστουγεννιάτικες αγορές, Χριστουγεννιάτικος στολισμός, Χριστουγεννιάτικες διαδρομές, Οδηγός Λονδίνου, Travelmpomps, Ταξίδια, Αγγλία, Ευρώπη",
+    // Τίτλος: Πρέπει να υποσχεθείς "τον απόλυτο οδηγό"
+    title: "Χριστούγεννα στο Λονδίνο: Ο Απόλυτος Οδηγός & Tips (2025) | Travelmpomps",
+
+    // Περιγραφή: Εδώ πρέπει να παίξεις με δυνατές λέξεις-κλειδιά:
+    // Winter Wonderland, Regent Street (φώτα), Αγορές.
+    description: "Ζήστε τη μαγεία των Χριστουγέννων στο Λονδίνο. Οδηγός για το Winter Wonderland, τα φώτα της Regent Street, τις χριστουγεννιάτικες αγορές και τα καλύτερα στολισμένα μαγαζιά.",
+
+    // Canonical URL
+    alternates: {
+        canonical: 'https://travelmpomps.gr/blog/christougenna-londino',
+    },
+
+    // Open Graph (Social Media)
+    openGraph: {
+        title: 'Χριστούγεννα στο Λονδίνο: Η απόλυτη μαγεία',
+        description: 'Winter Wonderland, φώτα και αγορές. Δείτε πώς να οργανώσετε το τέλειο χριστουγεννιάτικο ταξίδι στο Λονδίνο.',
+        url: 'https://travelmpomps.gr/blog/christougenna-londino',
+        siteName: 'Travelmpomps',
+        locale: 'el_GR',
+        type: 'article',
+    },
 }
 
 
 function ChristmasLondon() {
     return (
         <div className="min-h-screen bg-[#F8F6FE]">
-            <Head>
-                <title>Χριστούγεννα στο Λονδίνο</title>
-                <link
-                    rel="canonical"
-                    href="https://travelmpomps.gr/blog/christougenna-londino"
-                    key="canonical"
-                />
-                <meta
-                    name="description"
-                    content="Christmas in London"
-                    key="desc"
-                />
-            </Head>
+            
             {/* Navbar */}
             <Navbar />
 
             <main className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 py-16 space-y-20 pt-24">
                 {/* Section 1 — text left, image right */}
-                <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">Χριστούγεννα στο Λονδίνο</h1>
+                <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">Χριστούγεννα στο Λονδίνο: Μαγεία, Φώτα και Winter Wonderland</h1>
                 <div className="relative w-full aspect-[5/2] md:aspect-[5/2] rounded-2xl overflow-hidden shadow-lg">
-                        <Image
-                            src="/blog_images/london-xmas-1.jpg"
-                            alt="χριστούγεννα στο λονδινο"
-                            fill
-                            className="object-cover"
-                            sizes="100vw"
-                        />
-                    </div>
+                    <Image
+                        src="/blog_images/london-xmas-1.jpg"
+                        alt="χριστούγεννα στο λονδινο"
+                        fill
+                        className="object-cover"
+                        sizes="100vw"
+                    />
+                </div>
                 <p className="text-[#2E2E2F] mb-4 text-justify">
                     Το Λονδίνο αποτελεί ένα από τους πιο δημοφιλείς προορισμούς για τα Χριστούγεννα, και όχι άδικα αφού είναι γεμάτο στολισμούς, αγορές και εντυπωσιακά events.
                 </p>

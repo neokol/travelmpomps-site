@@ -2,12 +2,23 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import { PageFooter } from "../components/Footer";
 import Image from 'next/image'; // Import the Image component from Next.js
-import Head from 'next/head';
 import { Metadata } from 'next';
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Συμβουλές για τα ταξίδια σας | Travel tips",
+    title: "Travel Blog: Οδηγοί Πόλης & Συμβουλές | Travelmpomps",
+    description: "Διαβάστε τους αναλυτικούς ταξιδιωτικούς οδηγούς μας για Ευρώπη και κόσμο. Tips για οικονομικά ταξίδια, φαγητό και αξιοθέατα.",
+    alternates: {
+        canonical: 'https://travelmpomps.gr/blog',
+    },
+    openGraph: {
+        title: 'Travel Blog & Tips | Travelmpomps',
+        description: 'Ολοι οι ταξιδιωτικοί οδηγοί συγκεντρωμένοι.',
+        url: 'https://travelmpomps.gr/blog',
+        siteName: 'Travelmpomps',
+        locale: 'el_GR',
+        type: 'website',
+    },
 }
 
 
@@ -26,22 +37,17 @@ function Blog() {
 
     return (
         <div className="min-h-screen bg-[#F8F6FE]">
-            <Head>
-                <title>Συμβουλές για ένα οικονομικό ταξίδι</title>
-                <link
-                    rel="canonical"
-                    href="https://travelmpomps.gr/blog"
-                    key="canonical"
-                />
-                <meta
-                    name="description"
-                    content="Travel tips"
-                    key="desc"
-                />
-            </Head>
             {/* Navbar */}
             <Navbar />
             <main className="max-w-7xl mx-auto px-4 sm:px-12 lg:px-18 pt-24 pb-2 mt-12">
+                <div className="text-center mb-12">
+                    <h1 className="text-2xl md:text-3xl font-bold text-[#2E2E2F] mb-4">
+                        Travel Blog & Συμβουλές για οικονομικά ταξίδια
+                    </h1>
+                    <p className="text-gray-600 max-w-2xl mx-auto">
+                        Συμβουλές, οδηγοί πόλης και εμπειρίες από τα ταξίδια μας στην Ευρώπη.
+                    </p>
+                </div>
                 <div className="border-t border-gray-300 pt-8">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {Posts.map((blog) => (
