@@ -53,6 +53,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             name: 'Bologna',
             lastUpdated: '2025-12-09'
         },
+        {
+            slug: 'madrid',
+            name: 'Madrid',
+            lastUpdated: '2026-03-12'
+        },
     ];
 
     return [

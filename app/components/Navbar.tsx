@@ -115,6 +115,13 @@ function Navbar() {
                                     >
                                         Μπολόνια
                                     </Link>
+                                    <Link
+                                        href="/destinations/madrid"
+                                        onClick={handleNavItemClick}
+                                        className="block px-4 py-2 text-[#2E2E2F] hover:bg-gray-100"
+                                    >
+                                        Μαδρίτη
+                                    </Link>
                                     {/* Add more dropdown links as needed */}
                                 </div>
                             )}
