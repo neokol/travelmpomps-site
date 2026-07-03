@@ -2,145 +2,173 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
-import { PageFooter } from "../components/Footer"
+import { PageFooter } from "../components/Footer";
+import DestinationsGrid, { Destination } from "../components/DestinationsGrid";
 import { Metadata } from "next";
 
-interface Destination {
-    name: string;
-    slug: string;
-    image: string;
-    alt: string;
-}
-
 export const metadata: Metadata = {
-    // Τίτλος: Πρέπει να δείχνει ότι εδώ θα βρουν ΤΑ ΠΑΝΤΑ.
     title: "Κορυφαίοι Ταξιδιωτικοί Προορισμοί & Οδηγοί (2025) | Travelmpomps",
-
-    // Περιγραφή: Αναφέρουμε γενικά την Ευρώπη και μερικές δημοφιλείς πόλεις ως "δόλωμα",
-    // καθώς και λέξεις όπως "city breaks" και "tips".
     description: "Ανακαλύψτε τους καλύτερους προορισμούς για το επόμενο ταξίδι σας. Πλήρεις οδηγοί για Ευρώπη (Ρώμη, Λονδίνο, Βιέννη κ.α.), tips για οικονομικά city breaks και κρυμμένα διαμάντια.",
-
-    // Canonical URL
     alternates: {
         canonical: 'https://travelmpomps.gr/destinations',
     },
-
-    // Open Graph (Social Media)
     openGraph: {
         title: 'Βρείτε τον επόμενο ταξιδιωτικό προορισμό | Travelmpomps',
         description: 'Όλοι οι ταξιδιωτικοί οδηγοί συγκεντρωμένοι. Οργανώστε το τέλειο ταξίδι σε Ευρώπη και κόσμο με τους οδηγούς του Travelmpomps.',
         url: 'https://travelmpomps.gr/destinations',
         siteName: 'Travelmpomps',
         locale: 'el_GR',
-        type: 'website', // <--- ΠΡΟΣΟΧΗ: Εδώ βάζουμε website γιατί είναι σελίδα κατηγορίας
+        type: 'website',
     },
 }
 
+const destinations: Destination[] = [
+    {
+        name: "Ρώμη",
+        slug: "rome",
+        image: "/images/rome-hero.png",
+        alt: "Ταξιδιωτικός οδηγός για τη Ρώμη και το Κολοσσαίο",
+        country: "Ιταλία",
+        teaser: "Κολοσσαίο, Βατικανό & Fontana di Trevi",
+        budget: false,
+        featured: true,
+    },
+    {
+        name: "Βερολίνο",
+        slug: "berlin",
+        image: "/destinations/berlin1.jpg",
+        alt: "Ταξιδιωτικός οδηγός για το Βερολίνο και τον Καθεδρικό Ναό",
+        country: "Γερμανία",
+        teaser: "Ιστορία, τέχνη & νυχτερινή ζωή",
+        budget: false,
+    },
+    {
+        name: "Βαρκελώνη",
+        slug: "barcelona",
+        image: "/destinations/barcelona.jpg",
+        alt: "Ταξιδιωτικός οδηγός για τη Βαρκελώνη και τη Sagrada Familia",
+        country: "Ισπανία",
+        teaser: "Sagrada Familia & παραλίες",
+        budget: false,
+    },
+    {
+        name: "Βιέννη",
+        slug: "vienna",
+        image: "/destinations/vienna.jpg",
+        alt: "Ταξιδιωτικός οδηγός για τη Βιέννη και τα Αυτοκρατορικά Ανάκτορα",
+        country: "Αυστρία",
+        teaser: "Αυτοκρατορικά ανάκτορα & καφέ κουλτούρα",
+        budget: false,
+    },
+    {
+        name: "Βουκουρέστι",
+        slug: "bucharest",
+        image: "/bucharest/bucharest-hero.jpg",
+        alt: "Ταξιδιωτικός οδηγός για το Βουκουρέστι και την Παλιά Πόλη",
+        country: "Ρουμανία",
+        teaser: "Οικονομικό city break στην Παλιά Πόλη",
+        budget: true,
+    },
+    {
+        name: "Λονδίνο",
+        slug: "london",
+        image: "/destinations/london.jpg",
+        alt: "Ταξιδιωτικός οδηγός για το Λονδίνο, Big Ben και αξιοθέατα",
+        country: "Ηνωμένο Βασίλειο",
+        teaser: "Big Ben & θρυλικά αξιοθέατα",
+        budget: false,
+    },
+    {
+        name: "Βουδαπέστη",
+        slug: "budapest",
+        image: "/destinations/budapest.jpg",
+        alt: "Ταξιδιωτικός οδηγός για τη Βουδαπέστη και το Κοινοβούλιο",
+        country: "Ουγγαρία",
+        teaser: "Λουτρά & φθηνή διαμονή",
+        budget: true,
+    },
+    {
+        name: "Κρακοβία",
+        slug: "krakow",
+        image: "/destinations/krakow.jpg",
+        alt: "Ταξιδιωτικός οδηγός για την Κρακοβία και την κεντρική πλατεία",
+        country: "Πολωνία",
+        teaser: "Μεσαιωνική πλατεία με μικρό budget",
+        budget: true,
+    },
+    {
+        name: "Βαρσοβία",
+        slug: "warsaw",
+        image: "/destinations/warsaw.jpg",
+        alt: "Ταξιδιωτικός οδηγός για τη Βαρσοβία και την Παλιά Πόλη",
+        country: "Πολωνία",
+        teaser: "Ανακατασκευασμένη Παλιά Πόλη",
+        budget: true,
+    },
+    {
+        name: "Μαρδίτη",
+        slug: "madrid",
+        image: "/destinations/madrid.jpg",
+        alt: "Ταξιδιωτικός οδηγός για τη Μαρδίτη",
+        country: "Ισπανία",
+        teaser: "Ανακατασκευασμένη Παλιά Πόλη",
+        budget: false,
+    },
+    {
+        name: "Μπολόνια",
+        slug: "bolonia",
+        image: "/destinations/bologna.jpg",
+        alt: "Ταξιδιωτικός οδηγός για τη Μπολόνια",
+        country: "Ιταλία",
+        teaser: "Φαγητό και παλιά πόλη",
+        budget: true,
+    },
+];
 
 function Destinations() {
-    // Your destinations array
-    const destinations: Destination[] = [
-        {
-            name: "Βερολίνο",
-            slug: "berlin",
-            image: "/destinations/insta_berlin.png",
-            alt: "Ταξιδιωτικός οδηγός για το Βερολίνο και τον Καθεδρικό Ναό"
-        },
-        {
-            name: "Βαρκελώνη",
-            slug: "barcelona",
-            image: "/destinations/insta_barca.png",
-            alt: "Ταξιδιωτικός οδηγός για τη Βαρκελώνη και τη Sagrada Familia"
-        },
-        {
-            name: "Βιέννη",
-            slug: "vienna",
-            image: "/destinations/insta_vienna.jpg",
-            alt: "Ταξιδιωτικός οδηγός για τη Βιέννη και τα Αυτοκρατορικά Ανάκτορα"
-        },
-        {
-            name: "Βουκουρέστι",
-            slug: "bucharest",
-            image: "/destinations/insta_bucharest.jpg",
-            alt: "Ταξιδιωτικός οδηγός για το Βουκουρέστι και την Παλιά Πόλη"
-        },
-        {
-            name: "Λονδίνο",
-            slug: "london",
-            image: "/destinations/insta_london.jpg",
-            alt: "Ταξιδιωτικός οδηγός για το Λονδίνο, Big Ben και αξιοθέατα"
-        },
-        {
-            name: "Βουδαπέστη",
-            slug: "budapest",
-            image: "/destinations/insta_budapest.jpg",
-            alt: "Ταξιδιωτικός οδηγός για τη Βουδαπέστη και το Κοινοβούλιο"
-        },
-        {
-            name: "Κρακοβία",
-            slug: "krakow",
-            image: "/destinations/insta_krakow.jpg",
-            alt: "Ταξιδιωτικός οδηγός για την Κρακοβία και την κεντρική πλατεία"
-        },
-        {
-            name: "Βαρσοβία",
-            slug: "warsaw",
-            image: "/destinations/insta_warsaw.jpg",
-            alt: "Ταξιδιωτικός οδηγός για τη Βαρσοβία και την Παλιά Πόλη"
-        },
-        {
-            name: "Ρώμη",
-            slug: "rome",
-            image: "/destinations/insta_rome.jpg",
-            alt: "Ταξιδιωτικός οδηγός για τη Ρώμη και το Κοινοβούλιο"
-        }
-    ];
-
     return (
-        <div className="min-h-screen pt-22">
-            {/* Navbar */}
+        <div className="min-h-screen pt-16">
             <Navbar />
 
-            {/* Grid of Destinations */}
-            <div className="p-12 md:p-12 max-w-6xl mx-auto">
-                <div className="text-center mb-12">
-                    <h1 className="text-2xl md:text-3xl font-bold text-[#2E2E2F] mb-4">
+            {/* Hero banner */}
+            <div className="relative w-full h-[220px] md:h-[320px]">
+                <Image
+                    src="/images/hero-background.jpg"
+                    alt="Ταξιδιωτικοί προορισμοί"
+                    fill
+                    className="object-cover"
+                    priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70 flex flex-col items-center justify-center text-center px-4">
+                    <h1 className="text-white text-2xl md:text-4xl font-bold mb-3">
                         Ανακαλύψτε τον Επόμενο Προορισμό σας
                     </h1>
-                    <p className="text-gray-600 max-w-2xl mx-auto">
+                    <p className="text-white/90 max-w-xl">
                         Επιλέξτε μια πόλη και διαβάστε τον πλήρη ταξιδιωτικό οδηγό.
                     </p>
                 </div>
-                {/* <p className="text-gray-600 max-w-2xl mx-auto">
-                    Εξερευνήστε τους αναλυτικούς οδηγούς μας για τις ομορφότερες πόλεις της Ευρώπης και οργανώστε το ταξίδι των ονείρων σας.
-                </p> */}
-                {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 justify-items-center"> */}
-                {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center"> */}
-                <div className="border-t border-gray-300 pt-8"></div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
-                    
-                    {destinations.map((destination) => (
-                        <Link
-                            key={destination.slug}
-                            href={`/destinations/${destination.slug}`}
-                            className="flex justify-center p-1"
-                        >
-                            <div className="relative aspect-[4/5] w-full">
-                                <Image
-                                    className="w-full h-auto rounded-lg shadow-xl hover:scale-105 transition-transform duration-300"
-                                    src={destination.image}
-                                    width={250}
-                                    height={250}
-                                    alt={destination.alt}
-                                />
-                            </div>
-                        </Link>
-                    ))}
+            </div>
+
+            <div className="p-6 md:p-12 max-w-6xl mx-auto">
+                <DestinationsGrid destinations={destinations} />
+            </div>
+
+            {/* CTA */}
+            <div className="max-w-6xl mx-auto px-6 md:px-12 pb-10">
+                <div className="bg-[#F5F1ED] rounded-2xl p-8 text-center">
+                    <p className="font-bold text-[#2E2E2F] mb-4">
+                        Δεν βρήκες αυτό που ψάχνεις;
+                    </p>
+                    <Link
+                        href="/blog"
+                        className="inline-block bg-[#F76808] hover:bg-[#E55D07] text-white px-6 py-3 rounded-full font-medium transition-colors"
+                    >
+                        Δες όλα τα άρθρα
+                    </Link>
                 </div>
             </div>
-            <div className="pt-10">
-                <PageFooter />
-            </div>
+
+            <PageFooter />
         </div>
     );
 }
