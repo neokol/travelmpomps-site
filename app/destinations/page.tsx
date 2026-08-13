@@ -111,17 +111,26 @@ const destinations: Destination[] = [
         image: "/destinations/madrid.jpg",
         alt: "Ταξιδιωτικός οδηγός για τη Μαρδίτη",
         country: "Ισπανία",
-        teaser: "Ανακατασκευασμένη Παλιά Πόλη",
+        teaser: "Παλιά πόλη, φαγητό & νυχτερινή ζωή",
         budget: false,
     },
     {
         name: "Μπολόνια",
-        slug: "bolonia",
+        slug: "bologna",
         image: "/destinations/bologna.jpg",
         alt: "Ταξιδιωτικός οδηγός για τη Μπολόνια",
         country: "Ιταλία",
         teaser: "Φαγητό και παλιά πόλη",
         budget: true,
+    },
+    {
+        name: "Μιλάνο",
+        slug: "milan",
+        image: "/destinations/milan.jpg",
+        alt: "Ταξιδιωτικός οδηγός για το Μιλάνο",
+        country: "Ιταλία",
+        teaser: "Φαγητό και παλιά πόλη",
+        budget: false,
     },
 ];
 

@@ -58,6 +58,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             name: 'Madrid',
             lastUpdated: '2026-03-12'
         },
+        {
+            slug: 'milan',
+            name: 'Milan',
+            lastUpdated: '2026-08-13'
+        }
     ];
 
     return [
