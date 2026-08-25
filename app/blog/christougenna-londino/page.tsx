@@ -9,7 +9,7 @@ import { PageFooter } from '@/app/components/Footer';
 
 export const metadata: Metadata = {
     // Τίτλος: Πρέπει να υποσχεθείς "τον απόλυτο οδηγό"
-    title: "Χριστούγεννα στο Λονδίνο: Ο Απόλυτος Οδηγός & Tips (2025) | Travelmpomps",
+    title: "Χριστούγεννα στο Λονδίνο: Ο Απόλυτος Οδηγός & Tips (2025)",
 
     // Περιγραφή: Εδώ πρέπει να παίξεις με δυνατές λέξεις-κλειδιά:
     // Winter Wonderland, Regent Street (φώτα), Αγορές.

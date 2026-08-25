@@ -1,0 +1,16 @@
+{
+  "name": "Travelmpomps",
+  "short_name": "Travelmpomps",
+  "description": "Ολοκληρωμένοι ταξιδιωτικοί οδηγοί για προορισμούς στην Ευρώπη και την Ελλάδα.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F6FE",
+  "theme_color": "#F76808",
+  "icons": [
+    {
+      "src": "/travelmpomps.png",
+      "sizes": "600x600",
+      "type": "image/png"
+    }
+  ]
+}

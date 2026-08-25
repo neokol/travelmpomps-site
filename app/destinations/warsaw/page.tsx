@@ -76,7 +76,7 @@ const barcelonaItems = [
 
 export const metadata: Metadata = {
     // Τίτλος: Δυνατός, με χρονολογία
-    title: "Βαρσοβία: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
+    title: "Βαρσοβία: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2026)",
 
     // Περιγραφή: Εδώ συνδυάζουμε το ιστορικό με το μοντέρνο στοιχείο.
     // Αναφέρουμε το Παλάτι του Πολιτισμού (το σήμα κατατεθέν) και την Παλιά Πόλη.
@@ -100,15 +100,29 @@ export const metadata: Metadata = {
                 url: '/images/warsaw-hero.jpeg', 
                 width: 1200,
                 height: 630,
-                alt: 'Βαρσοβία: Ταξιδιωτικός Οδηγός 2025',
+                alt: 'Βαρσοβία: Ταξιδιωτικός Οδηγός 2026',
             },
         ],
     },
 }
 
 function Warsaw() {
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Αρχική', item: 'https://travelmpomps.gr/' },
+            { '@type': 'ListItem', position: 2, name: 'Προορισμοί', item: 'https://travelmpomps.gr/destinations' },
+            { '@type': 'ListItem', position: 3, name: 'Βαρσοβία', item: 'https://travelmpomps.gr/destinations/warsaw' },
+        ],
+    };
     return (
         <div className="min-h-screen">
+            <Script
+                id="json-ld-breadcrumb-warsaw"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             {/* <Head>
                 <title>Βαρσοβία Αξιοθέατα</title>
                 <link

@@ -7,7 +7,7 @@ import Script from 'next/script'
 
 export const metadata: Metadata = {
     // Ο τίτλος που θα φαίνεται στη Google
-    title: "Μιλάνο: Τι να δω και πού να φάω (Οδηγός 2026) | Travelmpomps",
+    title: "Μιλάνο: Τι να δω και πού να φάω (Οδηγός 2026)",
 
     // Η περιγραφή που θα φέρει το κλικ
     description: "Ανακαλύψτε το Μιλάνο, το κέντρο της μόδας στη Βόρεια Ιταλία. Πλήρης οδηγός με τον Duomo, τη Galleria, τη Navigli, μονοήμερες εκδρομές και τα καλύτερα μέρη για φαγητό.",
@@ -37,8 +37,22 @@ export const metadata: Metadata = {
 
 
 function Milan() {
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Αρχική', item: 'https://travelmpomps.gr/' },
+            { '@type': 'ListItem', position: 2, name: 'Προορισμοί', item: 'https://travelmpomps.gr/destinations' },
+            { '@type': 'ListItem', position: 3, name: 'Μιλάνο', item: 'https://travelmpomps.gr/destinations/milan' },
+        ],
+    };
     return (
         <div className="min-h-screen bg-[#F8F6FE]">
+            <Script
+                id="json-ld-breadcrumb-milan"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             <Script
                 async
                 defer

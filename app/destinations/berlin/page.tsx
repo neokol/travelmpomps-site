@@ -66,7 +66,7 @@ const berlinImages = [
 
 export const metadata: Metadata = {
     // Πιο δυνατός τίτλος με χρονολογία
-    title: "Βερολίνο: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
+    title: "Βερολίνο: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2026)",
 
     // Η περιγραφή πρέπει να δείχνει την ποικιλία του Βερολίνου (Ιστορία + Vibes)
     description: "Ανακαλύψτε το Βερολίνο: Από το Τείχος και την Πύλη του Βραδεμβούργου μέχρι τα κρυμμένα μπαρ και τα μουσεία. Ο απόλυτος οδηγός για αξιοθέατα, φαγητό και διαμονή.",
@@ -87,15 +87,29 @@ export const metadata: Metadata = {
                 url: '/images/4.jpeg', 
                 width: 1200,
                 height: 630,
-                alt: 'Βερολίνο: Ταξιδιωτικός Οδηγός 2025',
+                alt: 'Βερολίνο: Ταξιδιωτικός Οδηγός 2026',
             },
         ],
     },
 }
 
 function Berlin() {
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Αρχική', item: 'https://travelmpomps.gr/' },
+            { '@type': 'ListItem', position: 2, name: 'Προορισμοί', item: 'https://travelmpomps.gr/destinations' },
+            { '@type': 'ListItem', position: 3, name: 'Βερολίνο', item: 'https://travelmpomps.gr/destinations/berlin' },
+        ],
+    };
     return (
         <div className="min-h-screen">
+            <Script
+                id="json-ld-breadcrumb-berlin"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             {/* <Head>
                 <title>Βερολίνο Αξιοθέατα</title>
                 <link

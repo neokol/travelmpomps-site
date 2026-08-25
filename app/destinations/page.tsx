@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Navbar from "../components/Navbar";
+import LandingNavbar from "../components/LandingNavbar";
 import { PageFooter } from "../components/Footer";
 import DestinationsGrid, { Destination } from "../components/DestinationsGrid";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Κορυφαίοι Ταξιδιωτικοί Προορισμοί & Οδηγοί (2025) | Travelmpomps",
+    title: "Κορυφαίοι Ταξιδιωτικοί Προορισμοί & Οδηγοί (2026)",
     description: "Ανακαλύψτε τους καλύτερους προορισμούς για το επόμενο ταξίδι σας. Πλήρεις οδηγοί για Ευρώπη (Ρώμη, Λονδίνο, Βιέννη κ.α.), tips για οικονομικά city breaks και κρυμμένα διαμάντια.",
     alternates: {
         canonical: 'https://travelmpomps.gr/destinations',
@@ -106,10 +106,10 @@ const destinations: Destination[] = [
         budget: true,
     },
     {
-        name: "Μαρδίτη",
+        name: "Μαδρίτη",
         slug: "madrid",
         image: "/destinations/madrid.jpg",
-        alt: "Ταξιδιωτικός οδηγός για τη Μαρδίτη",
+        alt: "Ταξιδιωτικός οδηγός για τη Μαδρίτη",
         country: "Ισπανία",
         teaser: "Παλιά πόλη, φαγητό & νυχτερινή ζωή",
         budget: false,
@@ -132,15 +132,22 @@ const destinations: Destination[] = [
         teaser: "Φαγητό και παλιά πόλη",
         budget: false,
     },
+    {
+        name: "Βρότσλαβ",
+        slug: "wroclaw",
+        image: "/destinations/wroclaw.jpg",
+        alt: "Ταξιδιωτικός οδηγός για το Βρότσλαβ, τη Βενετία της Πολωνίας",
+        country: "Πολωνία",
+        teaser: "Η \"Βενετία\" της Πολωνίας & κυνήγι νάνων",
+        budget: true,
+    },
 ];
 
 function Destinations() {
     return (
-        <div className="min-h-screen pt-16">
-            <Navbar />
-
+        <div className="min-h-screen">
             {/* Hero banner */}
-            <div className="relative w-full h-[220px] md:h-[320px]">
+            <div className="relative w-full h-[320px] md:h-[420px]">
                 <Image
                     src="/images/hero-background.jpg"
                     alt="Ταξιδιωτικοί προορισμοί"
@@ -148,6 +155,7 @@ function Destinations() {
                     className="object-cover"
                     priority
                 />
+                <LandingNavbar />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70 flex flex-col items-center justify-center text-center px-4">
                     <h1 className="text-white text-2xl md:text-4xl font-bold mb-3">
                         Ανακαλύψτε τον Επόμενο Προορισμό σας

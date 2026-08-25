@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: [],
         },
-        sitemap: 'https://travelmpomps.gr//sitemap.xml',
+        sitemap: 'https://travelmpomps.gr/sitemap.xml',
     }
 }

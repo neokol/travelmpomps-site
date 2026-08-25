@@ -165,7 +165,7 @@ const fifthDayImages = [
 
 export const metadata: Metadata = {
     // Τίτλος: Πλήρης και ενημερωμένος
-    title: "Βαρκελώνη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
+    title: "Βαρκελώνη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2026)",
 
 
     description: "Ταξίδι στην καρδιά της Καταλονίας. Ο απόλυτος οδηγός για τη Βαρκελώνη: Sagrada Família, Park Güell, Γοτθική Συνοικία και τα καλύτερα tapas bars.",
@@ -186,15 +186,29 @@ export const metadata: Metadata = {
                 url: '/barcelona/barcelona-hero.jpg', // Η κύρια εικόνα του άρθρου
                 width: 1200,
                 height: 630,
-                alt: 'Βαρκελώνη: Ταξιδιωτικός Οδηγός 2025',
+                alt: 'Βαρκελώνη: Ταξιδιωτικός Οδηγός 2026',
             },
         ]
     },
 }
 
 function Barcelona() {
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Αρχική', item: 'https://travelmpomps.gr/' },
+            { '@type': 'ListItem', position: 2, name: 'Προορισμοί', item: 'https://travelmpomps.gr/destinations' },
+            { '@type': 'ListItem', position: 3, name: 'Βαρκελώνη', item: 'https://travelmpomps.gr/destinations/barcelona' },
+        ],
+    };
     return (
         <div className="min-h-screen">
+            <Script
+                id="json-ld-breadcrumb-barcelona"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             {/* <Head>
                 <title>Βαρκελώνη Αξιοθέατα</title>
                 <link

@@ -76,7 +76,7 @@ const barcelonaItems = [
 
 export const metadata: Metadata = {
     // Τίτλος: Κλασικός, περιεκτικός και με χρονολογία
-    title: "Ρώμη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
+    title: "Ρώμη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2026)",
 
     // Περιγραφή: Πρέπει να χωρέσουμε τα "βαριά χαρτιά" της Ρώμης.
     // Αναφέρουμε Κολοσσαίο, Βατικανό (Μουσεία), Fontana di Trevi και φυσικά πίτσα/pasta.
@@ -98,15 +98,29 @@ export const metadata: Metadata = {
                 url: '/images/rome-hero.png', 
                 width: 1200,
                 height: 630,
-                alt: 'Ρώμη: Ταξιδιωτικός Οδηγός 2025',
+                alt: 'Ρώμη: Ταξιδιωτικός Οδηγός 2026',
             },
         ],
     },
 }
 
 function Rome() {
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Αρχική', item: 'https://travelmpomps.gr/' },
+            { '@type': 'ListItem', position: 2, name: 'Προορισμοί', item: 'https://travelmpomps.gr/destinations' },
+            { '@type': 'ListItem', position: 3, name: 'Ρώμη', item: 'https://travelmpomps.gr/destinations/rome' },
+        ],
+    };
     return (
         <div className="min-h-screen">
+            <Script
+                id="json-ld-breadcrumb-rome"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             {/* <Head>
                 <title>Ρώμη Αξιοθέατα - Ρώμη τι να δω</title>
                 <link

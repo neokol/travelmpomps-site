@@ -53,8 +53,10 @@ export const metadata: Metadata = {
     ]
   },
   icons: {
-    icon: "/travelmpomps.png"
+    icon: "/travelmpomps.png",
+    apple: "/travelmpomps.png",
   },
+  manifest: "/manifest.json",
   verification: {
     google: "7q-1UM39MUG1YlU0DE2iqnmXXicGjIZtUAtc3C7Nokk",
   },

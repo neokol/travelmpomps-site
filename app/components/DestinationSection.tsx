@@ -7,7 +7,7 @@ export default function DestinationsSection() {
             <div className="relative w-full h-[300px] md:h-[400px] lg:h-[600px] mx-auto max-w-6xl">
                 <Image
                     src="/images/Enjoy_travel.jpg"
-                    alt="Travel Quote"
+                    alt="Απολαύστε το ταξίδι σας"
                     fill
                     className="object-cover rounded-2xl md:rounded-3xl shadow-xl"
                     priority

@@ -77,7 +77,7 @@ const secondDayImages = [
 
 export const metadata: Metadata = {
     // Τίτλος: Δυνατός, με χρονολογία και ξεκάθαρη υπόσχεση
-    title: "Βουκουρέστι: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
+    title: "Βουκουρέστι: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2026)",
 
     // Περιγραφή: Εδώ παίζουμε με τα "δυνατά χαρτιά" του Βουκουρεστίου: Therme & Παλιά Πόλη
     description: "Ανακαλύψτε το «Μικρό Παρίσι» της Ανατολής. Ο απόλυτος οδηγός για το Βουκουρέστι: Therme, Παλάτι της Βουλής, φαγητό και νυχτερινή ζωή στην Παλιά Πόλη.",
@@ -98,15 +98,29 @@ export const metadata: Metadata = {
                 url: '/bucharest/bucharest-hero.jpg', 
                 width: 1200,
                 height: 630,
-                alt: 'Βουκουρέστι: Ταξιδιωτικός Οδηγός 2025',
+                alt: 'Βουκουρέστι: Ταξιδιωτικός Οδηγός 2026',
             },
         ],
     },
 }
 
 function Bucharest() {
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Αρχική', item: 'https://travelmpomps.gr/' },
+            { '@type': 'ListItem', position: 2, name: 'Προορισμοί', item: 'https://travelmpomps.gr/destinations' },
+            { '@type': 'ListItem', position: 3, name: 'Βουκουρέστι', item: 'https://travelmpomps.gr/destinations/bucharest' },
+        ],
+    };
     return (
         <div className="min-h-screen">
+            <Script
+                id="json-ld-breadcrumb-bucharest"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             {/* <Head>
                 <title>Βουκουρέστι Αξιοθέατα</title>
                 <link

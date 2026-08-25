@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { MdPhotoCamera } from 'react-icons/md';
 
 type AccordionItem = {
@@ -30,10 +31,12 @@ export const ImageAccordion = ({ items, className = '' }: ImageAccordionProps) =
                         onClick={() => handleToggle(index)}
                     >
                         {/* Image */}
-                        <img
+                        <Image
                             src={item.image}
                             alt={item.header}
-                            className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[150%] w-full object-cover filter grayscale-[60%]"
+                            fill
+                            sizes="(max-width: 768px) 64px, 400px"
+                            className="z-0 object-cover filter grayscale-[60%]"
                         />
 
                         {/* Content */}

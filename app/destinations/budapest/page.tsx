@@ -75,8 +75,8 @@ const barcelonaItems = [
 // ];
 
 export const metadata: Metadata = {
-    // Τίτλος: Προσθέτουμε το "Πλήρης Οδηγός 2025" για κύρος
-    title: "Βουδαπέστη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025) | Travelmpomps",
+    // Τίτλος: Προσθέτουμε το "Πλήρης Οδηγός 2026" για κύρος
+    title: "Βουδαπέστη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2026)",
 
     // Περιγραφή: Πρέπει να αναφέρουμε τα "Highlights" που ψάχνει ο κόσμος
     description: "Ταξίδι στο «Μαργαριτάρι του Δούναβη». Ο απόλυτος οδηγός για τη Βουδαπέστη: Θερμά λουτρά (Széchenyi), Κοινοβούλιο, κρουαζιέρα στον Δούναβη και Ruin Bars.",
@@ -97,15 +97,29 @@ export const metadata: Metadata = {
                 url: '/images/budapesthero.jpg', 
                 width: 1200,
                 height: 630,
-                alt: 'Βουδαπέστη: Ταξιδιωτικός Οδηγός 2025',
+                alt: 'Βουδαπέστη: Ταξιδιωτικός Οδηγός 2026',
             },
         ],
     },
 }
 
 function Budapest() {
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Αρχική', item: 'https://travelmpomps.gr/' },
+            { '@type': 'ListItem', position: 2, name: 'Προορισμοί', item: 'https://travelmpomps.gr/destinations' },
+            { '@type': 'ListItem', position: 3, name: 'Βουδαπέστη', item: 'https://travelmpomps.gr/destinations/budapest' },
+        ],
+    };
     return (
         <div className="min-h-screen">
+            <Script
+                id="json-ld-breadcrumb-budapest"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             {/* <Head>
                 <title>Βουδαπέστη Αξιοθέατα</title>
                 <link

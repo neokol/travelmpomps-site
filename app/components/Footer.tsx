@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { BsInstagram } from 'react-icons/bs';
 import { AiFillTikTok } from 'react-icons/ai';
 import { SiYoutubeshorts } from 'react-icons/si';
@@ -17,20 +18,25 @@ export const PageFooter = () => {
 
             {/* Social Media Icons */}
             <div className="flex justify-center gap-8 mb-8">
-                <a href="https://instagram.com/travelmpomps/">
+                <a href="https://instagram.com/travelmpomps/" target="_blank" rel="noopener noreferrer">
                     <BsInstagram className="text-4xl text-[#22333B] hover:text-[#E101A7] transition-all duration-300" />
                 </a>
-                <a href="https://tiktok.com/@travelmpomps">
+                <a href="https://tiktok.com/@travelmpomps" target="_blank" rel="noopener noreferrer">
                     <AiFillTikTok className="text-4xl text-[#22333B] hover:text-black transition-all duration-300" />
                 </a>
-                <a href="https://youtube.com/@Travelmpomps">
+                <a href="https://youtube.com/@Travelmpomps" target="_blank" rel="noopener noreferrer">
                     <SiYoutubeshorts className="text-4xl text-[#22333B] hover:text-[#FE0032] transition-all duration-300" />
                 </a>
             </div>
 
             {/* Copyright Text */}
             <div className="text-sm text-gray-600 mb-4">
-                <p>© 2025 travelmpomps.gr – All rights reserved – Republishing the content of this page is strictly forbidden</p>
+                <p>© {new Date().getFullYear()} travelmpomps.gr – All rights reserved – Republishing the content of this page is strictly forbidden</p>
+                <p className="mt-2">
+                    <Link href="/privacy-policy" className="hover:text-[#F76808] hover:underline transition-colors">
+                        Πολιτική Απορρήτου
+                    </Link>
+                </p>
             </div>
 
             {/* Logo */}

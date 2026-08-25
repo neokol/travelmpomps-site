@@ -10,7 +10,7 @@ import { PageFooter } from '@/app/components/Footer';
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-    title: "Μπολόνια: Τι να δω και πού να φάω (Οδηγός 2025)",
+    title: "Μπολόνια: Τι να δω και πού να φάω (Οδηγός 2026)",
     description: "Ανακαλύψτε την Μπολόνια, την πρωτεύουσα του φαγητού. Πλήρης οδηγός με τα κορυφαία αξιοθέατα, αυθεντικές γεύσεις, διαμονή και tips για ένα αξέχαστο ταξίδι στην Ιταλία.",
     alternates: {
         canonical: '/destinations/bologna',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
                 url: '/images/bologna-main.jpg', // Η κύρια εικόνα του άρθρου
                 width: 1200,
                 height: 630,
-                alt: 'Μπολόνια 2025: Ταξιδιωτικός Οδηγός',
+                alt: 'Μπολόνια 2026: Ταξιδιωτικός Οδηγός',
             },
         ],
     },
@@ -33,8 +33,22 @@ export const metadata: Metadata = {
 
 
 function Bologna() {
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Αρχική', item: 'https://travelmpomps.gr/' },
+            { '@type': 'ListItem', position: 2, name: 'Προορισμοί', item: 'https://travelmpomps.gr/destinations' },
+            { '@type': 'ListItem', position: 3, name: 'Μπολόνια', item: 'https://travelmpomps.gr/destinations/bologna' },
+        ],
+    };
     return (
         <div className="min-h-screen bg-[#F8F6FE]">
+            <Script
+                id="json-ld-breadcrumb-bologna"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             <Script
                 async
                 defer

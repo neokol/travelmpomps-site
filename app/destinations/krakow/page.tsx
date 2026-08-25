@@ -76,7 +76,7 @@ const barcelonaItems = [
 
 export const metadata: Metadata = {
     // Τίτλος: Κλασικός και δυνατός για SEO
-    title: "Κρακοβία: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
+    title: "Κρακοβία: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2026)",
 
     // Περιγραφή: Εδώ πρέπει να βάλουμε τις λέξεις-κλειδιά που ψάχνουν όλοι:
     // "Wawel", "Kazimierz" (Εβραϊκή Συνοικία) και "Άουσβιτς/Αλατωρυχεία" (γιατί όλοι πάνε από εκεί).
@@ -98,15 +98,29 @@ export const metadata: Metadata = {
                 url: '/images/krakow-hero.jpg', 
                 width: 1200,
                 height: 630,
-                alt: 'Κρακοβία: Ταξιδιωτικός Οδηγός 2025',
+                alt: 'Κρακοβία: Ταξιδιωτικός Οδηγός 2026',
             },
         ],
     },
 }
 
 function Krakow() {
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Αρχική', item: 'https://travelmpomps.gr/' },
+            { '@type': 'ListItem', position: 2, name: 'Προορισμοί', item: 'https://travelmpomps.gr/destinations' },
+            { '@type': 'ListItem', position: 3, name: 'Κρακοβία', item: 'https://travelmpomps.gr/destinations/krakow' },
+        ],
+    };
     return (
         <div className="min-h-screen">
+            <Script
+                id="json-ld-breadcrumb-krakow"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             {/* <Head>
                 <title>Κρακοβία Αξιοθέατα</title>
                 <link

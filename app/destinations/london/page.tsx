@@ -76,7 +76,7 @@ const barcelonaItems = [
 
 export const metadata: Metadata = {
     // Τίτλος: Δυνατός και ξεκάθαρος
-    title: "Λονδίνο: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
+    title: "Λονδίνο: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2026)",
 
     // Περιγραφή: Στο Λονδίνο πρέπει να καλύψεις τα "Big Three" (Big Ben, London Eye)
     // αλλά και τα "δωρεάν" μουσεία, γιατί είναι ακριβή πόλη και αυτό ενδιαφέρει πολύ.
@@ -98,15 +98,29 @@ export const metadata: Metadata = {
                 url: '/images/londonguide2.jpg', 
                 width: 1200,
                 height: 630,
-                alt: 'Λονδίνο: Ταξιδιωτικός Οδηγός 2025',
+                alt: 'Λονδίνο: Ταξιδιωτικός Οδηγός 2026',
             },
         ],
     },
 }
 
 function London() {
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Αρχική', item: 'https://travelmpomps.gr/' },
+            { '@type': 'ListItem', position: 2, name: 'Προορισμοί', item: 'https://travelmpomps.gr/destinations' },
+            { '@type': 'ListItem', position: 3, name: 'Λονδίνο', item: 'https://travelmpomps.gr/destinations/london' },
+        ],
+    };
     return (
         <div className="min-h-screen">
+            <Script
+                id="json-ld-breadcrumb-london"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             {/* <Head>
                 <title>Λονδίνο Αξιοθέατα</title>
                 <link

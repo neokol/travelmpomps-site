@@ -146,7 +146,7 @@ const fourthDayImages = [
 
 export const metadata: Metadata = {
     // Τίτλος: Ελκυστικός και πλήρης
-    title: "Βιέννη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2025)",
+    title: "Βιέννη: Τι να δω και τι να κάνω (Πλήρης Οδηγός 2026)",
 
     // Περιγραφή: Αναφέρουμε τα ανάκτορα (Schönbrunn/Belvedere), την κουλτούρα του καφέ 
     // και τη μουσική, που είναι ταυτισμένα με τη Βιέννη.
@@ -168,15 +168,29 @@ export const metadata: Metadata = {
                 url: '/vienna/vienna-hero.jpg', 
                 width: 1200,
                 height: 630,
-                alt: 'Βιέννη: Ταξιδιωτικός Οδηγός 2025',
+                alt: 'Βιέννη: Ταξιδιωτικός Οδηγός 2026',
             },
         ],
     },
 }
 
 function Vienna() {
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Αρχική', item: 'https://travelmpomps.gr/' },
+            { '@type': 'ListItem', position: 2, name: 'Προορισμοί', item: 'https://travelmpomps.gr/destinations' },
+            { '@type': 'ListItem', position: 3, name: 'Βιέννη', item: 'https://travelmpomps.gr/destinations/vienna' },
+        ],
+    };
     return (
         <div className="min-h-screen">
+            <Script
+                id="json-ld-breadcrumb-vienna"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             {/* <Head>
                 <title>Βιέννη Αξιοθέατα</title>
                 <link

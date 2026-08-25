@@ -11,7 +11,7 @@ import Script from 'next/script'
 
 export const metadata: Metadata = {
     // Ο τίτλος που θα φαίνεται στη Google
-    title: "Μαδρίτη: Τι να δω και πού να φάω (Οδηγός 2026) | Travelmpomps",
+    title: "Μαδρίτη: Τι να δω και πού να φάω (Οδηγός 2026)",
 
     // Η περιγραφή που θα φέρει το κλικ
     description: "Ανακαλύψτε τη Μαδρίτη, την αριστοκρατική πρωτεύουσα της Ισπανίας. Πλήρης οδηγός με κορυφαία παλάτια, γραφικές γειτονιές, tapas, διαμονή και χρήσιμα tips.",
@@ -41,8 +41,22 @@ export const metadata: Metadata = {
 
 
 function Madrid() {
+    const breadcrumbJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Αρχική', item: 'https://travelmpomps.gr/' },
+            { '@type': 'ListItem', position: 2, name: 'Προορισμοί', item: 'https://travelmpomps.gr/destinations' },
+            { '@type': 'ListItem', position: 3, name: 'Μαδρίτη', item: 'https://travelmpomps.gr/destinations/madrid' },
+        ],
+    };
     return (
         <div className="min-h-screen bg-[#F8F6FE]">
+            <Script
+                id="json-ld-breadcrumb-madrid"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             <Script
                 async
                 defer

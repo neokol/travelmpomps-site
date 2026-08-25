@@ -46,11 +46,6 @@ export default function Home() {
     '@type': 'WebSite',
     name: 'Travelmpomps',
     url: 'https://travelmpomps.gr/',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: 'https://travelmpomps.gr/search?q={search_term_string}',
-      'query-input': 'required name=search_term_string'
-    }
   }
   return (
     <main>

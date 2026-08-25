@@ -136,6 +136,13 @@ function LandingNavbar() {
                                     >
                                         Μιλάνο
                                     </Link>
+                                    <Link
+                                        href="/destinations/wroclaw"
+                                        onClick={handleNavItemClick}
+                                        className="block px-4 py-2 text-white"
+                                    >
+                                        Βρότσλαβ
+                                    </Link>
                                     {/* Add more dropdown links as needed */}
                                 </div>
                             )}
@@ -229,7 +236,7 @@ function LandingNavbar() {
                                 About
                             </Link>
                             <Link
-                                href="/"
+                                href="/blog"
                                 onClick={handleNavItemClick}
                                 className="block px-4 py-3 font-bold text-white hover:text-[#F76808] text-xl"
                             >
