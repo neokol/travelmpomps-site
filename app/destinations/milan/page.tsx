@@ -100,12 +100,12 @@ function Milan() {
                     <p className="text-[#2E2E2F] mb-4 text-justify">
                         Το Μιλάνο είναι μια σχετικά μικρή πόλη με λίγα, αλλά αξιόλογα αξιοθέατα. Μέσα σε δύο μέρες μπορείτε να τη γυρίσετε όλη, για αυτό πολύς κόσμος το συνδυάζει με μονοήμερες εκδρομές στα γύρω μέρη.
                     </p>
-
+                    <div data-gyg-href="https://widget.getyourguide.com/default/city.frame" data-gyg-location-id="139" data-gyg-locale-code="el-GR" data-gyg-widget="city" data-gyg-partner-id="0OAQQKO"></div>
                     <h3 className="text-xl font-bold text-[#2E2E2F] mb-4">
                         🗓️ 1η Ημέρα – Κέντρο
                     </h3>
                     <p className="text-[#2E2E2F] mb-4 text-justify">
-                        Ξεκινάμε από το πιο διάσημο αξιοθέατο της πόλης, τον <strong>Καθεδρικό Ναό Duomo</strong>. Καλό είναι να πάτε νωρίς το πρωί ώστε να έχει λιγότερο κόσμο. Υπάρχουν διαφορετικά εισιτήρια ανάλογα με την πρόσβαση που θέλετε (μόνο εσωτερικό, μόνο ταράτσα, ή συνδυαστικό με μουσείο). Εμείς επιλέξαμε μόνο την ταράτσα (19€), από όπου έχετε υπέροχη θέα σε όλο το Μιλάνο και βλέπετε από κοντά τα γλυπτά της οροφής.
+                        Ξεκινάμε από το πιο διάσημο αξιοθέατο της πόλης, τον <strong>Καθεδρικό Ναό Duomo</strong>. Καλό είναι να πάτε νωρίς το πρωί ώστε να έχει λιγότερο κόσμο. Υπάρχουν διαφορετικά εισιτήρια ανάλογα με την πρόσβαση που θέλετε (μόνο εσωτερικό, μόνο ταράτσα, ή συνδυαστικό με μουσείο). Εμείς επιλέξαμε μόνο την ταράτσα (19€), από όπου έχετε υπέροχη θέα σε όλο το Μιλάνο και βλέπετε από κοντά τα γλυπτά της οροφής. Μπορείτε να κλείσετε τα εισητήρια σας από <a href="https://gyg.me/7z8axPnq" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">εδώ</a>. 
                     </p>
                     <p className="text-[#2E2E2F] mb-4 text-justify">
                         Χρειάστηκαν 500 χρόνια για να ολοκληρωθεί ο ναός. Χαρακτηριστικό του είναι το χρυσό άγαλμα της Παναγίας στην κορυφή — η <strong>Μαντονίνα</strong> — στην οποία είναι αφιερωμένος ολόκληρος ο ναός. Είναι ένας από τους μεγαλύτερους ναούς της Ευρώπης, με περίπου 3.500 αγάλματα. Στο εσωτερικό το ύψος φτάνει τα 45 μέτρα, και τα βιτρό χρονολογούνται από το 1470.
@@ -212,7 +212,7 @@ function Milan() {
                         Καθώς πλησιάζει το ηλιοβασίλεμα, κατευθυνθείτε προς την περιοχή <strong>Navigli</strong>, την πιο ζωντανή πλευρά του Μιλάνου, με τα κανάλια στη μέση και δεκάδες μαγαζιά για φαγητό και ποτό εκατέρωθεν. Εκεί δοκιμάσαμε την πιτσαρία <strong>Pizza e Mozzarella</strong>, μια επιλογή που προτιμούν αρκετοί ντόπιοι, με πολύ καλή και φθηνή πίτσα (περίπου 5€).
                     </p>
                     <p className="text-[#2E2E2F] mb-4 text-justify italic">
-                        💡 Tip: Ένα αξιοθέατο που παραλείψαμε στο δικό μας πρόγραμμα είναι ο <strong>Μυστικός Δείπνος</strong> (The Last Supper) του Λεονάρντο Ντα Βίντσι, στη Santa Maria delle Grazie. Τα εισιτήρια εξαντλούνται πολύ γρήγορα (οι κρατήσεις συνήθως ανοίγουν μήνες πριν), οπότε αν σας ενδιαφέρει, κλείστε το νωρίς.
+                        💡 Tip: Ένα αξιοθέατο που παραλείψαμε στο δικό μας πρόγραμμα είναι ο <strong>Μυστικός Δείπνος</strong> (The Last Supper) του Λεονάρντο Ντα Βίντσι, στη Santa Maria delle Grazie. Τα εισιτήρια εξαντλούνται πολύ γρήγορα (οι κρατήσεις συνήθως ανοίγουν μήνες πριν), οπότε αν σας ενδιαφέρει, κλείστε το νωρίς. Μπορείτε να κλείσετε τα εισητήρια σας από <a href="https://gyg.me/0PZkwhVv" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">εδώ</a> με guided tour.
                     </p>
 
                     <div className="my-10 relative w-full h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
@@ -233,7 +233,7 @@ function Milan() {
                         Το Μιλάνο είναι ιδανική βάση για μονοήμερες εκδρομές, αφού βρίσκεται σε μικρή απόσταση από πολλά αξιόλογα μέρη. Παρακάτω τα βασικά για το καθένα.
                     </p>
 
-                    <div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-q="Lake Como"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/lake-como-l2217/">GetYourGuide</a></span></div>
+                    <div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-tour-ids="739373,592426,866729"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/milan-l139/">GetYourGuide</a></span></div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-white p-6 rounded-xl shadow-sm">

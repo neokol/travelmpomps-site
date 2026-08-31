@@ -136,7 +136,7 @@ function Wroclaw() {
                         2. Οδηγός 2 Ημερών για το Βρότσλαβ
                     </h2>
                 </div>
-
+                <div data-gyg-href="https://widget.getyourguide.com/default/city.frame" data-gyg-location-id="2036" data-gyg-locale-code="el-GR" data-gyg-widget="city" data-gyg-partner-id="0OAQQKO"></div>
                 <div className="mt-8">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         🗓️ 1η Ημέρα
@@ -243,7 +243,7 @@ function Wroclaw() {
                             <strong>Πάρκο Szczytnicki και Ιαπωνικός Κήπος</strong>: Βρίσκεται ακριβώς δίπλα στο συντριβάνι. Προσφέρει αυθεντική ιαπωνική αρχιτεκτονική τοπίου.
                         </li>
                         <li>
-                            <strong>Hydropolis</strong>: Ένα υπερσύγχρονο, διαδραστικό μουσείο αφιερωμένο στο νερό. Στεγάζεται σε μια υπόγεια δεξαμενή καθαρού νερού του 19ου αιώνα και εξηγεί τον ρόλο του νερού στον πλανήτη, την ιστορία της ναυτιλίας και των ωκεανών (~10€).
+                            <strong>Hydropolis</strong>: Ένα υπερσύγχρονο, διαδραστικό μουσείο αφιερωμένο στο νερό. Στεγάζεται σε μια υπόγεια δεξαμενή καθαρού νερού του 19ου αιώνα και εξηγεί τον ρόλο του νερού στον πλανήτη, την ιστορία της ναυτιλίας και των ωκεανών (~10€). Μπορείτε να αγοράσετε εισιτήρια online για να αποφύγετε την αναμονή από <a href="https://gyg.me/40GK8Zkf" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">εδώ</a>.
                         </li>
                         <li>
                             <strong>Συνοικία Nadodrze</strong>: Η εναλλακτική πλευρά του Βρότσλαβ. Γεμάτη με industrial αισθητική, street art, καλλιτεχνικά εργαστήρια και εσωτερικές αυλές με τοιχογραφίες (όπως στην οδό Roosvelta), όπου οι ντόπιοι έχουν ζωγραφίσει τους εαυτούς τους και τα κατοικίδιά τους στους τοίχους.
@@ -266,7 +266,7 @@ function Wroclaw() {
                     <ul className="list-disc pl-6 space-y-2">
                         <li><strong>Ze Smakiem</strong>: Τα καλύτερα pierogi</li>
                         <li><strong>Bar mleczny Miś</strong></li>
-                        <li><strong>PLUTO</strong></li>
+                        <li><strong>PLUTO</strong>: Πολύ νόστιμα burgers σε εξαιρετική τιμή</li>
                     </ul>
 
                     <h4 className="font-bold mb-3 mt-8">Καφέ:</h4>
