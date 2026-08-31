@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '@/app/components/Navbar'
+import SiteNavbar from '@/app/components/SiteNavbar'
 import { Widget2 } from '@/app/components/Widget2'
 import { FaCoins } from "react-icons/fa";
 import { VscRadioTower } from "react-icons/vsc";
@@ -79,31 +79,33 @@ function Wroclaw() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
             />
-            <div><Navbar /></div>
             <Script
                 async
                 defer
                 src="https://widget.getyourguide.com/dist/pa.umd.production.min.js"
                 data-gyg-partner-id="0OAQQKO"
             />
-            {/* Content with Padding to Account for Navbar */}
-            <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-60">
 
-                <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">
-                    Ταξίδι στο Βρότσλαβ: Τι να δεις και τι να κάνεις σε 2 Ημέρες
-                </h1>
-
-                {/* Main picture */}
-                <div className="flex justify-center my-8">
-                    <Image
-                        src="/images/wroclaw-hero.jpg"
-                        width={1200}
-                        height={600}
-                        alt="wroclaw-center"
-                        className="rounded-lg shadow-lg w-full max-w-4xl"
-                        priority
-                    />
+            {/* Hero */}
+            <div className="relative w-full h-[50vh] md:h-[65vh]">
+                <Image
+                    src="/hero/wroclaw.jpg"
+                    alt="Ταξιδιωτικός οδηγός για το Βρότσλαβ"
+                    fill
+                    priority
+                    className="object-cover"
+                    sizes="100vw"
+                />
+                <SiteNavbar variant="transparent" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-black/60 flex items-center justify-center text-center px-4">
+                    <h1 className="font-display text-white text-3xl md:text-5xl font-bold max-w-3xl">
+                        Ταξίδι στο Βρότσλαβ: Τι να δεις και τι να κάνεις σε 2 Ημέρες
+                    </h1>
                 </div>
+            </div>
+
+            {/* Content */}
+            <div className="pt-12 container mx-auto px-8 md:px-20 lg:px-60">
 
                 <p className="text-[#2E2E2F] mb-4 text-justify">
                     Η πόλη του Βρότσλαβ λέγεται συχνά και η &quot;Βενετία&quot; της Πολωνίας. Ο λόγος είναι ότι έχει 120 γέφυρες και είναι χτισμένη πάνω σε 12 νησιά πάνω στον ποταμό Oder. Επίσης, είναι γνωστή και ως η πόλη των νάνων. Εντός της πόλης θα βρείτε διασκορπισμένα διάφορα μικρά αγαλματίδια από νάνους.

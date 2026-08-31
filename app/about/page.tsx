@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import LandingNavbar from '../components/LandingNavbar';
+import SiteNavbar from '../components/SiteNavbar';
 import { PageFooter } from "../components/Footer";
 import Image from 'next/image';
 import { Metadata } from 'next';
@@ -43,7 +43,7 @@ function About() {
                     className="object-cover"
                     sizes="100vw"
                 />
-                <LandingNavbar />
+                <SiteNavbar variant="transparent" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70 flex flex-col items-center justify-center text-center px-4">
                     <p className="text-white/80 tracking-[0.2em] uppercase text-sm font-semibold mb-4">
                         Το Travelmpomps

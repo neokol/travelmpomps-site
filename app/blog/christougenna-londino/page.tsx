@@ -1,10 +1,8 @@
 import React from 'react';
-// import Navbar from '../components/Navbar';
-// import { PageFooter } from "../components/Footer";
-import Image from 'next/image'; // Import the Image component from Next.js
+import Image from 'next/image';
 import { Metadata } from 'next';
 import Link from "next/link";
-import Navbar from '@/app/components/Navbar';
+import SiteNavbar from '@/app/components/SiteNavbar';
 import { PageFooter } from '@/app/components/Footer';
 
 export const metadata: Metadata = {
@@ -35,22 +33,23 @@ export const metadata: Metadata = {
 function ChristmasLondon() {
     return (
         <div className="min-h-screen bg-[#F8F6FE]">
-            
-            {/* Navbar */}
-            <Navbar />
-
-            <main className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 py-16 space-y-20 pt-24">
-                {/* Section 1 — text left, image right */}
-                <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">Χριστούγεννα στο Λονδίνο: Μαγεία, Φώτα και Winter Wonderland</h1>
-                <div className="relative w-full aspect-[5/2] md:aspect-[5/2] rounded-2xl overflow-hidden shadow-lg">
-                    <Image
-                        src="/blog_images/london-xmas-1.jpg"
-                        alt="χριστούγεννα στο λονδινο"
-                        fill
-                        className="object-cover"
-                        sizes="100vw"
-                    />
+            {/* Hero */}
+            <div className="relative w-full h-[50vh] md:h-[65vh]">
+                <Image
+                    src="/blog_images/london-xmas-1.jpg"
+                    alt="Χριστουγεννιάτικος στολισμός στο Λονδίνο"
+                    fill
+                    priority
+                    className="object-cover"
+                    sizes="100vw"
+                />
+                <SiteNavbar variant="transparent" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-black/60 flex items-center justify-center text-center px-4">
+                    <h1 className="text-white text-3xl md:text-5xl font-bold max-w-3xl">Χριστούγεννα στο Λονδίνο: Μαγεία, Φώτα και Winter Wonderland</h1>
                 </div>
+            </div>
+
+            <main className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 py-16 space-y-20">
                 <p className="text-[#2E2E2F] mb-4 text-justify">
                     Το Λονδίνο αποτελεί ένα από τους πιο δημοφιλείς προορισμούς για τα Χριστούγεννα, και όχι άδικα αφού είναι γεμάτο στολισμούς, αγορές και εντυπωσιακά events.
                 </p>

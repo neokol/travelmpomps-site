@@ -7,27 +7,32 @@ export default function JourneySection() {
         {
             title: "Βερολίνο",
             description: "Berlin Cathedral",
-            image: "/images/1.jpg" // Update with your image path
+            image: "/images/1.jpg", // Update with your image path
+            slug: "berlin"
         },
         {
             title: "Βαρκελώνη",
             description: "Sagrada Familia",
-            image: "/images/sagrada.png"
+            image: "/images/sagrada.png",
+            slug: "barcelona"
         },
         {
             title: "Βιέννη",
             description: "Schönbrunn Palace",
-            image: "/images/vienna.jpg"
+            image: "/images/vienna.jpg",
+            slug: "vienna"
         },
         {
             title: "Ρώμη",
             description: "Fontana di Trevi",
-            image: "/images/fontana.jpg"
+            image: "/images/fontana.jpg",
+            slug: "rome"
         },
         {
             title: "Λονδίνο",
             description: "Tower Bridge",
-            image: "/images/5.png"
+            image: "/images/5.png",
+            slug: "london"
         }
     ];
 
@@ -61,7 +66,10 @@ export default function JourneySection() {
                 {/* Highlights grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
                     {/* First highlight - spans two columns */}
-                    <div className="md:col-span-2 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                    <Link
+                        href={`/destinations/${highlights[0].slug}`}
+                        className="md:col-span-2 group relative block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
+                    >
                         <div className="relative h-64 md:h-80">
                             <Image
                                 src={highlights[0].image}
@@ -75,17 +83,20 @@ export default function JourneySection() {
                             <h3 className="text-xl md:text-2xl font-bold">{highlights[0].title}</h3>
                             <p className="text-base opacity-90">{highlights[0].description}</p>
                         </div>
-                    </div>
+                    </Link>
 
                     {/* Second highlight - normal size */}
-                    <div className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                    <Link
+                        href={`/destinations/${highlights[1].slug}`}
+                        className="group relative block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
+                    >
                         <div className="relative h-64  md:h-80">
                             <Image
                                 src={highlights[1].image}
                                 alt={highlights[1].title}
                                 fill
                                 className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                style={{ objectPosition: 'center center' }} 
+                                style={{ objectPosition: 'center center' }}
                             />
                             <div className="absolute inset-0  bg-opacity-30 group-hover:bg-opacity-20 transition-all" />
                         </div>
@@ -93,11 +104,15 @@ export default function JourneySection() {
                             <h3 className="text-lg font-bold">{highlights[1].title}</h3>
                             <p className="text-sm opacity-90">{highlights[1].description}</p>
                         </div>
-                    </div>
+                    </Link>
 
                     {/* Remaining highlights (3-5) */}
-                    {highlights.slice(2).map((highlight, index) => (
-                        <div key={index + 2} className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                    {highlights.slice(2).map((highlight) => (
+                        <Link
+                            key={highlight.slug}
+                            href={`/destinations/${highlight.slug}`}
+                            className="group relative block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
+                        >
                             <div className="relative h-48">
                                 <Image
                                     src={highlight.image}
@@ -111,7 +126,7 @@ export default function JourneySection() {
                                 <h3 className="text-lg font-bold">{highlight.title}</h3>
                                 <p className="text-sm opacity-90">{highlight.description}</p>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '@/app/components/Navbar'
+import SiteNavbar from '@/app/components/SiteNavbar'
 import { ImageGallery } from '@/app/components/ImageGallery'
 import { Widget2 } from '@/app/components/Widget2'
 import { FaCoins } from "react-icons/fa";
@@ -222,32 +222,36 @@ function Barcelona() {
                     key="desc"
                 />
             </Head> */}
-            <div><Navbar /></div>
             <Script
                 async
                 defer
                 src="https://widget.getyourguide.com/dist/pa.umd.production.min.js"
                 data-gyg-partner-id="0OAQQKO"
             />
-            {/* Content with Padding to Account for Navbar */}
-            <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-60">
-                <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">
-                    Ταξίδι στη Βαρκελώνη: Η Πόλη του Γκαουντί και της Μεσογειακής Ζωής
-                </h1>
+
+            {/* Hero */}
+            <div className="relative w-full h-[50vh] md:h-[65vh]">
+                <Image
+                    src="/hero/barcelona.jpg"
+                    alt="Ταξιδιωτικός οδηγός για τη Βαρκελώνη"
+                    fill
+                    priority
+                    className="object-cover"
+                    sizes="100vw"
+                />
+                <SiteNavbar variant="transparent" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-black/60 flex items-center justify-center text-center px-4">
+                    <h1 className="font-display text-white text-3xl md:text-5xl font-bold max-w-3xl">
+                        Ταξίδι στη Βαρκελώνη: Η Πόλη του Γκαουντί και της Μεσογειακής Ζωής
+                    </h1>
+                </div>
+            </div>
+
+            {/* Content */}
+            <div className="pt-12 container mx-auto px-8 md:px-20 lg:px-60">
                 <p className="text-[#2E2E2F]">
                     Ανακαλύψτε την Βαρκελώνη μέσα από τον αναλυτικό οδηγό για 5 ημέρες στην πρωτεύουσα της Καταλονίας. Από την Sagrada Familia, την Γοτθική συνοικία έως την Barceloneta και την La Ramblas η Βαρκελώνη συνδυάζει την ιστορία με την νυχτερινή ζωή και την καλό φαγητό.
                 </p>
-                {/* Main picture */}
-                <div className="flex justify-center my-8"> {/* Center the image */}
-                    <Image
-                        src="/barcelona/barcelona-hero.jpg"
-                        width={1200} // Increase width for a wider image
-                        height={600} // Adjust height proportionally
-                        alt="Barcelona-arc-de-triumph"
-                        className="rounded-lg shadow-lg w-full max-w-4xl" // Make it responsive and add styling
-                        priority // Optimize loading for above-the-fold images
-                    />
-                </div>
                 {/* Widget */}
 
                 <div className="mt-8">
@@ -266,16 +270,18 @@ function Barcelona() {
                         2. Μετακινήσεις εντός της πόλης
                     </h2>
                     <p className='text-justify'>Η Βαρκελώνη είναι μια αρκετά μεγάλη πόλη. Υπάρχουν αρκετά αξιοθέατα τα οποία είναι σε πολύ μακρινή απόσταση από το κέντρο. Για παράδειγμα το γήπεδο και το μουσείο της ποδοσφαιρικής ομάδας της Barcelona, βρίσκεται εκτός κέντρου της πόλης και μπορείτε να φτάσετε εύκολα χρησιμοποιώντας το μετρό. Κατά κύριο λόγο χρησιμοποιήσαμε το μετρό για τις μετακινήσεις μας και το λεωφορείο για την ανάβαση στο Montjuïc.
-                        <li>Μεμονωμένο εισιτήριο: 2,65 €</li>
-                        <li>Μεμονωμένο εισιτήριο (10 διαδρομών): 12.55 €</li>
-                        <li>Hola BCN Card: 2 μέρες / 48 ώρες:  18.10 €</li>
-                        <li>Hola BCN Card: 3 μέρες / 72 ώρες: 26.30 €</li>
-                        <li>Hola BCN Card: 4 μέρες / 96 ώρες: 34.40 €</li>
-                        <li>Hola BCN Card: 5 μέρες / 120 ώρες: 42.10 €</li>
-                        <li>Barcelona Card (3 ημέρες): 57 €</li>
-                        <li>Barcelona Card (4 ημέρες): 67 €</li>
-                        <li>Barcelona Card (5 ημέρες): 79 €</li>
-                        H Barcelona Card προσφέρει πρόσβαση σε πολλά αξιόλογα μουσεία και έκπτωση σε αρκετά διάσημα αξιοθέατα. Τα διάσημα δημιουργήματα του Gaudi και η Sagrada Familia δεν περιλαμβάνονται μέσα στα δωρεάν μουσεία. Μπορείτε να βρείτε την λίστα με αυτά που προσφέρει εδώ
+                        <ul>
+                            <li>Μεμονωμένο εισιτήριο: 2,65 €</li>
+                            <li>Μεμονωμένο εισιτήριο (10 διαδρομών): 12.55 €</li>
+                            <li>Hola BCN Card: 2 μέρες / 48 ώρες:  18.10 €</li>
+                            <li>Hola BCN Card: 3 μέρες / 72 ώρες: 26.30 €</li>
+                            <li>Hola BCN Card: 4 μέρες / 96 ώρες: 34.40 €</li>
+                            <li>Hola BCN Card: 5 μέρες / 120 ώρες: 42.10 €</li>
+                            <li>Barcelona Card (3 ημέρες): 57 €</li>
+                            <li>Barcelona Card (4 ημέρες): 67 €</li>
+                            <li>Barcelona Card (5 ημέρες): 79 €</li>
+                        </ul>
+                        <p>H Barcelona Card προσφέρει πρόσβαση σε πολλά αξιόλογα μουσεία και έκπτωση σε αρκετά διάσημα αξιοθέατα. Τα διάσημα δημιουργήματα του Gaudi και η Sagrada Familia δεν περιλαμβάνονται μέσα στα δωρεάν μουσεία. Μπορείτε να βρείτε την λίστα με αυτά που προσφέρει εδώ</p>
                     </p>
                 </div>
                 <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-cmp="Barcelona-post" data-gyg-partner-id="0OAQQKO" data-gyg-tour-ids="50027,398519,155979"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/sagrada-familia-l2699/">GetYourGuide</a></span></div></div>

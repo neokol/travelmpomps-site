@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Alegreya } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +10,13 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+// Elegant display serif used only for hero titles — supports Greek glyphs.
+const displayFont = Alegreya({
+  variable: "--font-alegreya",
+  subsets: ["latin", "greek"],
+  weight: ["600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -73,7 +80,7 @@ export default function RootLayout({
           <meta name="google-site-verification" content="7q-1UM39MUG1YlU0DE2iqnmXXicGjIZtUAtc3C7Nokk" />
       </head> */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${displayFont.variable} antialiased`}
       >
         {children}
       </body>

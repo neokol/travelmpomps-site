@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import SiteNavbar from '../components/SiteNavbar';
 import { PageFooter } from "../components/Footer";
 import { Metadata } from 'next';
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 function PrivacyPolicy() {
     return (
         <div className="min-h-screen bg-[#F8F6FE]">
-            <Navbar />
+            <SiteNavbar />
 
             <main className="max-w-3xl mx-auto px-4 sm:px-8 py-16 pt-28 space-y-10">
                 <div>

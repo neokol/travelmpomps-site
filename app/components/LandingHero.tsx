@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from "next/link";
 
-import LandingNavbar from './LandingNavbar';
+import SiteNavbar from './SiteNavbar';
 
 export default function LandingHero() {
     return (
@@ -16,7 +16,7 @@ export default function LandingHero() {
                 quality={80}
             />
 
-            <LandingNavbar />
+            <SiteNavbar variant="transparent" />
 
 
             {/* Hero Content */}

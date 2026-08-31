@@ -1,11 +1,11 @@
 import Link from "next/link";
-import Navbar from "./components/Navbar";
+import SiteNavbar from "./components/SiteNavbar";
 import { PageFooter } from "./components/Footer";
 
 export default function NotFound() {
     return (
         <div className="min-h-screen bg-[#F8F6FE] flex flex-col">
-            <Navbar />
+            <SiteNavbar />
             <main className="flex-1 flex items-center justify-center px-4 pt-24 pb-16">
                 <div className="text-center max-w-xl">
                     <p className="text-6xl font-bold text-[#F76808] mb-4">404</p>

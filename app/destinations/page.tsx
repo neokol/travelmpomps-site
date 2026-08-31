@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import LandingNavbar from "../components/LandingNavbar";
+import SiteNavbar from "../components/SiteNavbar";
 import { PageFooter } from "../components/Footer";
 import DestinationsGrid, { Destination } from "../components/DestinationsGrid";
 import { Metadata } from "next";
@@ -155,7 +155,7 @@ function Destinations() {
                     className="object-cover"
                     priority
                 />
-                <LandingNavbar />
+                <SiteNavbar variant="transparent" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70 flex flex-col items-center justify-center text-center px-4">
                     <h1 className="text-white text-2xl md:text-4xl font-bold mb-3">
                         Ανακαλύψτε τον Επόμενο Προορισμό σας

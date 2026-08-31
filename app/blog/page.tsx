@@ -1,5 +1,5 @@
 import React from 'react';
-import LandingNavbar from '../components/LandingNavbar';
+import SiteNavbar from '../components/SiteNavbar';
 import { PageFooter } from "../components/Footer";
 import Image from 'next/image';
 import { Metadata } from 'next';
@@ -47,7 +47,7 @@ function Blog() {
                     style={{ objectPosition: 'center 30%' }}
                     sizes="100vw"
                 />
-                <LandingNavbar />
+                <SiteNavbar variant="transparent" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70 flex flex-col items-center justify-center text-center px-4">
                     <h1 className="text-white text-2xl md:text-4xl font-bold mb-3">
                         Ιστορίες από τα Ταξίδια μας

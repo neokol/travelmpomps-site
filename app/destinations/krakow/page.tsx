@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '@/app/components/Navbar'
+import SiteNavbar from '@/app/components/SiteNavbar'
 // import { ImageGallery } from '@/app/components/ImageGallery'
 import { Widget2 } from '@/app/components/Widget2'
 import { FaCoins } from "react-icons/fa";
@@ -134,31 +134,33 @@ function Krakow() {
                     key="desc"
                 />
             </Head> */}
-            <div><Navbar /></div>
             <Script
                 async
                 defer
                 src="https://widget.getyourguide.com/dist/pa.umd.production.min.js"
                 data-gyg-partner-id="0OAQQKO"
             />
-            {/* Content with Padding to Account for Navbar */}
-            <div className="pt-24 container mx-auto px-8 md:px-20 lg:px-60">
 
-                <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">
-                    Ταξίδι στην Κρακοβία: Μεσαιωνική Γοητεία και Σύγχρονη Ζωή
-                </h1>
-
-                {/* Main picture */}
-                <div className="flex justify-center my-8"> {/* Center the image */}
-                    <Image
-                        src="/images/krakow-hero.jpg"
-                        width={1200} // Increase width for a wider image
-                        height={600} // Adjust height proportionally
-                        alt="krakow-center"
-                        className="rounded-lg shadow-lg w-full max-w-4xl" // Make it responsive and add styling
-                        priority // Optimize loading for above-the-fold images
-                    />
+            {/* Hero */}
+            <div className="relative w-full h-[50vh] md:h-[65vh]">
+                <Image
+                    src="/images/krakow-hero.jpg"
+                    alt="Ταξιδιωτικός οδηγός για την Κρακοβία"
+                    fill
+                    priority
+                    className="object-cover"
+                    sizes="100vw"
+                />
+                <SiteNavbar variant="transparent" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-black/60 flex items-center justify-center text-center px-4">
+                    <h1 className="font-display text-white text-3xl md:text-5xl font-bold max-w-3xl">
+                        Ταξίδι στην Κρακοβία: Μεσαιωνική Γοητεία και Σύγχρονη Ζωή
+                    </h1>
                 </div>
+            </div>
+
+            {/* Content */}
+            <div className="pt-12 container mx-auto px-8 md:px-20 lg:px-60">
 
                 <p className="text-[#2E2E2F] mb-4 text-justify">
                     Η Κρακοβία, η παλιά πρωτεύουσα της Πολωνίας, θεωρείται μία από τις πιο καλοδιατηρημένες και όμορφες πόλεις της Ευρώπης. Με την επιβλητική Παλιά Πόλη (Stare Miasto), το εντυπωσιακό κάστρο Wawel και τα ιστορικά μνημεία της, η πόλη συνδυάζει μεσαιωνική ατμόσφαιρα με ζωντανή σύγχρονη κουλτούρα.                 </p>

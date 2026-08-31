@@ -1,11 +1,7 @@
 import React from 'react';
-// import Navbar from '../components/Navbar';
-// import { PageFooter } from "../components/Footer";
-import Image from 'next/image'; // Import the Image component from Next.js
-// import Head from 'next/head';
+import Image from 'next/image';
 import { Metadata } from 'next';
-// import Link from "next/link";
-import Navbar from '@/app/components/Navbar';
+import SiteNavbar from '@/app/components/SiteNavbar';
 import { PageFooter } from '@/app/components/Footer';
 import Script from 'next/script'
 
@@ -63,23 +59,24 @@ function Madrid() {
                 src="https://widget.getyourguide.com/dist/pa.umd.production.min.js"
                 data-gyg-partner-id="0OAQQKO"
             />
-            <Navbar />
-
-            <main className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 py-16 space-y-20 pt-24">
-                {/* Section 1 — text left, image right */}
-                <h1 className="text-3xl font-bold text-[#2E2E2F] mb-4">Μαδρίτη: Τι να δω και τι να κάνω – Ο Πλήρης Οδηγός</h1>
-                <div className="relative w-full aspect-[5/2] md:aspect-[5/2] rounded-2xl overflow-hidden shadow-lg">
-                    <Image
-                        src="/images/madrid-hero.jpg"
-                        alt="Το κτήριο Metropolis στην Gran Via της Μαδρίτης"
-                        fill
-                        priority
-                        className="object-cover"
-                        // sizes="100vw"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
-                        quality={80}
-                    />
+            {/* Hero */}
+            <div className="relative w-full h-[50vh] md:h-[65vh]">
+                <Image
+                    src="/images/madrid-hero.jpg"
+                    alt="Το κτήριο Metropolis στην Gran Via της Μαδρίτης"
+                    fill
+                    priority
+                    className="object-cover"
+                    sizes="100vw"
+                    quality={80}
+                />
+                <SiteNavbar variant="transparent" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-black/60 flex items-center justify-center text-center px-4">
+                    <h1 className="font-display text-white text-3xl md:text-5xl font-bold max-w-3xl">Μαδρίτη: Τι να δω και τι να κάνω – Ο Πλήρης Οδηγός</h1>
                 </div>
+            </div>
+
+            <main className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 py-16 space-y-20">
                 <p className="text-[#2E2E2F] mb-4 text-justify">
                     Η Μαδρίτη η πρωτεύουσα της Ισπανίας, αριστοκρατική, όμορφη, οποιαδήποτε εποχή την επισκεφτείς δώσε της αρκετό χρόνο να ανακαλύψεις τι έχει να σου προσφέρει. Γειτονιές, παλάτια, αρχιτεκτονική, αγορές - mercados, tapas, τορτίγιες και σανγκρία.
                 </p>
