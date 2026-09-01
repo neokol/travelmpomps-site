@@ -66,6 +66,9 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   verification: {
     google: "7q-1UM39MUG1YlU0DE2iqnmXXicGjIZtUAtc3C7Nokk",
+    other: {
+      "p:domain_verify": "ca09e57c79b7d168b813b44d090ad1e2",
+    },
   },
 };
 
