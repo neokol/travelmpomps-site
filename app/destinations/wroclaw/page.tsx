@@ -1,5 +1,6 @@
 import React from 'react'
 import SiteNavbar from '@/app/components/SiteNavbar'
+import RelatedDestinations from '@/app/components/RelatedDestinations'
 import { Widget2 } from '@/app/components/Widget2'
 import { FaCoins } from "react-icons/fa";
 import { VscRadioTower } from "react-icons/vsc";
@@ -287,6 +288,7 @@ function Wroclaw() {
                     </ul>
                 </div>
             </div>
+            <RelatedDestinations currentSlug="wroclaw" country="Πολωνία" />
             <div className="pt-10">
                 <PageFooter />
             </div>

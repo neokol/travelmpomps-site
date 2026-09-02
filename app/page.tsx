@@ -1,6 +1,7 @@
 import { PageFooter } from "./components/Footer";
 import JourneySection from "./components/JourneySection";
 import LandingHero from "./components/LandingHero";
+import WhereWeveBeen from "./components/WhereWeveBeen";
 import WhyTravelmpomps from "./components/WhyTravelmpomps";
 import { Metadata } from 'next';
 import Script from 'next/script';
@@ -54,7 +55,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <LandingHero />
-      {/* Other sections of your page will go here */}
+      <WhereWeveBeen />
       <JourneySection />
       <WhyTravelmpomps />
       <div className="pt-6 md:pt-10">

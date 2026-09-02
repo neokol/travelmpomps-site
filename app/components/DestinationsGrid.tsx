@@ -3,25 +3,19 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import type { Destination } from "@/app/data/destinations";
 
-export interface Destination {
-    name: string;
-    slug: string;
-    image: string;
-    alt: string;
-    country: string;
-    teaser: string;
-    budget: boolean;
-    featured?: boolean;
-}
+export type { Destination };
 
 interface Props {
     destinations: Destination[];
+    /** Pre-select a country filter, e.g. when arriving from /destinations?country=Ιταλία */
+    initialCountry?: string;
 }
 
-export default function DestinationsGrid({ destinations }: Props) {
+export default function DestinationsGrid({ destinations, initialCountry }: Props) {
     const [budgetOnly, setBudgetOnly] = useState(false);
-    const [country, setCountry] = useState("all");
+    const [country, setCountry] = useState(initialCountry || "all");
 
     const countries = useMemo(
         () => Array.from(new Set(destinations.map((d) => d.country))).sort(),

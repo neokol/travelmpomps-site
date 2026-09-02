@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import SiteNavbar from '@/app/components/SiteNavbar';
+import RelatedDestinations from '@/app/components/RelatedDestinations';
 import { PageFooter } from '@/app/components/Footer';
 import Script from 'next/script'
 
@@ -283,8 +284,10 @@ function Bologna() {
 
             </main>
 
+            <RelatedDestinations currentSlug="bologna" country="Ιταλία" />
+
             {/* Footer Section */}
-            <div className="pt-70">
+            <div className="pt-10">
                 <PageFooter />
             </div>
         </div>

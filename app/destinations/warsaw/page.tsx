@@ -1,5 +1,6 @@
 import React from 'react'
 import SiteNavbar from '@/app/components/SiteNavbar'
+import RelatedDestinations from '@/app/components/RelatedDestinations'
 // import { ImageGallery } from '@/app/components/ImageGallery'
 import { Widget2 } from '@/app/components/Widget2'
 import { FaCoins } from "react-icons/fa";
@@ -381,6 +382,7 @@ function Warsaw() {
                     </ul>
                 </div>
                 <div data-gyg-href="https://widget.getyourguide.com/default/city.frame" data-gyg-location-id="41" data-gyg-locale-code="el-GR" data-gyg-widget="city" data-gyg-partner-id="0OAQQKO"></div>            </div>
+            <RelatedDestinations currentSlug="warsaw" country="Πολωνία" />
             <div className="pt-10">
                 <PageFooter />
             </div>
