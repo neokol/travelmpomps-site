@@ -67,6 +67,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             slug: 'wroclaw',
             name: 'Wroclaw',
             lastUpdated: '2026-08-25'
+        },
+        {
+            slug: 'venice',
+            name: 'Venice',
+            lastUpdated: '2026-08-27'
         }
     ];
 

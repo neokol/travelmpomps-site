@@ -19,6 +19,7 @@ const destinationLinks = [
     { name: "Μαδρίτη", slug: "madrid" },
     { name: "Μιλάνο", slug: "milan" },
     { name: "Βρότσλαβ", slug: "wroclaw" },
+    { name: "Βενετία", slug: "venice" },
 ];
 
 type SiteNavbarProps = {

@@ -132,4 +132,13 @@ export const destinations: Destination[] = [
         teaser: "Η \"Βενετία\" της Πολωνίας & κυνήγι νάνων",
         budget: true,
     },
+    {
+        name: "Βενετία",
+        slug: "venice",
+        image: "/destinations/venice.jpg",
+        alt: "Ταξιδιωτικός οδηγός για τη Βενετία, την πόλη του νερού",
+        country: "Ιταλία",
+        teaser: "Κανάλια, γόνδολες & Μουράνο-Μπουράνο",
+        budget: false,
+    },
 ];
