@@ -158,6 +158,9 @@ function Venice() {
                             <strong>Λεωφορείο:</strong> Η δεύτερη επιλογή είναι το λεωφορείο, φεύγουν συνεχώς λεωφορεία από δύο διαφορετικές εταιρείες (ATVO ή ACTV) με ίδιο κόστος 10€. Το express της ATVO είναι περίπου 5 λεπτά γρηγορότερο επειδή κάνει μόνο 2 στάσεις. Το πρόβλημα με αυτή την επιλογή είναι ότι το λεωφορείο θα σας αφήσει κοντά στον σταθμό των τρένων, οπότε αν το ξενοδοχείο σας βρίσκεται μακριά από εκεί, το περπάτημα με τις βαλίτσες θα σας ταλαιπωρήσει αρκετά.
                         </li>
                     </ul>
+                    <p className="text-[#2E2E2F] mt-4 text-justify italic">
+                        💡 Αν η πτήση σας φτάνει μετά τα μεσάνυχτα, τότε τα λεωφορεία έχουν δρομολόγια μέχρι την 1πμ. Αν πάλι δεν προλάβεται τα συγκεκριμένα τότε έχετε δύο επιλογές είτε να πάρετε ένα κανονικό ταξί το οποίο θα σας αφήσει στην Piazzale Roma και από εκεί να περπατήσετε στο κατάλημα σας, το οποίο έχει ένα κόστος €40–€50. Υπάρχει και επιλογή να πάρετε ένα θαλάσσιο ταξί, το οποίο μπορεί να κοστίσει €120–€140.
+                    </p>
                 </div>
 
                 <div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="en-US" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-tour-ids="778815,108124,221382"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/venice-l35/">GetYourGuide</a></span></div>

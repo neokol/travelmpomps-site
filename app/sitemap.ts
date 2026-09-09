@@ -71,7 +71,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         {
             slug: 'venice',
             name: 'Venice',
-            lastUpdated: '2026-08-27'
+            lastUpdated: '2026-09-09'
+        },
+        {
+            slug: 'prague',
+            name: 'Prague',
+            lastUpdated: '2026-09-09'
         }
     ];
 

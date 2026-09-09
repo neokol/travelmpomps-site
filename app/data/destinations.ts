@@ -141,4 +141,13 @@ export const destinations: Destination[] = [
         teaser: "Κανάλια, γόνδολες & Μουράνο-Μπουράνο",
         budget: false,
     },
+    {
+        name: "Πράγα",
+        slug: "prague",
+        image: "/destinations/prague.jpg",
+        alt: "Ταξιδιωτικός οδηγός για την Πράγα και το Αστρονομικό Ρολόι",
+        country: "Τσεχία",
+        teaser: "Αστρονομικό Ρολόι, κάστρο & Charles Bridge",
+        budget: false,
+    },
 ];
