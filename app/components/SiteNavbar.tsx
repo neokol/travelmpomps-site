@@ -42,6 +42,13 @@ function SiteNavbar({ variant = "solid" }: SiteNavbarProps) {
         return () => window.removeEventListener("scroll", onScroll);
     }, [variant]);
 
+    useEffect(() => {
+        document.body.style.overflow = isMobileMenuOpen ? "hidden" : "";
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [isMobileMenuOpen]);
+
     const isSolid = variant === "solid" || scrolled;
 
     const handleNavItemClick = () => {
@@ -59,12 +66,13 @@ function SiteNavbar({ variant = "solid" }: SiteNavbarProps) {
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isSolid ? "bg-white shadow-sm py-3" : "bg-transparent py-4 md:py-6"
                 }`}
         >
-            <div className="relative flex items-center justify-between px-4 md:px-6 max-w-7xl mx-auto">
+            <div className="relative z-50 flex items-center justify-between px-4 md:px-6 max-w-7xl mx-auto">
                 {/* Mobile menu button */}
                 <button
                     className={`md:hidden ${linkColor}`}
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    aria-label="Άνοιγμα μενού"
+                    aria-label={isMobileMenuOpen ? "Κλείσιμο μενού" : "Άνοιγμα μενού"}
+                    aria-expanded={isMobileMenuOpen}
                 >
                     {isMobileMenuOpen ? (
                         <HiOutlineX className="w-7 h-7" />
@@ -168,8 +176,11 @@ function SiteNavbar({ variant = "solid" }: SiteNavbarProps) {
 
             {/* Mobile menu overlay */}
             {isMobileMenuOpen && (
-                <div className="md:hidden fixed inset-0 z-40 bg-black/90 backdrop-blur-sm flex flex-col items-center justify-center">
-                    <div className="w-full max-w-xs">
+                <div
+                    className="md:hidden fixed inset-0 z-40 bg-black/90 backdrop-blur-sm flex flex-col items-center justify-center"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                >
+                    <div className="w-full max-w-xs" onClick={(e) => e.stopPropagation()}>
                         <div className="flex flex-col space-y-6 text-center">
                             <Link
                                 href="/"
