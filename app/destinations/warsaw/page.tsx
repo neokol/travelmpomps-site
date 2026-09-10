@@ -3,10 +3,21 @@ import SiteNavbar from '@/app/components/SiteNavbar'
 import RelatedDestinations from '@/app/components/RelatedDestinations'
 // import { ImageGallery } from '@/app/components/ImageGallery'
 import { Widget2 } from '@/app/components/Widget2'
-import { FaCoins } from "react-icons/fa";
+import { TableOfContents } from '@/app/components/TableOfContents';
+import { FaCoins, FaPlane, FaTrain, FaBed, FaMapMarkedAlt, FaUtensils, FaLandmark } from "react-icons/fa";
 import { VscRadioTower } from "react-icons/vsc";
 import { GiPassport } from "react-icons/gi";
 import { FaLanguage } from "react-icons/fa6";
+
+const warsawTocItems = [
+    { icon: <FaPlane className="w-5 h-5" />, label: 'Μεταφορά από το Αεροδρόμιο', targetId: 'metafora' },
+    { icon: <FaTrain className="w-5 h-5" />, label: 'Μεταφορά από την Κρακοβία', targetId: 'apo-krakovia' },
+    { icon: <FaBed className="w-5 h-5" />, label: 'Διαμονή', targetId: 'diamoni' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '1η Ημέρα', targetId: 'imera-1' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '2η Ημέρα', targetId: 'imera-2' },
+    { icon: <FaUtensils className="w-5 h-5" />, label: 'Φαγητό', targetId: 'fagito' },
+    { icon: <FaLandmark className="w-5 h-5" />, label: 'Επιπλέον Δραστηριότητες', targetId: 'epipleon' },
+];
 import Image from 'next/image';
 // import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
@@ -175,8 +186,10 @@ function Warsaw() {
                 <div className="mt-8">
                     <Widget2 items={barcelonaItems} />
                 </div>
+
+                <TableOfContents items={warsawTocItems} />
                 {/* Main sector */}
-                <div className="mt-8">
+                <div id="metafora" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         1. Μεταφορά από το Αεροδρόμιο της Βαρσοβίας στο Κέντρο της Πόλης
                     </h2>
@@ -185,7 +198,7 @@ function Warsaw() {
                     </p>
                 </div>
 
-                <div className="mt-8">
+                <div id="apo-krakovia" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         2. Μεταφορά από την Κρακοβία στην Βαρσοβία
                     </h2>
@@ -200,7 +213,7 @@ function Warsaw() {
                     </p>
 
                 </div>
-                <div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-q="warsaw"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/warsaw-l41/">GetYourGuide</a></span></div>                <div className="mt-8">
+                <div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-q="warsaw"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/warsaw-l41/">GetYourGuide</a></span></div>                <div id="diamoni" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         3. Διαμονή στην Βαρσοβία
                     </h2>
@@ -220,7 +233,7 @@ function Warsaw() {
                         Θα χωρίσουμε την πόλη σε δύο μέρες, την πρώτη μέρα θα δούμε όσα περισσότερα σημεία γίνεται εκτός του ιστορικού κέντρο και την δεύτερη να δούμε όσα περισσότερα γίνεται στην παλιά πόλη και τον βασιλικό δρόμο.
                     </p>
                 </div>
-                <div className="mt-8">
+                <div id="imera-1" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         1η Ημέρα
                     </h3>
@@ -257,7 +270,7 @@ function Warsaw() {
                     {/* <ImageGallery images={firstDayImages} /> */}
                 </div>
 
-                <div className="mt-8">
+                <div id="imera-2" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         2η Ημέρα
                     </h3>
@@ -312,7 +325,7 @@ function Warsaw() {
                     {/* <ImageGallery images={secondDayImages} /> */}
                 </div>
 
-                <div className="mt-8 mb-8">
+                <div id="fagito" className="mt-8 mb-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         5. Φαγητό στην Βαρσοβία
                     </h2>
@@ -344,7 +357,7 @@ function Warsaw() {
                     </ul>
 
                 </div>
-                <div className="mt-8 mb-8">
+                <div id="epipleon" className="mt-8 mb-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         6. Επιπλέον δραστηριότητες στην Βαρσοβία
                     </h2>

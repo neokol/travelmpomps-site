@@ -3,10 +3,21 @@ import SiteNavbar from '@/app/components/SiteNavbar'
 import RelatedDestinations from '@/app/components/RelatedDestinations'
 // import { ImageGallery } from '@/app/components/ImageGallery'
 import { Widget2 } from '@/app/components/Widget2'
-import { FaCoins } from "react-icons/fa";
+import { TableOfContents } from '@/app/components/TableOfContents';
+import { FaCoins, FaPlane, FaBus, FaBed, FaMapMarkedAlt, FaUtensils } from "react-icons/fa";
 import { VscRadioTower } from "react-icons/vsc";
 import { GiPassport } from "react-icons/gi";
 import { FaLanguage } from "react-icons/fa6";
+
+const krakowTocItems = [
+    { icon: <FaPlane className="w-5 h-5" />, label: 'Μεταφορά από το Αεροδρόμιο', targetId: 'metafora' },
+    { icon: <FaBus className="w-5 h-5" />, label: 'Μετακινήσεις', targetId: 'metakiniseis' },
+    { icon: <FaBed className="w-5 h-5" />, label: 'Διαμονή', targetId: 'diamoni' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '1η Ημέρα', targetId: 'imera-1' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '2η Ημέρα', targetId: 'imera-2' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '3η Ημέρα', targetId: 'imera-3' },
+    { icon: <FaUtensils className="w-5 h-5" />, label: 'Επιπλέον Δραστηριότητες & Φαγητό', targetId: 'epipleon' },
+];
 import Image from 'next/image';
 // import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
@@ -173,8 +184,10 @@ function Krakow() {
                 <div className="mt-8">
                     <Widget2 items={barcelonaItems} />
                 </div>
+
+                <TableOfContents items={krakowTocItems} />
                 {/* Main sector */}
-                <div className="mt-8">
+                <div id="metafora" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         1. Μεταφορά από το Αεροδρόμιο της Κρακοβίας
                     </h2>
@@ -190,7 +203,7 @@ function Krakow() {
                     </p>
                 </div>
 
-                <div className="mt-8">
+                <div id="metakiniseis" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         2. Μετακινήσεις στην Κρακοβία
                     </h2>
@@ -203,7 +216,7 @@ function Krakow() {
                     </p>
 
                 </div>
-                <div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-q="krakow"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/krakow-l40/">GetYourGuide</a></span></div>                <div className="mt-8">
+                <div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-q="krakow"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/krakow-l40/">GetYourGuide</a></span></div>                <div id="diamoni" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         3. Διαμονή στην Κρακοβία
                     </h2>
@@ -217,7 +230,7 @@ function Krakow() {
                         4. Ταξιδωτικός Οδηγός 3 ημερών για την Κρακοβία
                     </h2>
                 </div>
-                <div className="mt-8">
+                <div id="imera-1" className="mt-8 scroll-mt-24">
 
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         1η Ημέρα
@@ -314,7 +327,7 @@ function Krakow() {
                     {/* <ImageGallery images={firstDayImages} /> */}
                 </div>
 
-                <div className="mt-8">
+                <div id="imera-2" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         2η Ημέρα
                     </h3>
@@ -342,7 +355,7 @@ function Krakow() {
 
                     {/* <ImageGallery images={secondDayImages} /> */}
                 </div>
-                <div className="mt-8">
+                <div id="imera-3" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         3η Ημέρα
                     </h3>
@@ -390,7 +403,7 @@ function Krakow() {
                         </li>
                     </ul>
                 </div>
-                <div className="mt-8 mb-8">
+                <div id="epipleon" className="mt-8 mb-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         Επιπλέον δραστηριότητες & φαγητό στην Κρακοβία
                     </h3>

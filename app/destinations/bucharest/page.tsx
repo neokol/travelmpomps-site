@@ -2,10 +2,20 @@ import React from 'react'
 import SiteNavbar from '@/app/components/SiteNavbar'
 import { ImageGallery } from '@/app/components/ImageGallery'
 import { Widget2 } from '@/app/components/Widget2'
-import { FaCoins } from "react-icons/fa";
+import { TableOfContents } from '@/app/components/TableOfContents';
+import { FaCoins, FaPlane, FaBus, FaBed, FaMapMarkedAlt } from "react-icons/fa";
 import { VscRadioTower } from "react-icons/vsc";
 import { GiPassport } from "react-icons/gi";
 import { FaLanguage } from "react-icons/fa6";
+
+const bucharestTocItems = [
+    { icon: <FaPlane className="w-5 h-5" />, label: 'Μεταφορά από το Αεροδρόμιο', targetId: 'metafora' },
+    { icon: <FaBus className="w-5 h-5" />, label: 'Μετακινήσεις', targetId: 'metakiniseis' },
+    { icon: <FaBed className="w-5 h-5" />, label: 'Διαμονή', targetId: 'diamoni' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '1η Ημέρα', targetId: 'imera-1' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '2η Ημέρα', targetId: 'imera-2' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '3η Ημέρα', targetId: 'imera-3' },
+];
 import Image from 'next/image';
 // import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
@@ -173,8 +183,10 @@ function Bucharest() {
                 <div className="mt-8">
                     <Widget2 items={barcelonaItems} />
                 </div>
+
+                <TableOfContents items={bucharestTocItems} />
                 {/* Main sector */}
-                <div className="mt-8">
+                <div id="metafora" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         1. Μεταφορά από το Αεροδρόμιο Henri Coandă στο Βουκουρέστι
                     </h2>
@@ -184,7 +196,7 @@ function Bucharest() {
                         Η πιο δημοφιλής και οικονομική λύση είναι το λεωφορείο 783 Express. Αυτή η γραμμή συνδέει απευθείας το αεροδρόμιο με το κέντρο της πόλης, την Piata Unirii. Το εισιτήριο κοστίζει  1 ευρώ (ή περίπου 5 lei Ρουμανίας). Για την πληρωμή έχετε δύο επιλογές: Tap and Pay (Απλά χρησιμοποιήστε την κάρτα σας απευθείας στο μηχάνημα μέσα στο λεωφορείο). Εναλλακτικά, μπορείτε να αγοράσετε το εισιτήριό σας από τα ειδικά εκδοτήρια που βρίσκονται εντός του αεροδρομίου.                    </p>
                 </div>
 
-                <div className="mt-8">
+                <div id="metakiniseis" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         2. Μετακινήσεις εντός της πόλης
                     </h2>
@@ -196,7 +208,7 @@ function Bucharest() {
                     </p>
                 </div>
                 <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-tour-ids="444964,492833,982185"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/bucharest-l111/">GetYourGuide</a></span></div></div>
-                <div className="mt-8">
+                <div id="diamoni" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         3. Διαμονή στο Βουκουρέστι
                     </h2>
@@ -209,7 +221,7 @@ function Bucharest() {
                         4. Οδηγός 3 ημερών για το Βουκουρέστι
                     </h2>
                 </div>
-                <div className="mt-8">
+                <div id="imera-1" className="mt-8 scroll-mt-24">
 
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         1η Ημέρα
@@ -255,7 +267,7 @@ function Bucharest() {
                     <ImageGallery images={firstDayImages} />
                 </div>
 
-                <div className="mt-8">
+                <div id="imera-2" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         2η Ημέρα
                     </h3>
@@ -284,7 +296,7 @@ function Bucharest() {
                     </p>
                     <ImageGallery images={secondDayImages} />
                 </div>
-                <div className="mt-8">
+                <div id="imera-3" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         3η Ημέρα
                     </h3>

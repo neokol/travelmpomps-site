@@ -4,7 +4,16 @@ import { Metadata } from 'next';
 import SiteNavbar from '@/app/components/SiteNavbar';
 import RelatedDestinations from '@/app/components/RelatedDestinations';
 import { PageFooter } from '@/app/components/Footer';
+import { TableOfContents } from '@/app/components/TableOfContents';
+import { FaPlane, FaMapMarkedAlt, FaUtensils } from 'react-icons/fa';
 import Script from 'next/script'
+
+const bolognaTocItems = [
+    { icon: <FaPlane className="w-5 h-5" />, label: 'Μεταφορά από το Αεροδρόμιο', targetId: 'metafora' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '1η Ημέρα', targetId: 'imera-1' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '2η Ημέρα', targetId: 'imera-2' },
+    { icon: <FaUtensils className="w-5 h-5" />, label: 'Φαγητό', targetId: 'fagito' },
+];
 
 export const metadata: Metadata = {
     title: "Μπολόνια: Τι να δω και πού να φάω (Οδηγός 2026)",
@@ -74,8 +83,10 @@ function Bologna() {
                     Η Μπολόνια είναι μια μικρή αλλά ζωντανή πόλη της Ιταλίας, γνωστή για το ιστορικό της πανεπιστήμιο, την πλούσια κουζίνα της και την ιδιαίτερη αρχιτεκτονική με τις χαρακτηριστικές στοές της. Τέλεια επιλογή για ένα οικονομικό city break και σύνδεση για ένα ταξίδι στην Τοσκάνη.
                 </p>
 
+                <TableOfContents items={bolognaTocItems} />
+
                 {/* --- ΜΕΤΑΦΟΡΕΣ --- */}
-                <section className="space-y-6">
+                <section id="metafora" className="space-y-6 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F]">Μεταφορά από το Αεροδρόμιο της Μπολόνια</h2>
                     <p className="text-[#2E2E2F] text-justify leading-relaxed">
                         Το αεροδρόμιο Guglielmo Marconi βρίσκεται μόλις 6 χλμ. από το κέντρο της πόλης. Για να φτάσετε στο κέντρο της Μπολόνια:
@@ -103,7 +114,7 @@ function Bologna() {
 
 
                 {/* Section 3 — image left, text right */}
-                <section className="space-y-6 pt-10">
+                <section id="imera-1" className="space-y-6 pt-10 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">Πρόγραμμα 2 ημερών στην Μπολόνια</h2>
                     <h3 className="text-xl font-bold text-[#2E2E2F] mb-4">
                         1η Ημέρα - Ιστορικό Κέντρο
@@ -182,7 +193,7 @@ function Bologna() {
                     </div>
                 </section>
 
-                <section className="space-y-8 pt-10 border-t border-gray-200">
+                <section id="imera-2" className="space-y-8 pt-10 border-t border-gray-200 scroll-mt-24">
                     <h3 className="text-xl font-bold text-[#2E2E2F] mb-4">
                         2η Ημέρα - Περπάτημα μέχρι τον San Luca
                     </h3>
@@ -240,7 +251,7 @@ function Bologna() {
 
 
                 {/* --- ΦΑΓΗΤΟ --- */}
-                <section className="space-y-8 pt-10 border-t border-gray-200">
+                <section id="fagito" className="space-y-8 pt-10 border-t border-gray-200 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F]">Φαγητό στην Μπολόνια</h2>
 
                     {/* ΕΙΚΟΝΑ 7: Μια πολύ δυνατή φωτογραφία φαγητού (π.χ. μακαρονάδα ή pizza) */}

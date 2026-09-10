@@ -2,10 +2,22 @@ import React from 'react'
 import SiteNavbar from '@/app/components/SiteNavbar'
 // import { ImageGallery } from '@/app/components/ImageGallery'
 import { Widget2 } from '@/app/components/Widget2'
-import { FaCoins } from "react-icons/fa";
+import { TableOfContents } from '@/app/components/TableOfContents';
+import { FaCoins, FaPlane, FaBus, FaBed, FaMapMarkedAlt } from "react-icons/fa";
 import { VscRadioTower } from "react-icons/vsc";
 import { GiPassport } from "react-icons/gi";
 import { FaLanguage } from "react-icons/fa6";
+
+const londonTocItems = [
+    { icon: <FaPlane className="w-5 h-5" />, label: 'Μεταφορά από το Αεροδρόμιο', targetId: 'metafora' },
+    { icon: <FaBus className="w-5 h-5" />, label: 'Μετακινήσεις', targetId: 'metakiniseis' },
+    { icon: <FaBed className="w-5 h-5" />, label: 'Διαμονή', targetId: 'diamoni' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '1η Ημέρα', targetId: 'imera-1' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '2η Ημέρα', targetId: 'imera-2' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '3η Ημέρα', targetId: 'imera-3' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '4η Ημέρα', targetId: 'imera-4' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '5η Ημέρα', targetId: 'imera-5' },
+];
 import Image from 'next/image';
 // import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
@@ -174,8 +186,10 @@ function London() {
                 <div className="mt-8">
                     <Widget2 items={barcelonaItems} />
                 </div>
+
+                <TableOfContents items={londonTocItems} />
                 {/* Main sector */}
-                <div className="mt-8">
+                <div id="metafora" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         1. Μεταφορά από το Αεροδρόμιο
                     </h2>
@@ -187,7 +201,7 @@ function London() {
                         Δεν χρειάζεται να κλείσετε κάποιο εισιτήριο νωρίτερα απλά χτυπήστε την ανέπαφη κάρτα σας (προτιμήστε μια Revolut) κατά την είσοδο σας και την έξοδο σας από τον σταθμό.</p>
                 </div>
 
-                <div className="mt-8">
+                <div id="metakiniseis" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         2. Μετακινήσεις εντός της πόλης
                     </h2>
@@ -203,7 +217,7 @@ function London() {
                         Υπενθύμιση: Το χρήματα θα αφαιρεθούν συγκεντρωτικά την επόμενη ημέρα. Οπότε εκείνη τη στιγμή δε θα έχουν αφαιρεθεί χρήματα από το λογαριασμός σας.                     </p>
                 </div>
                 <div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-location-id="57" data-gyg-locale-code="en-US" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/london-l57/">GetYourGuide</a></span></div>
-                <div className="mt-8">
+                <div id="diamoni" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         3. Διαμονή
                     </h2>
@@ -218,7 +232,7 @@ function London() {
                         4. Οδηγός 5 ημερών για το Λονδίνο
                     </h2>
                 </div>
-                <div className="mt-8">
+                <div id="imera-1" className="mt-8 scroll-mt-24">
 
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         1η Ημέρα
@@ -273,7 +287,7 @@ function London() {
                     {/* <ImageGallery images={firstDayImages} /> */}
                 </div>
 
-                <div className="mt-8">
+                <div id="imera-2" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         2η Ημέρα
                     </h3>
@@ -360,7 +374,7 @@ function London() {
                     </div>
                     {/* <ImageGallery images={secondDayImages} /> */}
                 </div>
-                <div className="mt-8">
+                <div id="imera-3" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         3η Ημέρα
                     </h3>
@@ -392,7 +406,7 @@ function London() {
                         Τέλος, ένα ακόμα αξιοθέατο που βρίσκεται απέναντι από την γέφυρα είναι το <strong>Tower of London</strong>, είναι κάστρο, φρούριο, βασιλικό παλάτι και κάποτε ήταν ακόμα και φυλακή. Δεν χώρεσε στο πρόγραμμα μας καθώς κοστίζει αρκετά, περίπου 35 λίρες, μπορείτε να κλείσετε εισητήρια από <a className="text-blue-600 underline" href='https://gyg.me/acAmhJ1L'>εδώ</a> και θέλει αρκετό χρόνο για να το εξερευνήσεις όλο.
                     </p>
                 </div>
-                <div className="mt-8">
+                <div id="imera-4" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         4η Ημέρα
                     </h3>
@@ -416,7 +430,7 @@ function London() {
                         Αν είστε fun του Harry Potter αξίζει πραγματικά να δείτε το μέρος που γυρίστηκαν οι ταινίες καθώς και να μάθετε και τον τρόπο που γυριζόντουσαν οι ταινίες.
                     </p>
                 </div>
-                <div className="mt-8">
+                <div id="imera-5" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         5η Ημέρα
                     </h3>

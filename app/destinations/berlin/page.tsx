@@ -1,10 +1,23 @@
 import React from 'react'
 import SiteNavbar from '@/app/components/SiteNavbar'
 import { Widget2 } from '@/app/components/Widget2'
-import { FaCoins } from "react-icons/fa";
+import { TableOfContents } from '@/app/components/TableOfContents';
+import { FaCoins, FaPlane, FaBus, FaBed, FaLandmark, FaMapMarkedAlt } from "react-icons/fa";
 import { VscRadioTower } from "react-icons/vsc";
 import { GiPassport } from "react-icons/gi";
 import { FaLanguage } from "react-icons/fa6";
+
+const berlinTocItems = [
+    { icon: <FaPlane className="w-5 h-5" />, label: 'Μεταφορά από το Αεροδρόμιο', targetId: 'metafora' },
+    { icon: <FaBus className="w-5 h-5" />, label: 'Μετακινήσεις', targetId: 'metakiniseis' },
+    { icon: <FaBed className="w-5 h-5" />, label: 'Διαμονή', targetId: 'diamoni' },
+    { icon: <FaLandmark className="w-5 h-5" />, label: 'Top Αξιοθέατα', targetId: 'axiotheata' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '1η Ημέρα', targetId: 'imera-1' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '2η Ημέρα', targetId: 'imera-2' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '3η Ημέρα', targetId: 'imera-3' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '4η Ημέρα', targetId: 'imera-4' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '5η Ημέρα', targetId: 'imera-5' },
+];
 import Image from 'next/image';
 import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
@@ -160,15 +173,17 @@ function Berlin() {
                 <div className="mt-8">
                     <Widget2 items={berlinItems} />
                 </div>
+
+                <TableOfContents items={berlinTocItems} />
                 {/* Main sector */}
-                <div className="mt-8">
+                <div id="metafora" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         1. Μεταφορά από το αεροδρόμιο στο Βερολίνο
                     </h2>
                     <p className='text-justify'>Όλες οι αεροπορικές εξυπηρετούν από το αεροδρόμιο του Βρανδεμβούργου BER. Η μεταφορά γίνεται με το τρένο είτε την γραμμή S9 (συχνότερα δρομολόγια) είτε το τρένο FEX (γρηγορότερο). Το πιο σημαντικό είναι ότι για την μεταφορά θα πρέπει να βγάλετε το εισιτήριο σας προτού επιβιβαστείτε στο τρένο. Θα επιλέξετε αυτό που ανήκει και στις τρεις ζώνες ABC και έχει κόστος 4,40 ευρώ.  </p>
                 </div>
 
-                <div className="mt-8">
+                <div id="metakiniseis" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         2. Μετακινήσεις στο Βερολίνο
                     </h2>
@@ -186,13 +201,13 @@ function Berlin() {
                     
                 </div>
                 <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-tour-ids="141648,6045,560843"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/berlin-l17/">GetYourGuide</a></span></div></div>
-                <div className="mt-8">
+                <div id="diamoni" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         3. Διαμονή στο Βερολίνο
                     </h2>
                     <p className='text-justify'>Για την διαμονή σας στο Βερολίνο προτιμήστε κάποιο ξενοδοχείο που βρίσκεται πολύ κοντά σε κάποια στάση του μετρό, για την ευκολότερη σας μετακίνηση. Η πιο δημοφιλής περιοχή είναι το Mitte, όπου βρίσκεται στο κέντρο της πόλης και έχετε πρόσβαση έτσι στα περισσότερα αξιοθέατα. </p>
                 </div>
-                <div className="mt-8">
+                <div id="axiotheata" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">4. Top Αξιοθέατα στο Βερολίνο</h2>
                     <div className="flex justify-center">
                         <ImageAccordion items={berlinImages} />
@@ -204,7 +219,7 @@ function Berlin() {
                     </h2>
                     <p className='text-justify'>Τα αξιοθέατα στο Βερολίνο έχουν αρκετά μεγάλη απόσταση μεταξύ τους οπότε ένας καλός προγραμματισμός είναι απαραίτητος αν θέλουμε να δούμε όσο τα περισσότερα γίνεται. Ο παρακάτω οδηγός καλύπτει 5 μέρες στο Βερολίνο. Μπορείτε να προσαρμόσετε το δικό σας πρόγραμμα σύμφωνα με τα δικά σας ενδιαφέροντα </p>
                 </div>
-                <div className="mt-8">
+                <div id="imera-1" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         1η Ημέρα
                     </h3>
@@ -225,7 +240,7 @@ function Berlin() {
                     </p>
                 </div>
 
-                <div className="mt-8">
+                <div id="imera-2" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         2η Ημέρα
                     </h3>
@@ -245,7 +260,7 @@ function Berlin() {
                         Συνεχίζοντας στην <strong>Babelplatz</strong>, πρόκειται για μια όμορφη πλατεία όπου τα Χριστούγεννα διοργανώνεται αγορά. Τέλος, ένα δωρεάν μουσείο που αξίζει να αφιερώσετε λίγο χρόνο είναι το <strong>Tränenpalast</strong>, ένα παλιό σημείο διέλευσης των συνόρων, που τώρα στεγάζει μια μόνιμη έκθεση για την καθημερινή ζωή στην τότε διαιρεμένη Γερμανία.
                     </p>
                 </div>
-                <div className="mt-8">
+                <div id="imera-3" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         3η Ημέρα
                     </h3>
@@ -277,7 +292,7 @@ function Berlin() {
                         Τέλος, θα χρειαστεί να πάρουμε το μετρό από το Hallesches Tor (γραμμές <strong>U1</strong> ή <strong>U3</strong>) προς τον σταθμό Warschauer. Εκεί υπάρχει το διάσημο <strong>East Side Gallery</strong>, η γέφυρα <strong>Oberbaumbrücke</strong> και η <strong>Uber Arena</strong>.
                     </p>
                 </div>
-                <div className="mt-8">
+                <div id="imera-4" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         4η Ημέρα
                     </h3>
@@ -293,7 +308,7 @@ function Berlin() {
                         Τελευταίο αξιοθέατο στην σημερινή ημέρα είναι το <strong>Charlottenburg Palace</strong>. Για να φτάσουμε εκεί, θα χρειαστεί να πάρουμε το λεωφορείο <strong>M45</strong>. Κατασκευασμένο το 1699 ως θερινή κατοικία της Σοφίας Σάρλοτ, συζύγου του βασιλιά Φρειδερίκου Α. Η είσοδος στο παλάτι κοστίζει 12 ευρώ.
                     </p>
                 </div>
-                <div className="mt-8">
+                <div id="imera-5" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         5η Ημέρα
                     </h3>

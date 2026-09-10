@@ -4,7 +4,17 @@ import { Metadata } from 'next';
 import SiteNavbar from '@/app/components/SiteNavbar';
 import RelatedDestinations from '@/app/components/RelatedDestinations';
 import { PageFooter } from '@/app/components/Footer';
+import { TableOfContents } from '@/app/components/TableOfContents';
+import { FaPlane, FaMapMarkedAlt, FaRoute, FaUtensils } from 'react-icons/fa';
 import Script from 'next/script'
+
+const milanTocItems = [
+    { icon: <FaPlane className="w-5 h-5" />, label: 'Μεταφορά από το Αεροδρόμιο', targetId: 'metafora' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '1η Ημέρα', targetId: 'imera-1' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '2η Ημέρα', targetId: 'imera-2' },
+    { icon: <FaRoute className="w-5 h-5" />, label: 'Μονοήμερες Εκδρομές', targetId: 'ekdromes' },
+    { icon: <FaUtensils className="w-5 h-5" />, label: 'Φαγητό', targetId: 'fagito' },
+];
 
 export const metadata: Metadata = {
     // Ο τίτλος που θα φαίνεται στη Google
@@ -82,8 +92,10 @@ function Milan() {
                     Το Μιλάνο, το κέντρο της μόδας, είναι μια ιδιαίτερη πόλη στη Βόρεια Ιταλία. Είναι αρκετά μικρή για να τη γυρίσεις σε δύο μέρες βλέποντας τα βασικά αξιοθέατα, όμως έχει ένα μεγάλο προτέρημα: βρίσκεται πολύ κοντά σε πολλά όμορφα μέρη, όπως η λίμνη Κόμο, το Μπέργκαμο, το Τορίνο, η Βερόνα, η λίμνη Γκάρντα και το Λουγκάνο της Ελβετίας.
                 </p>
 
+                <TableOfContents items={milanTocItems} />
+
                 {/* --- ΜΕΤΑΦΟΡΕΣ --- */}
-                <section className="space-y-6">
+                <section id="metafora" className="space-y-6 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F]">Μεταφορά από το Αεροδρόμιο του Μιλάνου</h2>
                     <p className="text-[#2E2E2F] text-justify leading-relaxed">
                         Υπάρχουν δύο αεροδρόμια που εξυπηρετούν πτήσεις από την Ελλάδα. Το <strong>Malpensa (MXP)</strong> βρίσκεται περίπου 50 χλμ. από την πόλη. Ο πιο εύκολος και γρήγορος τρόπος είναι το τρένο <strong>Malpensa Express</strong>, που φτάνει στο κέντρο σε περίπου μισή ώρα και κοστίζει 13€. Ακολουθήστε απλά τις πινακίδες του τρένου μέσα στο αεροδρόμιο.
@@ -96,7 +108,7 @@ function Milan() {
                 <div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-q="Milan"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/milan-l63/">GetYourGuide</a></span></div>
 
                 {/* Section 2 — Πρόγραμμα */}
-                <section className="space-y-6 pt-10">
+                <section id="imera-1" className="space-y-6 pt-10 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">Πρόγραμμα 2 ημερών στο Μιλάνο</h2>
                     <p className="text-[#2E2E2F] mb-4 text-justify">
                         Το Μιλάνο είναι μια σχετικά μικρή πόλη με λίγα, αλλά αξιόλογα αξιοθέατα. Μέσα σε δύο μέρες μπορείτε να τη γυρίσετε όλη, για αυτό πολύς κόσμος το συνδυάζει με μονοήμερες εκδρομές στα γύρω μέρη.
@@ -172,7 +184,7 @@ function Milan() {
                     </p>
                 </section>
 
-                <section className="space-y-8 pt-10 border-t border-gray-200">
+                <section id="imera-2" className="space-y-8 pt-10 border-t border-gray-200 scroll-mt-24">
                     <h3 className="text-xl font-bold text-[#2E2E2F] mb-4">
                         🗓️ 2η Ημέρα – Κάστρο, Porta Garibaldi και Navigli
                     </h3>
@@ -228,7 +240,7 @@ function Milan() {
                 </section>
 
                 {/* --- ΜΟΝΟΗΜΕΡΕΣ ΕΚΔΡΟΜΕΣ --- */}
-                <section className="space-y-8 pt-10 border-t border-gray-200">
+                <section id="ekdromes" className="space-y-8 pt-10 border-t border-gray-200 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F]">Μονοήμερες εκδρομές από το Μιλάνο</h2>
                     <p className="text-[#2E2E2F] mb-4 text-justify">
                         Το Μιλάνο είναι ιδανική βάση για μονοήμερες εκδρομές, αφού βρίσκεται σε μικρή απόσταση από πολλά αξιόλογα μέρη. Παρακάτω τα βασικά για το καθένα.
@@ -282,7 +294,7 @@ function Milan() {
                 </section>
 
                 {/* --- ΦΑΓΗΤΟ --- */}
-                <section className="space-y-8 pt-10 border-t border-gray-200">
+                <section id="fagito" className="space-y-8 pt-10 border-t border-gray-200 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F]">Φαγητό στο Μιλάνο</h2>
 
                     <div className="grid grid-cols-2 gap-2 my-10 w-full h-[300px] md:h-[450px]">

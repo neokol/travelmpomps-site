@@ -2,10 +2,22 @@ import React from 'react'
 import SiteNavbar from '@/app/components/SiteNavbar'
 import { ImageGallery } from '@/app/components/ImageGallery'
 import { Widget2 } from '@/app/components/Widget2'
-import { FaCoins } from "react-icons/fa";
+import { TableOfContents } from '@/app/components/TableOfContents';
+import { FaCoins, FaPlane, FaBus, FaBed, FaPiggyBank, FaMapMarkedAlt } from "react-icons/fa";
 import { VscRadioTower } from "react-icons/vsc";
 import { GiPassport } from "react-icons/gi";
 import { FaLanguage } from "react-icons/fa6";
+
+const viennaTocItems = [
+    { icon: <FaPlane className="w-5 h-5" />, label: 'Μεταφορά από το Αεροδρόμιο', targetId: 'metafora' },
+    { icon: <FaBus className="w-5 h-5" />, label: 'Μετακινήσεις', targetId: 'metakiniseis' },
+    { icon: <FaBed className="w-5 h-5" />, label: 'Διαμονή', targetId: 'diamoni' },
+    { icon: <FaPiggyBank className="w-5 h-5" />, label: 'Budget Tips', targetId: 'budget-tips' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '1η Ημέρα', targetId: 'imera-1' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '2η Ημέρα', targetId: 'imera-2' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '3η Ημέρα', targetId: 'imera-3' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '4η Ημέρα', targetId: 'imera-4' },
+];
 import Image from 'next/image';
 // import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
@@ -250,15 +262,17 @@ function Vienna() {
                 <div className="mt-8">
                     <Widget2 items={barcelonaItems} />
                 </div>
+
+                <TableOfContents items={viennaTocItems} />
                 {/* Main sector */}
-                <div className="mt-8">
+                <div id="metafora" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         1. Μεταφορά από το αεροδρόμιο
                     </h2>
                     <p className='text-justify'>Μόλις φτάσετε στο αεροδρόμιο ΜΗΝ κάνετε το λάθος και πάρετε το CAT (cityairporttrain). Το οποίο κοστίζει 12 ευρώ. Αντιθέτως πάρτε τον απλό προαστιακό Schnellbahn (S-Bahn), γραμμή S7, με κατεύθυνση προς Floridsdorf και κατεβείτε στη στάση WienMitteLandstrabe (ή σε όποια άλλη στάση σας βολεύει) που είναι κέντρο της πόλης, και από εκεί πάρτε όποια γραμμή U (μετρό) ή τραμ θέλετε. Η διαφορά είναι μόνο 15 λεπτά παραπάνω από το CAT και το κόστος είναι μόνο 4.40 το άτομο, ενώ στην τιμή συμπεριλαμβάνεται και το μετρό (ή όποιο άλλο μέσο) στη συνέχεια πάρετε. Εισιτήρια θα βγάλετε από τα μηχανήματα στο S-Bahn (κόκκινα μηχανήματα OBB)</p>
                 </div>
 
-                <div className="mt-8">
+                <div id="metakiniseis" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         2. Μετακινήσεις εντός της πόλης
                     </h2>
@@ -276,7 +290,7 @@ function Vienna() {
                     </p>
                 </div>
                 <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-tour-ids="47912,37928,471440"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/vienna-l7/">GetYourGuide</a></span></div></div>
-                <div className="mt-8">
+                <div id="diamoni" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         3. Διαμονή
                     </h2>
@@ -303,7 +317,7 @@ function Vienna() {
                         <strong>Rossau:</strong>Τέλος το Rossau, που βρίσκεται στην 9η συνοικία είναι η οικονομικότερη επιλογή για κατάλυμα στην Βιέννη. Είναι μια πολύ ήσυχη περιοχή και βρίσκεται περίπου 20 λεπτά με τα πόδια μακριά από το ιστορικό κέντρο. Αυτήν ακριβώς την περιοχή επιλέξαμε για να μείνουμε. Όπως επίσης μπορείτε εύκολα να χρησιμοποιήσετε το τραμ ώστε να σας αφήσει στο κέντρο της πόλης. Η περιοχή είναι ήσυχη και πολύ ασφαλής καθώς ακόμα και το βράδυ δεν αντιμετωπίσαμε κανένα πρόβλημα.
                     </p>
                 </div>
-                <div className="mt-8">
+                <div id="budget-tips" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         4. Budget Tips για το ταξίδι σας στην Βιέννη
                     </h2>
@@ -350,7 +364,7 @@ function Vienna() {
                         5. Οδηγός 4 ημερών για την Βιέννη
                     </h2>
                 </div>
-                <div className="mt-8">
+                <div id="imera-1" className="mt-8 scroll-mt-24">
 
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         1η Ημέρα
@@ -382,7 +396,7 @@ function Vienna() {
                     <ImageGallery images={firstDayImages} />
                 </div>
 
-                <div className="mt-8">
+                <div id="imera-2" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         2η Ημέρα
                     </h3>
@@ -403,7 +417,7 @@ function Vienna() {
                     </p>
                     <ImageGallery images={secondDayImages} />
                 </div>
-                <div className="mt-8">
+                <div id="imera-3" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         3η Ημέρα
                     </h3>
@@ -436,7 +450,7 @@ function Vienna() {
                     </p>
                     <ImageGallery images={thirdDayImages} />
                 </div>
-                <div className="mt-8">
+                <div id="imera-4" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         4η Ημέρα
                     </h3>

@@ -4,7 +4,20 @@ import { Metadata } from 'next';
 import SiteNavbar from '@/app/components/SiteNavbar';
 import RelatedDestinations from '@/app/components/RelatedDestinations';
 import { PageFooter } from '@/app/components/Footer';
+import { TableOfContents } from '@/app/components/TableOfContents';
+import { FaPlane, FaBed, FaMapMarkedAlt, FaUtensils, FaLandmark } from 'react-icons/fa';
 import Script from 'next/script'
+
+const madridTocItems = [
+    { icon: <FaPlane className="w-5 h-5" />, label: 'Μεταφορά από το Αεροδρόμιο', targetId: 'metafora' },
+    { icon: <FaBed className="w-5 h-5" />, label: 'Πού να Μείνεις', targetId: 'pou-na-mineis' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '1η Ημέρα', targetId: 'imera-1' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '2η Ημέρα', targetId: 'imera-2' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '3η Ημέρα', targetId: 'imera-3' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '4η Ημέρα', targetId: 'imera-4' },
+    { icon: <FaUtensils className="w-5 h-5" />, label: 'Φαγητό', targetId: 'fagito' },
+    { icon: <FaLandmark className="w-5 h-5" />, label: 'Άλλες Δραστηριότητες', targetId: 'alles' },
+];
 
 export const metadata: Metadata = {
     // Ο τίτλος που θα φαίνεται στη Google
@@ -82,8 +95,10 @@ function Madrid() {
                     Η Μαδρίτη η πρωτεύουσα της Ισπανίας, αριστοκρατική, όμορφη, οποιαδήποτε εποχή την επισκεφτείς δώσε της αρκετό χρόνο να ανακαλύψεις τι έχει να σου προσφέρει. Γειτονιές, παλάτια, αρχιτεκτονική, αγορές - mercados, tapas, τορτίγιες και σανγκρία.
                 </p>
 
+                <TableOfContents items={madridTocItems} />
+
                 {/* --- ΜΕΤΑΦΟΡΕΣ --- */}
-                <section className="space-y-6">
+                <section id="metafora" className="space-y-6 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F]">Μεταφορά από το Αεροδρόμιο της Μαδρίτης</h2>
                     <p className="text-[#2E2E2F] text-justify leading-relaxed">
                         Για να φτάσετε στο κέντρο της πόλης από το αεροδρόμιο της Μαδρίτης ο πιο οικονομικός τρόπος είναι το τρένο το οποίο κοστίζει 2.6€. Αυτό φεύγει από το τερματικό Τ4 (επίπεδο -1, ακολουθώντας τις πινακίδες Renfe). Εναλλακτικά υπάρχει και το μετρό το οποίο κοστίζει λίγο παραπάνω όμως βρίσκεται αμέσως στα δεξιά σας με το που βγείτε από τον χώρο παραλαβής αποσκευών (στον πρώτο όροφο του τερματικού Τ2). To κόστος του εισιτηρίου είναι 4.50€-5€ και θα χρειαστεί να αλλάξετε επιπλέον γραμμή για να φτάσετε στο κέντρο. Εμείς επιλέξαμε το δεύτερο λόγω ευκολίας.
@@ -93,7 +108,7 @@ function Madrid() {
                     </p>
                 </section>
                 <div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-q="Madrid"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/madrid-l46/">GetYourGuide</a></span></div>
-                <section className="space-y-6">
+                <section id="pou-na-mineis" className="space-y-6 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F]">Που να μείνετε στην Μαδρίτη</h2>
                     <p className="text-[#2E2E2F] text-justify leading-relaxed">
                         Ίσως το μεγαλύτερο challenge που θα συναντήσετε στην οργάνωση για το ταξίδι σας στην Μαδρίτη είναι το που θα μείνετε. Τα ξενοδοχεία είναι αρκετά ακριβά ιδιαίτερα στο ιστορικό κέντρο, το οποίο για προφανείς λόγους είναι το καλύτερο σημείο. Το κατάλυμα που επιλέξαμε εμείς βρισκόταν στο Chamberi. Αν θέλετε να βρείτε κάποιο κατάλυμα το οποίο είναι οικονομικότερο θα επικεντρωνόμουν στις παρακάτω γειτονιές:
@@ -111,7 +126,7 @@ function Madrid() {
                 <div data-gyg-href="https://widget.getyourguide.com/default/city.frame" data-gyg-location-id="46" data-gyg-locale-code="el-GR" data-gyg-widget="city" data-gyg-partner-id="0OAQQKO"></div>
 
                 {/* Section 3 — image left, text right */}
-                <section className="space-y-6 pt-10">
+                <section id="imera-1" className="space-y-6 pt-10 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">Πρόγραμμα 4 ημερών στην Μαδρίτη</h2>
 
                     <p className="text-[#2E2E2F] mb-4 text-justify">
@@ -197,7 +212,7 @@ function Madrid() {
                     </div>
                 </section>
 
-                <section className="space-y-8 pt-10 border-t border-gray-200">
+                <section id="imera-2" className="space-y-8 pt-10 border-t border-gray-200 scroll-mt-24">
                     <h3 className="text-xl font-bold text-[#2E2E2F] mb-4">
                         🗓️ 2η Ημέρα – Μαδρίτη των Αψβούργων
                     </h3>
@@ -282,7 +297,7 @@ function Madrid() {
                 </section>
 
 
-                <section className="space-y-8 pt-10 border-t border-gray-200">
+                <section id="imera-3" className="space-y-8 pt-10 border-t border-gray-200 scroll-mt-24">
                     <h3 className="text-xl font-bold text-[#2E2E2F] mb-4">
                         🗓️ 3η Ημέρα – El Rastro, El Retiro και Santiago Bernabeu
                     </h3>
@@ -346,7 +361,7 @@ function Madrid() {
                     </div>
                 </section>
 
-                <section className="space-y-8 pt-10 border-t border-gray-200">
+                <section id="imera-4" className="space-y-8 pt-10 border-t border-gray-200 scroll-mt-24">
                     <h3 className="text-xl font-bold text-[#2E2E2F] mb-4">
                         🗓️ 4η Ημέρα – Μονοήμερη εκδρομή στο Τολέδο
                     </h3>
@@ -435,7 +450,7 @@ function Madrid() {
                 </section>
 
                 {/* --- ΦΑΓΗΤΟ --- */}
-                <section className="space-y-8 pt-10 border-t border-gray-200">
+                <section id="fagito" className="space-y-8 pt-10 border-t border-gray-200 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F]">Φαγητό στην Μαδρίτη</h2>
 
                     
@@ -547,7 +562,7 @@ function Madrid() {
                     </div>
 
                 </section>
-                <section className="space-y-8 pt-10 border-t border-gray-200">
+                <section id="alles" className="space-y-8 pt-10 border-t border-gray-200 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4 mt-8">
                         Άλλες δραστηριότητες στην Μαδρίτη
                     </h2>

@@ -3,10 +3,21 @@ import SiteNavbar from '@/app/components/SiteNavbar'
 import RelatedDestinations from '@/app/components/RelatedDestinations'
 // import { ImageGallery } from '@/app/components/ImageGallery'
 import { Widget2 } from '@/app/components/Widget2'
-import { FaCoins } from "react-icons/fa";
+import { TableOfContents } from '@/app/components/TableOfContents';
+import { FaCoins, FaPlane, FaBus, FaMapMarkedAlt, FaUtensils, FaLandmark } from "react-icons/fa";
 import { VscRadioTower } from "react-icons/vsc";
 import { GiPassport } from "react-icons/gi";
 import { FaLanguage } from "react-icons/fa6";
+
+const romeTocItems = [
+    { icon: <FaPlane className="w-5 h-5" />, label: 'Μεταφορά από το Αεροδρόμιο', targetId: 'metafora' },
+    { icon: <FaBus className="w-5 h-5" />, label: 'Μετακινήσεις', targetId: 'metakiniseis' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '1η Ημέρα', targetId: 'imera-1' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '2η Ημέρα', targetId: 'imera-2' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '3η Ημέρα', targetId: 'imera-3' },
+    { icon: <FaUtensils className="w-5 h-5" />, label: 'Φαγητό', targetId: 'fagito' },
+    { icon: <FaLandmark className="w-5 h-5" />, label: 'Επιπλέον Δραστηριότητες', targetId: 'epipleon' },
+];
 import Image from 'next/image';
 // import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
@@ -184,9 +195,11 @@ function Rome() {
                 <div className="mt-8">
                     <Widget2 items={barcelonaItems} />
                 </div>
+
+                <TableOfContents items={romeTocItems} />
                 {/* Main sector */}
 
-                <div className="mt-8">
+                <div id="metafora" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         1. Μεταφορά από το αεροδρόμιο της Ρώμης στο κέντρο
                     </h2>
@@ -204,7 +217,7 @@ function Rome() {
                     </ul>
 
                 </div>
-                <div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-q="Rome"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/rome-l33/">GetYourGuide</a></span></div>                <div className="mt-8">
+                <div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-partner-id="0OAQQKO" data-gyg-q="Rome"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/rome-l33/">GetYourGuide</a></span></div>                <div id="metakiniseis" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         2. Μετακινήσεις στην Ρώμη
                     </h2>
@@ -220,7 +233,7 @@ function Rome() {
                     <p className="mb-4 text-justify">
                         Το πρόγραμμα που ακολουθήσαμε ήταν 3 ημερών, καθώς την πρώτη ημέρα δεν είχαμε αρκετό χρόνο να δούμε πολλά πράγματα, παρά μόνο να δούμε λίγο το ιστορικό κέντρο φωτισμένο το βράδυ και να πάρουμε μια μικρή γεύση από την πόλη. Χωρίσαμε σε 2 μέρες το ιστορικό κέντρο και την Βίλλα Μποργκέσε και σε μια ημέρα το Βατικανό συνδυαστικά με βόλτα στο Trastevere.                     </p>
                 </div>
-                <div className="mt-8">
+                <div id="imera-1" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         1η Ημέρα
                     </h3>
@@ -249,7 +262,7 @@ function Rome() {
                     {/* <ImageGallery images={firstDayImages} /> */}
                 </div>
 
-                <div className="mt-8">
+                <div id="imera-2" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         2η Ημέρα
                     </h3>
@@ -294,7 +307,7 @@ function Rome() {
                 </div>
 
 
-                <div className="mt-8">
+                <div id="imera-3" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         3η Ημέρα
                     </h3>
@@ -323,7 +336,7 @@ function Rome() {
                     {/* <ImageGallery images={secondDayImages} /> */}
                 </div>
 
-                <div className="mt-8 mb-8">
+                <div id="fagito" className="mt-8 mb-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         4. Φαγητό στην Ρώμη
                     </h2>
@@ -348,7 +361,7 @@ function Rome() {
                     </p>
 
                 </div>
-                <div className="mt-8 mb-8">
+                <div id="epipleon" className="mt-8 mb-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         5. Επιπλέον δραστηριότητες στην Ρώμη
                     </h2>

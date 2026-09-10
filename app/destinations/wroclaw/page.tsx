@@ -2,10 +2,19 @@ import React from 'react'
 import SiteNavbar from '@/app/components/SiteNavbar'
 import RelatedDestinations from '@/app/components/RelatedDestinations'
 import { Widget2 } from '@/app/components/Widget2'
-import { FaCoins } from "react-icons/fa";
+import { TableOfContents } from '@/app/components/TableOfContents';
+import { FaCoins, FaPlane, FaMapMarkedAlt, FaLandmark, FaUtensils } from "react-icons/fa";
 import { VscRadioTower } from "react-icons/vsc";
 import { GiPassport } from "react-icons/gi";
 import { FaLanguage } from "react-icons/fa6";
+
+const wroclawTocItems = [
+    { icon: <FaPlane className="w-5 h-5" />, label: 'Μεταφορά από το Αεροδρόμιο', targetId: 'metafora' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '1η Ημέρα', targetId: 'imera-1' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '2η Ημέρα', targetId: 'imera-2' },
+    { icon: <FaLandmark className="w-5 h-5" />, label: 'Επιπλέον Δραστηριότητες', targetId: 'epipleon' },
+    { icon: <FaUtensils className="w-5 h-5" />, label: 'Φαγητό', targetId: 'fagito' },
+];
 import Image from 'next/image';
 import { PageFooter } from "@/app/components/Footer"
 import Script from 'next/script'
@@ -120,8 +129,10 @@ function Wroclaw() {
                     <Widget2 items={wroclawItems} />
                 </div>
 
+                <TableOfContents items={wroclawTocItems} />
+
                 {/* Main sector */}
-                <div className="mt-8">
+                <div id="metafora" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         1. Μεταφορά από το Αεροδρόμιο του Βρότσλαβ
                     </h2>
@@ -138,7 +149,7 @@ function Wroclaw() {
                     </h2>
                 </div>
                 <div data-gyg-href="https://widget.getyourguide.com/default/city.frame" data-gyg-location-id="2036" data-gyg-locale-code="el-GR" data-gyg-widget="city" data-gyg-partner-id="0OAQQKO"></div>
-                <div className="mt-8">
+                <div id="imera-1" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         🗓️ 1η Ημέρα
                     </h3>
@@ -187,7 +198,7 @@ function Wroclaw() {
                     </p>
                 </div>
 
-                <div className="mt-8">
+                <div id="imera-2" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         🗓️ 2η Ημέρα
                     </h3>
@@ -232,7 +243,7 @@ function Wroclaw() {
                     </p>
                 </div>
 
-                <div className="mt-8 mb-8">
+                <div id="epipleon" className="mt-8 mb-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         Επιπλέον δραστηριότητες
                     </h3>
@@ -252,7 +263,7 @@ function Wroclaw() {
                     </ul>
                 </div>
 
-                <div className="mt-8 mb-8">
+                <div id="fagito" className="mt-8 mb-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         Φαγητό στο Βρότσλαβ
                     </h3>

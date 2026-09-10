@@ -3,10 +3,23 @@ import SiteNavbar from '@/app/components/SiteNavbar'
 import RelatedDestinations from '@/app/components/RelatedDestinations'
 import { ImageGallery } from '@/app/components/ImageGallery'
 import { Widget2 } from '@/app/components/Widget2'
-import { FaCoins } from "react-icons/fa";
+import { TableOfContents } from '@/app/components/TableOfContents';
+import { FaCoins, FaPlane, FaBus, FaBed, FaLandmark, FaMapMarkedAlt } from "react-icons/fa";
 import { VscRadioTower } from "react-icons/vsc";
 import { GiPassport } from "react-icons/gi";
 import { FaLanguage } from "react-icons/fa6";
+
+const barcelonaTocItems = [
+    { icon: <FaPlane className="w-5 h-5" />, label: 'Μεταφορά από το Αεροδρόμιο', targetId: 'metafora' },
+    { icon: <FaBus className="w-5 h-5" />, label: 'Μετακινήσεις', targetId: 'metakiniseis' },
+    { icon: <FaBed className="w-5 h-5" />, label: 'Διαμονή', targetId: 'diamoni' },
+    { icon: <FaLandmark className="w-5 h-5" />, label: 'Top Αξιοθέατα', targetId: 'axiotheata' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '1η Ημέρα', targetId: 'imera-1' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '2η Ημέρα', targetId: 'imera-2' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '3η Ημέρα', targetId: 'imera-3' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '4η Ημέρα', targetId: 'imera-4' },
+    { icon: <FaMapMarkedAlt className="w-5 h-5" />, label: '5η Ημέρα', targetId: 'imera-5' },
+];
 import Image from 'next/image';
 import { ImageAccordion } from '@/app/components/ImageAccordion';
 import { PageFooter } from "@/app/components/Footer"
@@ -258,15 +271,17 @@ function Barcelona() {
                 <div className="mt-8">
                     <Widget2 items={barcelonaItems} />
                 </div>
+
+                <TableOfContents items={barcelonaTocItems} />
                 {/* Main sector */}
-                <div className="mt-8">
+                <div id="metafora" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         1. Μεταφορά από το αεροδρόμιο στη Βαρκελώνη
                     </h2>
                     <p className='text-justify'>Όλες οι αεροπορικές εξυπηρετούν από το αεροδρόμιο Josep Tarradellas Barcelona-El Prat Airport (BCN). O ευκολότερος τρόπος για την μετακίνηση σας από το αεροδρόμιο προς το κέντρο της πόλης είναι το Aerobus. Το κόστος είναι 7.50 EUR για μια διαδρομή και 12.50 EUR με επιστροφή. Εναλλακτικά, υπάρχει και η επιλογή του λεωφορείου το οποίο το κόστος του εισιτηρίου είναι 5,70, όμως κάνει πολύ περισσότερη ώρα καθώς κάνει συχνές στάσεις.  Εισιτήρια για το πρώτο μπορείτε είτε να βγάλετε online είτε με το που βγείτε από το αεροδρόμιο θα βρείτε να μπλε μηχανήματα κοντά στην στάση.  </p>
                 </div>
 
-                <div className="mt-8">
+                <div id="metakiniseis" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         2. Μετακινήσεις εντός της πόλης
                     </h2>
@@ -286,13 +301,13 @@ function Barcelona() {
                     </p>
                 </div>
                 <div className='mt-8'><div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="el-GR" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-cmp="Barcelona-post" data-gyg-partner-id="0OAQQKO" data-gyg-tour-ids="50027,398519,155979"><span>Powered by <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/sagrada-familia-l2699/">GetYourGuide</a></span></div></div>
-                <div className="mt-8">
+                <div id="diamoni" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         3. Διαμονή στην Βαρκελώνη
                     </h2>
                     <p className='text-justify'>Η Βαρκελώνη χωρίζεται σε συνοικίες. Τα καταλύματα στην γοτθική συνοικία και την  Eixample βρίσκονται στο κέντρο και δίνουν πρόσβαση στα περισσότερα αξιοθέατα. Φυσικά αυτά είναι και τα ακριβότερα καταλύματα. Εναλλακτικά, η συνοικία Gracia, έχει μεγαλύτερη απόσταση από το κέντρο όμως είναι λιγότερο τουριστική, έχει οικονομικότερες επιλογές και είναι ωραία ευκαιρία να εξερευνήσετε και αυτή την γειτονία. Ακόμα μια επιλογή είναι η Sarrià-Sant Gervasi είναι λιγότερο γραφική σε σχέση με την Gracia όμως παραμένει μια πολύ καλή επιλογή αφού έχετε πρόσβαση στο μετρό. Γενικά, αν σε κοντινή απόσταση από το κατάλυμα που επιλέξετε υπάρχει μετρό, η μετακινήσεις θα είναι εύκολες. </p>
                 </div>
-                <div className="mt-8">
+                <div id="axiotheata" className="mt-8 scroll-mt-24">
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">4. Top Αξιοθέατα στην Βαρκελώνη</h2>
                     <div className="flex justify-center">
                         <ImageAccordion items={barcelonaImages} />
@@ -326,7 +341,7 @@ function Barcelona() {
                     <p className="mb-4 text-justify">
                         Αν τύχει να βρεθείτε στην Βαρκελώνη την πρώτη Κυριακή του μήνα θα έχετε την ευκαιρία να δείτε αρκετά αξιοθέατα δωρεάν όπως το μουσείο του Πικάσο και το Palau Güell. Όμως φροντίστε να έχετε κλείσει το εισιτήριο σας από νωρίς ηλεκτρονικά καθώς αυτά εξαντλούνται αμέσως. Μπορείτε να δείτε αναλυτικά εδώ ποια είναι αυτά τα μουσεία.
                     </p>
-                    <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
+                    <h3 id="imera-1" className="text-1xl font-bold text-[#2E2E2F] mb-4 scroll-mt-24">
                         1η Ημέρα
                     </h3>
                     <p className="mb-4 text-justify">
@@ -352,7 +367,7 @@ function Barcelona() {
                     <ImageGallery images={firstDayImages} />
                 </div>
 
-                <div className="mt-8">
+                <div id="imera-2" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         2η Ημέρα
                     </h3>
@@ -389,7 +404,7 @@ function Barcelona() {
                     </p>
                     <ImageGallery images={secondDayImages} />
                 </div>
-                <div className="mt-8">
+                <div id="imera-3" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         3η Ημέρα
                     </h3>
@@ -414,7 +429,7 @@ function Barcelona() {
                     </p>
                     <ImageGallery images={thirdDayImages} />
                 </div>
-                <div className="mt-8">
+                <div id="imera-4" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         4η Ημέρα
                     </h3>
@@ -443,7 +458,7 @@ function Barcelona() {
                     </p>
                     <ImageGallery images={fourthDayImages} />
                 </div>
-                <div className="mt-8">
+                <div id="imera-5" className="mt-8 scroll-mt-24">
                     <h3 className="text-1xl font-bold text-[#2E2E2F] mb-4">
                         5η Ημέρα
                     </h3>
