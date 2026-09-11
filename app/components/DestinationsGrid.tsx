@@ -13,8 +13,10 @@ interface Props {
     initialCountry?: string;
 }
 
+type Category = "all" | "budget" | "christmas";
+
 export default function DestinationsGrid({ destinations, initialCountry }: Props) {
-    const [budgetOnly, setBudgetOnly] = useState(false);
+    const [category, setCategory] = useState<Category>("all");
     const [country, setCountry] = useState(initialCountry || "all");
 
     const countries = useMemo(
@@ -23,34 +25,31 @@ export default function DestinationsGrid({ destinations, initialCountry }: Props
     );
 
     const filtered = destinations.filter((d) => {
-        if (budgetOnly && !d.budget) return false;
+        if (category === "budget" && !d.budget) return false;
+        if (category === "christmas" && !d.christmas) return false;
         if (country !== "all" && d.country !== country) return false;
         return true;
     });
+
+    const categoryButtonClass = (value: Category) =>
+        `px-4 py-2 rounded-full text-sm font-bold transition-colors ${
+            category === value
+                ? "bg-[#F76808] text-white"
+                : "bg-[#F5F1ED] text-[#2E2E2F] hover:bg-[#eee8e0]"
+        }`;
 
     return (
         <>
             {/* Filters */}
             <div className="flex flex-wrap items-center gap-3 mb-8">
-                <button
-                    onClick={() => setBudgetOnly(false)}
-                    className={`px-4 py-2 rounded-full text-sm font-bold transition-colors ${
-                        !budgetOnly
-                            ? "bg-[#F76808] text-white"
-                            : "bg-[#F5F1ED] text-[#2E2E2F] hover:bg-[#eee8e0]"
-                    }`}
-                >
+                <button onClick={() => setCategory("all")} className={categoryButtonClass("all")}>
                     Όλα
                 </button>
-                <button
-                    onClick={() => setBudgetOnly(true)}
-                    className={`px-4 py-2 rounded-full text-sm font-bold transition-colors ${
-                        budgetOnly
-                            ? "bg-[#F76808] text-white"
-                            : "bg-[#F5F1ED] text-[#2E2E2F] hover:bg-[#eee8e0]"
-                    }`}
-                >
+                <button onClick={() => setCategory("budget")} className={categoryButtonClass("budget")}>
                     Οικονομικά
+                </button>
+                <button onClick={() => setCategory("christmas")} className={categoryButtonClass("christmas")}>
+                    🎄 Χριστουγεννιάτικοι
                 </button>
 
                 <select

@@ -6,6 +6,8 @@ export interface Destination {
     country: string;
     teaser: string;
     budget: boolean;
+    /** Destination worth visiting for its Christmas markets / festive atmosphere. */
+    christmas?: boolean;
     featured?: boolean;
 }
 
@@ -32,6 +34,7 @@ export const destinations: Destination[] = [
         country: "Γερμανία",
         teaser: "Ιστορία, τέχνη & νυχτερινή ζωή",
         budget: false,
+        christmas: true,
     },
     {
         name: "Βαρκελώνη",
@@ -50,6 +53,7 @@ export const destinations: Destination[] = [
         country: "Αυστρία",
         teaser: "Αυτοκρατορικά ανάκτορα & καφέ κουλτούρα",
         budget: false,
+        christmas: true,
     },
     {
         name: "Βουκουρέστι",
@@ -68,6 +72,7 @@ export const destinations: Destination[] = [
         country: "Ηνωμένο Βασίλειο",
         teaser: "Big Ben & θρυλικά αξιοθέατα",
         budget: false,
+        christmas: true,
     },
     {
         name: "Βουδαπέστη",
@@ -77,6 +82,7 @@ export const destinations: Destination[] = [
         country: "Ουγγαρία",
         teaser: "Λουτρά & φθηνή διαμονή",
         budget: true,
+        christmas: true,
     },
     {
         name: "Κρακοβία",
@@ -86,6 +92,7 @@ export const destinations: Destination[] = [
         country: "Πολωνία",
         teaser: "Μεσαιωνική πλατεία με μικρό budget",
         budget: true,
+        christmas: true,
     },
     {
         name: "Βαρσοβία",
@@ -95,6 +102,7 @@ export const destinations: Destination[] = [
         country: "Πολωνία",
         teaser: "Ανακατασκευασμένη Παλιά Πόλη",
         budget: true,
+        christmas: true,
     },
     {
         name: "Μαδρίτη",
@@ -131,6 +139,7 @@ export const destinations: Destination[] = [
         country: "Πολωνία",
         teaser: "Η \"Βενετία\" της Πολωνίας & κυνήγι νάνων",
         budget: true,
+        christmas: true,
     },
     {
         name: "Βενετία",
@@ -149,5 +158,15 @@ export const destinations: Destination[] = [
         country: "Τσεχία",
         teaser: "Αστρονομικό Ρολόι, κάστρο & Charles Bridge",
         budget: false,
+        christmas: true,
+    },
+    {
+        name: "Βερόνα",
+        slug: "verona",
+        image: "/destinations/verona.jpg",
+        alt: "Ταξιδιωτικός οδηγός για τη Βερόνα, την πόλη του Ρωμαίου και της Ιουλιέτας",
+        country: "Ιταλία",
+        teaser: "Αρένα, το σπίτι της Ιουλιέτας & γέφυρες πάνω στον Adige",
+        budget: true,
     },
 ];
