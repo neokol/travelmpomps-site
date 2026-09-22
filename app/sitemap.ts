@@ -82,6 +82,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             slug: 'verona',
             name: 'Verona',
             lastUpdated: '2026-09-11'
+        },
+        {
+            slug: 'bratislava',
+            name: 'Bratislava',
+            lastUpdated: '2026-09-21'
         }
     ];
 

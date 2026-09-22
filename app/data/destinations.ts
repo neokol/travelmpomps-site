@@ -169,4 +169,14 @@ export const destinations: Destination[] = [
         teaser: "Αρένα, το σπίτι της Ιουλιέτας & γέφυρες πάνω στον Adige",
         budget: true,
     },
+    {
+        name: "Μπρατισλάβα",
+        slug: "bratislava",
+        image: "/destinations/bratislava.jpg",
+        alt: "Ταξιδιωτικός οδηγός για τη Μπρατισλάβα και το άγαλμα Τσούμιλ",
+        country: "Σλοβακία",
+        teaser: "Μονοήμερη εκδρομή από τη Βιέννη: κάστρο, Τσούμιλ & UFO Tower",
+        budget: true,
+        christmas: true,
+    },
 ];
