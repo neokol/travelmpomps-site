@@ -21,7 +21,15 @@ export const metadata: Metadata = {
     },
 }
 
+// Newest first — the first entry is shown as the featured post.
 const Posts = [
+    {
+        name: "Χριστουγεννιάτικες αγορές στη Βιέννη 2026",
+        slug: "christougenniatikes-agores-vienni",
+        image: "/blog_images/vienna-xmas-1.jpg",
+        title: "Χριστουγεννιάτικες αγορές στη Βιέννη 2026",
+        description: "Ημερομηνίες, ώρες και οι 6 αγορές που αξίζουν πραγματικά — μαζί με το πόσο κοστίζει το punch και πότε να πάτε."
+    },
     {
         name: "Χριστούγεννα στο Λονδίνο",
         slug: "christougenna-londino",

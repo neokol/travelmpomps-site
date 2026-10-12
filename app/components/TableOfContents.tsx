@@ -10,9 +10,11 @@ export type TocItem = {
 
 type Props = {
     items: TocItem[];
+    /** Heading of the desktop card — guides keep the default, articles can override it. */
+    title?: string;
 };
 
-export function TableOfContents({ items }: Props) {
+export function TableOfContents({ items, title = 'Περιεχόμενα Οδηγού' }: Props) {
     const [mobileOpen, setMobileOpen] = useState(false);
 
     const scrollToSection = (id: string) => {
@@ -29,7 +31,7 @@ export function TableOfContents({ items }: Props) {
         <>
             {/* Desktop card */}
             <div className="hidden md:block rounded-2xl border border-gray-200 bg-white shadow-sm p-6 md:p-8 my-8">
-                <h2 className="text-lg font-bold text-[#2E2E2F] mb-2">Περιεχόμενα Οδηγού</h2>
+                <h2 className="text-lg font-bold text-[#2E2E2F] mb-2">{title}</h2>
                 <div className="grid grid-cols-2 gap-x-8">
                     {items.map((item) => (
                         <button
