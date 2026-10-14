@@ -138,6 +138,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date('2026-10-12'),
             changeFrequency: 'monthly' as const,
             priority: 0.7,
+        },
+        {
+            url: `${baseUrl}/blog/fthines-poleis-xristougenna-evropi`,
+            lastModified: new Date('2026-10-12'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
+        },
+        {
+            url: `${baseUrl}/blog/xristougenna-voudapesti`,
+            lastModified: new Date('2026-10-13'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
         }
     ]
 }

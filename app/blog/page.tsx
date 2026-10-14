@@ -24,6 +24,20 @@ export const metadata: Metadata = {
 // Newest first — the first entry is shown as the featured post.
 const Posts = [
     {
+        name: "Χριστούγεννα στη Βουδαπέστη 2026",
+        slug: "xristougenna-voudapesti",
+        image: "/blog_images/budapest-xmas-1.jpg",
+        title: "Χριστούγεννα στη Βουδαπέστη 2026",
+        description: "Αγορές, φαγητό, φωτισμένα τραμ και λουτρά στο κρύο — μαζί με το κόλπο των 1.600 φιορινιών για να τρώτε φθηνά."
+    },
+    {
+        name: "Οι πιο φθηνές πόλεις για Χριστούγεννα στην Ευρώπη 2026",
+        slug: "fthines-poleis-xristougenna-evropi",
+        image: "/blog_images/cheap-christmas-europe-1.jpg",
+        title: "Οι πιο φθηνές πόλεις για Χριστούγεννα στην Ευρώπη 2026",
+        description: "7 οικονομικές πόλεις για χριστουγεννιάτικες αγορές — με ημερομηνίες, κόστος και tips για να κρατήσετε το budget χαμηλά."
+    },
+    {
         name: "Χριστουγεννιάτικες αγορές στη Βιέννη 2026",
         slug: "christougenniatikes-agores-vienni",
         image: "/blog_images/vienna-xmas-1.jpg",

@@ -283,6 +283,10 @@ function ViennaChristmasMarkets() {
                         {' '}— μόλις 1 ώρα από τη Βιέννη — και της{' '}
                         <Link href="/destinations/prague" className="text-blue-600 underline">Πράγας</Link>.
                     </p>
+                    <p className="text-[#2E2E2F] mb-4 text-justify">
+                        Θέλετε χριστουγεννιάτικο ταξίδι χωρίς τις τιμές της Βιέννης; Δείτε τις{' '}
+                        <Link href="/blog/fthines-poleis-xristougenna-evropi" className="text-blue-600 underline">πιο φθηνές πόλεις για Χριστούγεννα στην Ευρώπη</Link>.
+                    </p>
                 </div>
             </div>
 
