@@ -24,6 +24,13 @@ export const metadata: Metadata = {
 // Newest first — the first entry is shown as the featured post.
 const Posts = [
     {
+        name: "Χριστουγεννιάτικες αγορές στο Βερολίνο 2026",
+        slug: "xristougenniatikes-agores-verolino",
+        image: "/blog_images/berlin-xmas-1.jpg",
+        title: "Χριστουγεννιάτικες αγορές στο Βερολίνο 2026",
+        description: "Οι 6 αγορές που αξίζουν, ημερομηνίες, είσοδος, Pfand και μια διαδρομή με τα πόδια για ένα βράδυ."
+    },
+    {
         name: "Χριστούγεννα στη Βουδαπέστη 2026",
         slug: "xristougenna-voudapesti",
         image: "/blog_images/budapest-xmas-1.jpg",

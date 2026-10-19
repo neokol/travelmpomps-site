@@ -150,6 +150,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date('2026-10-13'),
             changeFrequency: 'monthly' as const,
             priority: 0.7,
+        },
+        {
+            url: `${baseUrl}/blog/xristougenniatikes-agores-verolino`,
+            lastModified: new Date('2026-10-19'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
         }
     ]
 }
