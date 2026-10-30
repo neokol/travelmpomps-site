@@ -203,6 +203,9 @@ function ChristmasLondon() {
                     <p className="text-[#2E2E2F] mb-4 text-justify">
                         Διαβάστε <Link href={`/destinations/london`} className="text-blue-600 hover:text-blue-700 hover:underline">εδώ</Link> τον αναλυτικό μας οδηγό για τον Λονδίνο.
                     </p>
+                    <p className="text-[#2E2E2F] mb-4 text-justify">
+                        Το Λονδίνο είναι ακριβό — δείτε και τα <Link href="/blog/dorean-aksiothea-londino" className="text-blue-600 hover:text-blue-700 hover:underline">καλύτερα δωρεάν αξιοθέατα της πόλης</Link>.
+                    </p>
                     <div className="relative w-full aspect-[5/2] md:aspect-[5/2] rounded-2xl overflow-hidden shadow-lg">
                         <Image
                             src="/blog_images/london-xmas-4.jpg"

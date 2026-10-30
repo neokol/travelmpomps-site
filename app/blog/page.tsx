@@ -24,6 +24,13 @@ export const metadata: Metadata = {
 // Newest first — the first entry is shown as the featured post.
 const Posts = [
     {
+        name: "Τα καλύτερα δωρεάν αξιοθέατα στο Λονδίνο",
+        slug: "dorean-aksiothea-londino",
+        image: "/blog_images/london-free-1.jpg",
+        title: "Τα καλύτερα δωρεάν αξιοθέατα στο Λονδίνο (2026)",
+        description: "Δωρεάν μουσεία, θέα από ουρανοξύστες, κρυμμένοι κήποι και αλλαγή φρουράς — με tips για να μη χάσετε τις κρατήσεις."
+    },
+    {
         name: "Χριστουγεννιάτικες αγορές στο Βερολίνο 2026",
         slug: "xristougenniatikes-agores-verolino",
         image: "/blog_images/berlin-xmas-1.jpg",

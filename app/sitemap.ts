@@ -156,6 +156,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date('2026-10-19'),
             changeFrequency: 'monthly' as const,
             priority: 0.7,
+        },
+        {
+            url: `${baseUrl}/blog/dorean-aksiothea-londino`,
+            lastModified: new Date('2026-10-27'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
         }
     ]
 }
