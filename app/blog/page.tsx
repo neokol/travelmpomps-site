@@ -24,6 +24,13 @@ export const metadata: Metadata = {
 // Newest first — the first entry is shown as the featured post.
 const Posts = [
     {
+        name: "Τι αποσκευή δίνει κάθε αεροπορική",
+        slug: "aposkeues-fthinotero-eisitirio",
+        image: "/blog_images/aposkeues-1.jpg",
+        title: "Τι αποσκευή δίνει κάθε αεροπορική στο φθηνότερο εισιτήριο (2026)",
+        description: "Aegean, SKY express, Ryanair, Wizz Air, easyJet και άλλες — τι χωράει στο φθηνότερο εισιτήριο, διαστάσεις και πόσο κοστίζει η έξτρα χειραποσκευή."
+    },
+    {
         name: "Πρωτοχρονιά στην Ευρώπη 2027",
         slug: "protoxronia-evropi",
         image: "/blog_images/protoxronia-1.jpg",

@@ -168,6 +168,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date('2026-10-30'),
             changeFrequency: 'monthly' as const,
             priority: 0.7,
+        },
+        {
+            url: `${baseUrl}/blog/aposkeues-fthinotero-eisitirio`,
+            lastModified: new Date('2026-11-02'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
         }
     ]
 }
