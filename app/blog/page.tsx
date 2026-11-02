@@ -24,6 +24,13 @@ export const metadata: Metadata = {
 // Newest first — the first entry is shown as the featured post.
 const Posts = [
     {
+        name: "Πρωτοχρονιά στην Ευρώπη 2027",
+        slug: "protoxronia-evropi",
+        image: "/blog_images/protoxronia-1.jpg",
+        title: "Πρωτοχρονιά στην Ευρώπη: 6 πόλεις για να την περάσετε",
+        description: "Βιέννη, Μαδρίτη, Βερολίνο, Βαρσοβία, Βουδαπέστη και Λονδίνο — πού γίνεται το μεγάλο πάρτι, τι είναι δωρεάν και τι να κλείσετε από τώρα."
+    },
+    {
         name: "Τα καλύτερα δωρεάν αξιοθέατα στο Λονδίνο",
         slug: "dorean-aksiothea-londino",
         image: "/blog_images/london-free-1.jpg",
