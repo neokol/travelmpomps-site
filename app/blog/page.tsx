@@ -24,6 +24,13 @@ export const metadata: Metadata = {
 // Newest first — the first entry is shown as the featured post.
 const Posts = [
     {
+        name: "Χριστουγεννιάτικη αγορά στην Πράγα 2026",
+        slug: "xristougenniatiki-agora-praga",
+        image: "/blog_images/prague-xmas-1.jpg",
+        title: "Χριστουγεννιάτικη αγορά στην Πράγα 2026",
+        description: "Ημερομηνίες, τιμές, η παγίδα με το ζαμπόν και μια διαδρομή με τα πόδια για ένα βράδυ στις αγορές της Πράγας."
+    },
+    {
         name: "Τι αποσκευή δίνει κάθε αεροπορική",
         slug: "aposkeues-fthinotero-eisitirio",
         image: "/blog_images/aposkeues-1.jpg",

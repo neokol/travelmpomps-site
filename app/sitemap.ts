@@ -174,6 +174,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date('2026-11-02'),
             changeFrequency: 'monthly' as const,
             priority: 0.7,
+        },
+        {
+            url: `${baseUrl}/blog/xristougenniatiki-agora-praga`,
+            lastModified: new Date('2026-11-09'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
         }
     ]
 }
