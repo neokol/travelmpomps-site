@@ -9,7 +9,6 @@ import { PageFooter } from '@/app/components/Footer';
 import { TableOfContents } from '@/app/components/TableOfContents';
 import { ResponsiveTable } from '@/app/components/ResponsiveTable';
 import { PhotoPair } from '@/app/components/PhotoPair';
-import { PhotoFull } from '@/app/components/PhotoFull';
 
 const PAGE_URL = 'https://travelmpomps.gr/blog/xristougenniatiki-agora-praga';
 const HERO_IMAGE = '/blog_images/prague-xmas-1.jpg';
@@ -242,7 +241,7 @@ function PragueChristmasMarkets() {
                     <h2 className="text-2xl font-bold text-[#2E2E2F] mb-4">
                         Οι αγορές που αξίζουν
                     </h2>
-                    {topMarkets.map((market, index) => (
+                    {topMarkets.map((market) => (
                         <React.Fragment key={market.title}>
                             <h3 className={h3}>{market.title}</h3>
                             <p className={p}>{market.body}</p>
