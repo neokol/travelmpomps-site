@@ -141,7 +141,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
         {
             url: `${baseUrl}/blog/fthines-poleis-xristougenna-evropi`,
-            lastModified: new Date('2026-10-12'),
+            lastModified: new Date('2026-11-12'),
             changeFrequency: 'monthly' as const,
             priority: 0.7,
         },
@@ -177,7 +177,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
         {
             url: `${baseUrl}/blog/xristougenniatiki-agora-praga`,
-            lastModified: new Date('2026-11-09'),
+            lastModified: new Date('2026-11-12'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
+        },
+        {
+            url: `${baseUrl}/blog/xristougenna-krakovia`,
+            lastModified: new Date('2026-11-12'),
             changeFrequency: 'monthly' as const,
             priority: 0.7,
         }
