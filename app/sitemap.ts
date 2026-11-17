@@ -186,6 +186,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date('2026-11-12'),
             changeFrequency: 'monthly' as const,
             priority: 0.7,
+        },
+        {
+            url: `${baseUrl}/blog/monoimeri-bratislava-apo-vienni`,
+            lastModified: new Date('2026-11-17'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
         }
     ]
 }

@@ -24,6 +24,13 @@ export const metadata: Metadata = {
 // Newest first — the first entry is shown as the featured post.
 const Posts = [
     {
+        name: "Μονοήμερη στη Μπρατισλάβα από τη Βιέννη",
+        slug: "monoimeri-bratislava-apo-vienni",
+        image: "/blog_images/bratislava-day-1.jpg",
+        title: "Μονοήμερη στη Μπρατισλάβα από τη Βιέννη: πώς θα πάτε και αξίζει;",
+        description: "Τρένο ή καράβι, πόσο κοστίζει το εισιτήριο, τι να δείτε και ένα πρόγραμμα για μία μέρα στη Μπρατισλάβα."
+    },
+    {
         name: "Χριστούγεννα στην Κρακοβία 2026",
         slug: "xristougenna-krakovia",
         image: "/blog_images/krakow-xmas-1.jpg",
