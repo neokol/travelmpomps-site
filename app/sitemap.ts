@@ -192,6 +192,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date('2026-11-17'),
             changeFrequency: 'monthly' as const,
             priority: 0.7,
+        },
+        {
+            url: `${baseUrl}/blog/praga-i-voudapesti-xristougenna`,
+            lastModified: new Date('2026-11-20'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
         }
     ]
 }

@@ -24,6 +24,13 @@ export const metadata: Metadata = {
 // Newest first — the first entry is shown as the featured post.
 const Posts = [
     {
+        name: "Πράγα ή Βουδαπέστη για Χριστούγεννα",
+        slug: "praga-i-voudapesti-xristougenna",
+        image: "/blog_images/prague-vs-budapest-1.jpg",
+        title: "Πράγα ή Βουδαπέστη για Χριστούγεννα; Η σύγκριση (2026)",
+        description: "Αγορές, ατμόσφαιρα, τιμές, φαγητό και δραστηριότητες — ποια πόλη σας ταιριάζει περισσότερο για χριστουγεννιάτικο ταξίδι."
+    },
+    {
         name: "Μονοήμερη στη Μπρατισλάβα από τη Βιέννη",
         slug: "monoimeri-bratislava-apo-vienni",
         image: "/blog_images/bratislava-day-1.jpg",
